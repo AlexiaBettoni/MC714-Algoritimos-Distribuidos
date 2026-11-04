@@ -1,0 +1,15 @@
+x-node: &node
+  build: .
+  environment: &env
+    PEERS: node1,node2,node3,node4,node5
+    HB_INTERVAL: ${HB_INTERVAL:-0.5}
+    HB_TIMEOUT: ${HB_TIMEOUT:-2.0}
+    LOSS_RATE: ${LOSS_RATE:-0}
+    SEED: ${SEED:-42}
+ 
+services:
+  node1: { <<: *node, environment: { <<: *env, NODE_ID: node1 } }
+  node2: { <<: *node, environment: { <<: *env, NODE_ID: node2 } }
+  node3: { <<: *node, environment: { <<: *env, NODE_ID: node3 } }
+  node4: { <<: *node, environment: { <<: *env, NODE_ID: node4 } }
+  node5: { <<: *node, environment: { <<: *env, NODE_ID: node5 } }

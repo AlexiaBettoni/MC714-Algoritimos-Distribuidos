@@ -1,0 +1,10 @@
+{
+  "victim": "node3",
+  "interval": 0.5,
+  "timeout": 2.0,
+  "loss": 0.1,
+  "seed": 1,
+  "detection_s": {},
+  "max_detection_s": null,
+  "false_suspicions": 0
+}
