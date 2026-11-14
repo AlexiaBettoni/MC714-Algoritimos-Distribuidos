@@ -1,0 +1,18 @@
+{
+  "run_id": "run-001-normal-n3-loss0-seed1",
+  "scenario": "normal",
+  "nodes": 3,
+  "loss_rate": 0.0,
+  "seed": 1,
+  "victim": null,
+  "timeout_s": 2.0,
+  "heartbeat_interval_s": 0.5,
+  "warmup_s": 6.0,
+  "observation_s": 8.0,
+  "start_ts": 1794664256.8917332,
+  "kill_ts": null,
+  "end_ts": 1794664271.4516296,
+  "duration_s": 14.559896469116211,
+  "completed_at": "2026-11-14T10:51:11.451634-03:00",
+  "compose_exit_code": 0
+}

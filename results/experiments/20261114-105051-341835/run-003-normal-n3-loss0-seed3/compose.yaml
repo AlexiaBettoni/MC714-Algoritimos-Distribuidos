@@ -1,0 +1,28 @@
+services:
+  node1:
+    image: mc714-bully-experiment:local
+    environment:
+      NODE_ID: "node1"
+      PEERS: "node2,node3"
+      HB_INTERVAL: 0.5
+      HB_TIMEOUT: 2.0
+      LOSS_RATE: 0.0
+      SEED: 3
+  node2:
+    image: mc714-bully-experiment:local
+    environment:
+      NODE_ID: "node2"
+      PEERS: "node1,node3"
+      HB_INTERVAL: 0.5
+      HB_TIMEOUT: 2.0
+      LOSS_RATE: 0.0
+      SEED: 3
+  node3:
+    image: mc714-bully-experiment:local
+    environment:
+      NODE_ID: "node3"
+      PEERS: "node1,node2"
+      HB_INTERVAL: 0.5
+      HB_TIMEOUT: 2.0
+      LOSS_RATE: 0.0
+      SEED: 3

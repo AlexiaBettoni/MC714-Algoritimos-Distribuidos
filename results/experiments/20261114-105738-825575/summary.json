@@ -1,0 +1,206 @@
+[
+  {
+    "scenario": "coordinator_crash",
+    "nodes": 5,
+    "loss_rate": 0.0,
+    "runs": 2,
+    "detection_latency_max_s": {
+      "n": 2,
+      "mean": 1.8501179218292236,
+      "stdev": 0.06539707319823171,
+      "p50": 1.8501179218292236,
+      "p95": 1.8917363643646241
+    },
+    "coordinator_convergence_s": {
+      "n": 2,
+      "mean": 3.7906436920166016,
+      "stdev": 0.08913384110477914,
+      "p50": 3.7906436920166016,
+      "p95": 3.8473681211471558
+    },
+    "election_messages": {
+      "n": 2,
+      "mean": 26,
+      "stdev": 2.8284271247461903,
+      "p50": 26.0,
+      "p95": 27.8
+    },
+    "false_suspicions": {
+      "n": 2,
+      "mean": 0,
+      "stdev": 0.0,
+      "p50": 0.0,
+      "p95": 0.0
+    }
+  },
+  {
+    "scenario": "coordinator_crash",
+    "nodes": 5,
+    "loss_rate": 0.05,
+    "runs": 2,
+    "detection_latency_max_s": {
+      "n": 2,
+      "mean": 1.7886508703231812,
+      "stdev": 0.1224660977181048,
+      "p50": 1.7886508703231812,
+      "p95": 1.8665878176689148
+    },
+    "coordinator_convergence_s": {
+      "n": 2,
+      "mean": 3.514678120613098,
+      "stdev": 0.1562806828657891,
+      "p50": 3.514678120613098,
+      "p95": 3.6141345381736754
+    },
+    "election_messages": {
+      "n": 2,
+      "mean": 15,
+      "stdev": 0.0,
+      "p50": 15.0,
+      "p95": 15.0
+    },
+    "false_suspicions": {
+      "n": 2,
+      "mean": 0,
+      "stdev": 0.0,
+      "p50": 0.0,
+      "p95": 0.0
+    }
+  },
+  {
+    "scenario": "coordinator_crash",
+    "nodes": 5,
+    "loss_rate": 0.15,
+    "runs": 2,
+    "detection_latency_max_s": {
+      "n": 2,
+      "mean": 1.9461835622787476,
+      "stdev": 0.07817953800200969,
+      "p50": 1.9461835622787476,
+      "p95": 1.9959367156028747
+    },
+    "coordinator_convergence_s": {
+      "n": 2,
+      "mean": 3.62786865234375,
+      "stdev": 0.28331954505993184,
+      "p50": 3.62786865234375,
+      "p95": 3.808172106742859
+    },
+    "election_messages": {
+      "n": 2,
+      "mean": 17.5,
+      "stdev": 3.5355339059327378,
+      "p50": 17.5,
+      "p95": 19.75
+    },
+    "false_suspicions": {
+      "n": 2,
+      "mean": 0.5,
+      "stdev": 0.7071067811865476,
+      "p50": 0.5,
+      "p95": 0.95
+    }
+  },
+  {
+    "scenario": "normal",
+    "nodes": 5,
+    "loss_rate": 0.0,
+    "runs": 2,
+    "detection_latency_max_s": {
+      "n": 0,
+      "mean": null,
+      "stdev": null,
+      "p50": null,
+      "p95": null
+    },
+    "coordinator_convergence_s": {
+      "n": 2,
+      "mean": 2.696051597595215,
+      "stdev": 0.11145616077530096,
+      "p50": 2.696051597595215,
+      "p95": 2.766981863975525
+    },
+    "election_messages": {
+      "n": 2,
+      "mean": 21,
+      "stdev": 2.8284271247461903,
+      "p50": 21.0,
+      "p95": 22.8
+    },
+    "false_suspicions": {
+      "n": 2,
+      "mean": 0,
+      "stdev": 0.0,
+      "p50": 0.0,
+      "p95": 0.0
+    }
+  },
+  {
+    "scenario": "normal",
+    "nodes": 5,
+    "loss_rate": 0.05,
+    "runs": 2,
+    "detection_latency_max_s": {
+      "n": 0,
+      "mean": null,
+      "stdev": null,
+      "p50": null,
+      "p95": null
+    },
+    "coordinator_convergence_s": {
+      "n": 2,
+      "mean": 2.375847578048706,
+      "stdev": 0.07533496290231242,
+      "p50": 2.375847578048706,
+      "p95": 2.423790454864502
+    },
+    "election_messages": {
+      "n": 2,
+      "mean": 18.5,
+      "stdev": 0.7071067811865476,
+      "p50": 18.5,
+      "p95": 18.95
+    },
+    "false_suspicions": {
+      "n": 2,
+      "mean": 0,
+      "stdev": 0.0,
+      "p50": 0.0,
+      "p95": 0.0
+    }
+  },
+  {
+    "scenario": "normal",
+    "nodes": 5,
+    "loss_rate": 0.15,
+    "runs": 2,
+    "detection_latency_max_s": {
+      "n": 0,
+      "mean": null,
+      "stdev": null,
+      "p50": null,
+      "p95": null
+    },
+    "coordinator_convergence_s": {
+      "n": 1,
+      "mean": 2.4233012199401855,
+      "stdev": 0,
+      "p50": 2.4233012199401855,
+      "p95": 2.4233012199401855
+    },
+    "election_messages": {
+      "n": 2,
+      "mean": 34,
+      "stdev": 15.556349186104045,
+      "p50": 34.0,
+      "p95": 43.9
+    },
+    "false_suspicions": {
+      "n": 2,
+      "mean": 1,
+      "stdev": 1.4142135623730951,
+      "p50": 1.0,
+      "p95": 1.9
+    }
+  }
+]

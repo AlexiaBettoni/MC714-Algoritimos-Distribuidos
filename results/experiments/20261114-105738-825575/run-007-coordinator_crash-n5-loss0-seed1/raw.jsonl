@@ -1,0 +1,1152 @@
+{"ts": 1794664810.6339042, "node": "node2", "event": "start", "peers": ["node1", "node3", "node4", "node5"], "interval": 0.5, "timeout": 2.0, "election_timeout": 2.0, "loss": 0.0, "seed": 1}
+{"ts": 1794664810.6343257, "node": "node2", "event": "election_started", "election_id": "node2:68dc7f01", "reason": "no_coordinator", "higher_peers": ["node3", "node4", "node5"]}
+{"ts": 1794664810.6346722, "node": "node2", "event": "message_sent", "message": {"type": "HEARTBEAT", "seq": 0, "from": "node2", "to": "node1"}}
+{"ts": 1794664810.6347013, "node": "node2", "event": "message_sent", "message": {"type": "ELECTION", "election_id": "node2:68dc7f01", "from": "node2", "to": "node3"}}
+{"ts": 1794664810.6348038, "node": "node2", "event": "message_sent", "message": {"type": "HEARTBEAT", "seq": 0, "from": "node2", "to": "node3"}}
+{"ts": 1794664810.634854, "node": "node2", "event": "message_sent", "message": {"type": "ELECTION", "election_id": "node2:68dc7f01", "from": "node2", "to": "node4"}}
+{"ts": 1794664810.6349812, "node": "node2", "event": "message_sent", "message": {"type": "HEARTBEAT", "seq": 0, "from": "node2", "to": "node4"}}
+{"ts": 1794664810.6350298, "node": "node2", "event": "message_received", "message": {"type": "OK", "election_id": "node2:68dc7f01", "from": "node3", "to": "node2"}, "address": "172.22.0.3"}
+{"ts": 1794664810.6351123, "node": "node2", "event": "message_sent", "message": {"type": "ELECTION", "election_id": "node2:68dc7f01", "from": "node2", "to": "node5"}}
+{"ts": 1794664810.6351728, "node": "node2", "event": "election_ok_received", "peer": "node3", "election_id": "node2:68dc7f01"}
+{"ts": 1794664810.6352255, "node": "node2", "event": "message_received", "message": {"type": "OK", "election_id": "node2:68dc7f01", "from": "node4", "to": "node2"}, "address": "172.22.0.4"}
+{"ts": 1794664810.635255, "node": "node2", "event": "election_ok_received", "peer": "node4", "election_id": "node2:68dc7f01"}
+{"ts": 1794664810.635399, "node": "node2", "event": "message_received", "message": {"type": "OK", "election_id": "node2:68dc7f01", "from": "node5", "to": "node2"}, "address": "172.22.0.2"}
+{"ts": 1794664810.6354213, "node": "node2", "event": "election_yielded", "election_id": "node2:68dc7f01", "reason": "higher_node_replied"}
+{"ts": 1794664810.6354527, "node": "node2", "event": "message_sent", "message": {"type": "HEARTBEAT", "seq": 0, "from": "node2", "to": "node5"}}
+{"ts": 1794664810.635485, "node": "node2", "event": "election_ok_received", "peer": "node5", "election_id": "node2:68dc7f01"}
+{"ts": 1794664810.7278485, "node": "node2", "event": "message_received", "message": {"type": "HEARTBEAT", "seq": 0, "from": "node1", "to": "node2"}, "address": "172.22.0.6"}
+{"ts": 1794664810.7279136, "node": "node2", "event": "message_received", "message": {"type": "ELECTION", "election_id": "node1:cb5dca3c", "from": "node1", "to": "node2"}, "address": "172.22.0.6"}
+{"ts": 1794664810.7281845, "node": "node2", "event": "message_sent", "message": {"type": "OK", "election_id": "node1:cb5dca3c", "from": "node2", "to": "node1"}}
+{"ts": 1794664810.7282207, "node": "node2", "event": "election_request_received", "peer": "node1", "election_id": "node1:cb5dca3c"}
+{"ts": 1794664810.728253, "node": "node2", "event": "election_already_running", "election_id": "node2:68dc7f01", "reason": "election_request_from_node1"}
+{"ts": 1794664810.8498085, "node": "node2", "event": "message_received", "message": {"type": "HEARTBEAT", "seq": 1, "from": "node5", "to": "node2"}, "address": "172.22.0.2"}
+{"ts": 1794664810.9529972, "node": "node2", "event": "message_received", "message": {"type": "HEARTBEAT", "seq": 1, "from": "node3", "to": "node2"}, "address": "172.22.0.3"}
+{"ts": 1794664811.0396547, "node": "node2", "event": "message_received", "message": {"type": "HEARTBEAT", "seq": 1, "from": "node4", "to": "node2"}, "address": "172.22.0.4"}
+{"ts": 1794664811.1358845, "node": "node2", "event": "message_sent", "message": {"type": "HEARTBEAT", "seq": 1, "from": "node2", "to": "node1"}}
+{"ts": 1794664811.1360917, "node": "node2", "event": "message_sent", "message": {"type": "HEARTBEAT", "seq": 1, "from": "node2", "to": "node3"}}
+{"ts": 1794664811.1362603, "node": "node2", "event": "message_sent", "message": {"type": "HEARTBEAT", "seq": 1, "from": "node2", "to": "node4"}}
+{"ts": 1794664811.136436, "node": "node2", "event": "message_sent", "message": {"type": "HEARTBEAT", "seq": 1, "from": "node2", "to": "node5"}}
+{"ts": 1794664811.2291663, "node": "node2", "event": "message_received", "message": {"type": "HEARTBEAT", "seq": 1, "from": "node1", "to": "node2"}, "address": "172.22.0.6"}
+{"ts": 1794664811.3509638, "node": "node2", "event": "message_received", "message": {"type": "HEARTBEAT", "seq": 2, "from": "node5", "to": "node2"}, "address": "172.22.0.2"}
+{"ts": 1794664811.45458, "node": "node2", "event": "message_received", "message": {"type": "HEARTBEAT", "seq": 2, "from": "node3", "to": "node2"}, "address": "172.22.0.3"}
+{"ts": 1794664811.5415223, "node": "node2", "event": "message_received", "message": {"type": "HEARTBEAT", "seq": 2, "from": "node4", "to": "node2"}, "address": "172.22.0.4"}
+{"ts": 1794664811.637048, "node": "node2", "event": "message_sent", "message": {"type": "HEARTBEAT", "seq": 2, "from": "node2", "to": "node1"}}
+{"ts": 1794664811.6372936, "node": "node2", "event": "message_sent", "message": {"type": "HEARTBEAT", "seq": 2, "from": "node2", "to": "node3"}}
+{"ts": 1794664811.6375306, "node": "node2", "event": "message_sent", "message": {"type": "HEARTBEAT", "seq": 2, "from": "node2", "to": "node4"}}
+{"ts": 1794664811.637762, "node": "node2", "event": "message_sent", "message": {"type": "HEARTBEAT", "seq": 2, "from": "node2", "to": "node5"}}
+{"ts": 1794664811.7304714, "node": "node2", "event": "message_received", "message": {"type": "HEARTBEAT", "seq": 2, "from": "node1", "to": "node2"}, "address": "172.22.0.6"}
+{"ts": 1794664811.8523421, "node": "node2", "event": "message_received", "message": {"type": "HEARTBEAT", "seq": 3, "from": "node5", "to": "node2"}, "address": "172.22.0.2"}
+{"ts": 1794664811.9561782, "node": "node2", "event": "message_received", "message": {"type": "HEARTBEAT", "seq": 3, "from": "node3", "to": "node2"}, "address": "172.22.0.3"}
+{"ts": 1794664812.0428026, "node": "node2", "event": "message_received", "message": {"type": "HEARTBEAT", "seq": 3, "from": "node4", "to": "node2"}, "address": "172.22.0.4"}
+{"ts": 1794664812.1382973, "node": "node2", "event": "message_sent", "message": {"type": "HEARTBEAT", "seq": 3, "from": "node2", "to": "node1"}}
+{"ts": 1794664812.1385684, "node": "node2", "event": "message_sent", "message": {"type": "HEARTBEAT", "seq": 3, "from": "node2", "to": "node3"}}
+{"ts": 1794664812.138796, "node": "node2", "event": "message_sent", "message": {"type": "HEARTBEAT", "seq": 3, "from": "node2", "to": "node4"}}
+{"ts": 1794664812.1390164, "node": "node2", "event": "message_sent", "message": {"type": "HEARTBEAT", "seq": 3, "from": "node2", "to": "node5"}}
+{"ts": 1794664812.2317, "node": "node2", "event": "message_received", "message": {"type": "HEARTBEAT", "seq": 3, "from": "node1", "to": "node2"}, "address": "172.22.0.6"}
+{"ts": 1794664812.3371723, "node": "node2", "event": "message_received", "message": {"type": "COORDINATOR", "coordinator": "node5", "election_id": "node5:431ffb91", "from": "node5", "to": "node2"}, "address": "172.22.0.2"}
+{"ts": 1794664812.3372617, "node": "node2", "event": "coordinator_changed", "coordinator": "node5", "peer": "node5", "election_id": "node5:431ffb91"}
+{"ts": 1794664812.353399, "node": "node2", "event": "message_received", "message": {"type": "HEARTBEAT", "seq": 4, "from": "node5", "to": "node2"}, "address": "172.22.0.2"}
+{"ts": 1794664812.4577022, "node": "node2", "event": "message_received", "message": {"type": "HEARTBEAT", "seq": 4, "from": "node3", "to": "node2"}, "address": "172.22.0.3"}
+{"ts": 1794664812.5440392, "node": "node2", "event": "message_received", "message": {"type": "HEARTBEAT", "seq": 4, "from": "node4", "to": "node2"}, "address": "172.22.0.4"}
+{"ts": 1794664812.6398118, "node": "node2", "event": "message_sent", "message": {"type": "HEARTBEAT", "seq": 4, "from": "node2", "to": "node1"}}
+{"ts": 1794664812.640074, "node": "node2", "event": "message_sent", "message": {"type": "HEARTBEAT", "seq": 4, "from": "node2", "to": "node3"}}
+{"ts": 1794664812.6403313, "node": "node2", "event": "message_sent", "message": {"type": "HEARTBEAT", "seq": 4, "from": "node2", "to": "node4"}}
+{"ts": 1794664812.6405463, "node": "node2", "event": "message_sent", "message": {"type": "HEARTBEAT", "seq": 4, "from": "node2", "to": "node5"}}
+{"ts": 1794664812.732936, "node": "node2", "event": "message_received", "message": {"type": "HEARTBEAT", "seq": 4, "from": "node1", "to": "node2"}, "address": "172.22.0.6"}
+{"ts": 1794664812.8546417, "node": "node2", "event": "message_received", "message": {"type": "HEARTBEAT", "seq": 5, "from": "node5", "to": "node2"}, "address": "172.22.0.2"}
+{"ts": 1794664812.9592922, "node": "node2", "event": "message_received", "message": {"type": "HEARTBEAT", "seq": 5, "from": "node3", "to": "node2"}, "address": "172.22.0.3"}
+{"ts": 1794664813.0455344, "node": "node2", "event": "message_received", "message": {"type": "HEARTBEAT", "seq": 5, "from": "node4", "to": "node2"}, "address": "172.22.0.4"}
+{"ts": 1794664813.1410458, "node": "node2", "event": "message_sent", "message": {"type": "HEARTBEAT", "seq": 5, "from": "node2", "to": "node1"}}
+{"ts": 1794664813.1412475, "node": "node2", "event": "message_sent", "message": {"type": "HEARTBEAT", "seq": 5, "from": "node2", "to": "node3"}}
+{"ts": 1794664813.1414125, "node": "node2", "event": "message_sent", "message": {"type": "HEARTBEAT", "seq": 5, "from": "node2", "to": "node4"}}
+{"ts": 1794664813.1417015, "node": "node2", "event": "message_sent", "message": {"type": "HEARTBEAT", "seq": 5, "from": "node2", "to": "node5"}}
+{"ts": 1794664813.2339146, "node": "node2", "event": "message_received", "message": {"type": "HEARTBEAT", "seq": 5, "from": "node1", "to": "node2"}, "address": "172.22.0.6"}
+{"ts": 1794664813.3562222, "node": "node2", "event": "message_received", "message": {"type": "HEARTBEAT", "seq": 6, "from": "node5", "to": "node2"}, "address": "172.22.0.2"}
+{"ts": 1794664813.4607706, "node": "node2", "event": "message_received", "message": {"type": "HEARTBEAT", "seq": 6, "from": "node3", "to": "node2"}, "address": "172.22.0.3"}
+{"ts": 1794664813.5468066, "node": "node2", "event": "message_received", "message": {"type": "HEARTBEAT", "seq": 6, "from": "node4", "to": "node2"}, "address": "172.22.0.4"}
+{"ts": 1794664813.6421883, "node": "node2", "event": "message_sent", "message": {"type": "HEARTBEAT", "seq": 6, "from": "node2", "to": "node1"}}
+{"ts": 1794664813.642434, "node": "node2", "event": "message_sent", "message": {"type": "HEARTBEAT", "seq": 6, "from": "node2", "to": "node3"}}
+{"ts": 1794664813.6427488, "node": "node2", "event": "message_sent", "message": {"type": "HEARTBEAT", "seq": 6, "from": "node2", "to": "node4"}}
+{"ts": 1794664813.6429884, "node": "node2", "event": "message_sent", "message": {"type": "HEARTBEAT", "seq": 6, "from": "node2", "to": "node5"}}
+{"ts": 1794664813.7351415, "node": "node2", "event": "message_received", "message": {"type": "HEARTBEAT", "seq": 6, "from": "node1", "to": "node2"}, "address": "172.22.0.6"}
+{"ts": 1794664813.8575172, "node": "node2", "event": "message_received", "message": {"type": "HEARTBEAT", "seq": 7, "from": "node5", "to": "node2"}, "address": "172.22.0.2"}
+{"ts": 1794664813.9624217, "node": "node2", "event": "message_received", "message": {"type": "HEARTBEAT", "seq": 7, "from": "node3", "to": "node2"}, "address": "172.22.0.3"}
+{"ts": 1794664814.047696, "node": "node2", "event": "message_received", "message": {"type": "HEARTBEAT", "seq": 7, "from": "node4", "to": "node2"}, "address": "172.22.0.4"}
+{"ts": 1794664814.1434846, "node": "node2", "event": "message_sent", "message": {"type": "HEARTBEAT", "seq": 7, "from": "node2", "to": "node1"}}
+{"ts": 1794664814.143823, "node": "node2", "event": "message_sent", "message": {"type": "HEARTBEAT", "seq": 7, "from": "node2", "to": "node3"}}
+{"ts": 1794664814.1440744, "node": "node2", "event": "message_sent", "message": {"type": "HEARTBEAT", "seq": 7, "from": "node2", "to": "node4"}}
+{"ts": 1794664814.1442797, "node": "node2", "event": "message_sent", "message": {"type": "HEARTBEAT", "seq": 7, "from": "node2", "to": "node5"}}
+{"ts": 1794664814.236423, "node": "node2", "event": "message_received", "message": {"type": "HEARTBEAT", "seq": 7, "from": "node1", "to": "node2"}, "address": "172.22.0.6"}
+{"ts": 1794664814.3588583, "node": "node2", "event": "message_received", "message": {"type": "HEARTBEAT", "seq": 8, "from": "node5", "to": "node2"}, "address": "172.22.0.2"}
+{"ts": 1794664814.464069, "node": "node2", "event": "message_received", "message": {"type": "HEARTBEAT", "seq": 8, "from": "node3", "to": "node2"}, "address": "172.22.0.3"}
+{"ts": 1794664814.5486875, "node": "node2", "event": "message_received", "message": {"type": "HEARTBEAT", "seq": 8, "from": "node4", "to": "node2"}, "address": "172.22.0.4"}
+{"ts": 1794664814.6448102, "node": "node2", "event": "message_sent", "message": {"type": "HEARTBEAT", "seq": 8, "from": "node2", "to": "node1"}}
+{"ts": 1794664814.6451046, "node": "node2", "event": "message_sent", "message": {"type": "HEARTBEAT", "seq": 8, "from": "node2", "to": "node3"}}
+{"ts": 1794664814.6453347, "node": "node2", "event": "message_sent", "message": {"type": "HEARTBEAT", "seq": 8, "from": "node2", "to": "node4"}}
+{"ts": 1794664814.6455388, "node": "node2", "event": "message_sent", "message": {"type": "HEARTBEAT", "seq": 8, "from": "node2", "to": "node5"}}
+{"ts": 1794664814.7377055, "node": "node2", "event": "message_received", "message": {"type": "HEARTBEAT", "seq": 8, "from": "node1", "to": "node2"}, "address": "172.22.0.6"}
+{"ts": 1794664814.860173, "node": "node2", "event": "message_received", "message": {"type": "HEARTBEAT", "seq": 9, "from": "node5", "to": "node2"}, "address": "172.22.0.2"}
+{"ts": 1794664814.9651997, "node": "node2", "event": "message_received", "message": {"type": "HEARTBEAT", "seq": 9, "from": "node3", "to": "node2"}, "address": "172.22.0.3"}
+{"ts": 1794664815.0497496, "node": "node2", "event": "message_received", "message": {"type": "HEARTBEAT", "seq": 9, "from": "node4", "to": "node2"}, "address": "172.22.0.4"}
+{"ts": 1794664815.146255, "node": "node2", "event": "message_sent", "message": {"type": "HEARTBEAT", "seq": 9, "from": "node2", "to": "node1"}}
+{"ts": 1794664815.1464972, "node": "node2", "event": "message_sent", "message": {"type": "HEARTBEAT", "seq": 9, "from": "node2", "to": "node3"}}
+{"ts": 1794664815.1467648, "node": "node2", "event": "message_sent", "message": {"type": "HEARTBEAT", "seq": 9, "from": "node2", "to": "node4"}}
+{"ts": 1794664815.147028, "node": "node2", "event": "message_sent", "message": {"type": "HEARTBEAT", "seq": 9, "from": "node2", "to": "node5"}}
+{"ts": 1794664815.239105, "node": "node2", "event": "message_received", "message": {"type": "HEARTBEAT", "seq": 9, "from": "node1", "to": "node2"}, "address": "172.22.0.6"}
+{"ts": 1794664815.3614502, "node": "node2", "event": "message_received", "message": {"type": "HEARTBEAT", "seq": 10, "from": "node5", "to": "node2"}, "address": "172.22.0.2"}
+{"ts": 1794664815.4665506, "node": "node2", "event": "message_received", "message": {"type": "HEARTBEAT", "seq": 10, "from": "node3", "to": "node2"}, "address": "172.22.0.3"}
+{"ts": 1794664815.5508547, "node": "node2", "event": "message_received", "message": {"type": "HEARTBEAT", "seq": 10, "from": "node4", "to": "node2"}, "address": "172.22.0.4"}
+{"ts": 1794664815.6475554, "node": "node2", "event": "message_sent", "message": {"type": "HEARTBEAT", "seq": 10, "from": "node2", "to": "node1"}}
+{"ts": 1794664815.6478174, "node": "node2", "event": "message_sent", "message": {"type": "HEARTBEAT", "seq": 10, "from": "node2", "to": "node3"}}
+{"ts": 1794664815.6480691, "node": "node2", "event": "message_sent", "message": {"type": "HEARTBEAT", "seq": 10, "from": "node2", "to": "node4"}}
+{"ts": 1794664815.6482778, "node": "node2", "event": "message_sent", "message": {"type": "HEARTBEAT", "seq": 10, "from": "node2", "to": "node5"}}
+{"ts": 1794664815.7403555, "node": "node2", "event": "message_received", "message": {"type": "HEARTBEAT", "seq": 10, "from": "node1", "to": "node2"}, "address": "172.22.0.6"}
+{"ts": 1794664815.8626602, "node": "node2", "event": "message_received", "message": {"type": "HEARTBEAT", "seq": 11, "from": "node5", "to": "node2"}, "address": "172.22.0.2"}
+{"ts": 1794664815.9682453, "node": "node2", "event": "message_received", "message": {"type": "HEARTBEAT", "seq": 11, "from": "node3", "to": "node2"}, "address": "172.22.0.3"}
+{"ts": 1794664816.0523782, "node": "node2", "event": "message_received", "message": {"type": "HEARTBEAT", "seq": 11, "from": "node4", "to": "node2"}, "address": "172.22.0.4"}
+{"ts": 1794664816.1489139, "node": "node2", "event": "message_sent", "message": {"type": "HEARTBEAT", "seq": 11, "from": "node2", "to": "node1"}}
+{"ts": 1794664816.149211, "node": "node2", "event": "message_sent", "message": {"type": "HEARTBEAT", "seq": 11, "from": "node2", "to": "node3"}}
+{"ts": 1794664816.1494896, "node": "node2", "event": "message_sent", "message": {"type": "HEARTBEAT", "seq": 11, "from": "node2", "to": "node4"}}
+{"ts": 1794664816.149726, "node": "node2", "event": "message_sent", "message": {"type": "HEARTBEAT", "seq": 11, "from": "node2", "to": "node5"}}
+{"ts": 1794664816.2417524, "node": "node2", "event": "message_received", "message": {"type": "HEARTBEAT", "seq": 11, "from": "node1", "to": "node2"}, "address": "172.22.0.6"}
+{"ts": 1794664816.3642128, "node": "node2", "event": "message_received", "message": {"type": "HEARTBEAT", "seq": 12, "from": "node5", "to": "node2"}, "address": "172.22.0.2"}
+{"ts": 1794664816.469641, "node": "node2", "event": "message_received", "message": {"type": "HEARTBEAT", "seq": 12, "from": "node3", "to": "node2"}, "address": "172.22.0.3"}
+{"ts": 1794664816.5536044, "node": "node2", "event": "message_received", "message": {"type": "HEARTBEAT", "seq": 12, "from": "node4", "to": "node2"}, "address": "172.22.0.4"}
+{"ts": 1794664816.6501756, "node": "node2", "event": "message_sent", "message": {"type": "HEARTBEAT", "seq": 12, "from": "node2", "to": "node1"}}
+{"ts": 1794664816.650383, "node": "node2", "event": "message_sent", "message": {"type": "HEARTBEAT", "seq": 12, "from": "node2", "to": "node3"}}
+{"ts": 1794664816.6505241, "node": "node2", "event": "message_sent", "message": {"type": "HEARTBEAT", "seq": 12, "from": "node2", "to": "node4"}}
+{"ts": 1794664816.650686, "node": "node2", "event": "message_sent", "message": {"type": "HEARTBEAT", "seq": 12, "from": "node2", "to": "node5"}}
+{"ts": 1794664816.742836, "node": "node2", "event": "message_received", "message": {"type": "HEARTBEAT", "seq": 12, "from": "node1", "to": "node2"}, "address": "172.22.0.6"}
+{"ts": 1794664816.9717937, "node": "node2", "event": "message_received", "message": {"type": "HEARTBEAT", "seq": 13, "from": "node3", "to": "node2"}, "address": "172.22.0.3"}
+{"ts": 1794664817.0549314, "node": "node2", "event": "message_received", "message": {"type": "HEARTBEAT", "seq": 13, "from": "node4", "to": "node2"}, "address": "172.22.0.4"}
+{"ts": 1794664817.1512222, "node": "node2", "event": "message_sent", "message": {"type": "HEARTBEAT", "seq": 13, "from": "node2", "to": "node1"}}
+{"ts": 1794664817.1515224, "node": "node2", "event": "message_sent", "message": {"type": "HEARTBEAT", "seq": 13, "from": "node2", "to": "node3"}}
+{"ts": 1794664817.1517582, "node": "node2", "event": "message_sent", "message": {"type": "HEARTBEAT", "seq": 13, "from": "node2", "to": "node4"}}
+{"ts": 1794664817.1563892, "node": "node2", "event": "message_send_error", "message": {"type": "HEARTBEAT", "seq": 13, "from": "node2", "to": "node5"}, "error": "[Errno -2] Name or service not known"}
+{"ts": 1794664817.2441015, "node": "node2", "event": "message_received", "message": {"type": "HEARTBEAT", "seq": 13, "from": "node1", "to": "node2"}, "address": "172.22.0.6"}
+{"ts": 1794664817.4878106, "node": "node2", "event": "message_received", "message": {"type": "HEARTBEAT", "seq": 14, "from": "node3", "to": "node2"}, "address": "172.22.0.3"}
+{"ts": 1794664817.5591335, "node": "node2", "event": "message_received", "message": {"type": "HEARTBEAT", "seq": 14, "from": "node4", "to": "node2"}, "address": "172.22.0.4"}
+{"ts": 1794664817.657042, "node": "node2", "event": "message_sent", "message": {"type": "HEARTBEAT", "seq": 14, "from": "node2", "to": "node1"}}
+{"ts": 1794664817.6573658, "node": "node2", "event": "message_sent", "message": {"type": "HEARTBEAT", "seq": 14, "from": "node2", "to": "node3"}}
+{"ts": 1794664817.6576376, "node": "node2", "event": "message_sent", "message": {"type": "HEARTBEAT", "seq": 14, "from": "node2", "to": "node4"}}
+{"ts": 1794664817.6626542, "node": "node2", "event": "message_send_error", "message": {"type": "HEARTBEAT", "seq": 14, "from": "node2", "to": "node5"}, "error": "[Errno -2] Name or service not known"}
+{"ts": 1794664817.750282, "node": "node2", "event": "message_received", "message": {"type": "HEARTBEAT", "seq": 14, "from": "node1", "to": "node2"}, "address": "172.22.0.6"}
+{"ts": 1794664817.9937234, "node": "node2", "event": "message_received", "message": {"type": "HEARTBEAT", "seq": 15, "from": "node3", "to": "node2"}, "address": "172.22.0.3"}
+{"ts": 1794664818.0631216, "node": "node2", "event": "message_received", "message": {"type": "HEARTBEAT", "seq": 15, "from": "node4", "to": "node2"}, "address": "172.22.0.4"}
+{"ts": 1794664818.1631756, "node": "node2", "event": "message_sent", "message": {"type": "HEARTBEAT", "seq": 15, "from": "node2", "to": "node1"}}
+{"ts": 1794664818.163452, "node": "node2", "event": "message_sent", "message": {"type": "HEARTBEAT", "seq": 15, "from": "node2", "to": "node3"}}
+{"ts": 1794664818.1637344, "node": "node2", "event": "message_sent", "message": {"type": "HEARTBEAT", "seq": 15, "from": "node2", "to": "node4"}}
+{"ts": 1794664818.166844, "node": "node2", "event": "message_send_error", "message": {"type": "HEARTBEAT", "seq": 15, "from": "node2", "to": "node5"}, "error": "[Errno -2] Name or service not known"}
+{"ts": 1794664818.2567205, "node": "node2", "event": "message_received", "message": {"type": "HEARTBEAT", "seq": 15, "from": "node1", "to": "node2"}, "address": "172.22.0.6"}
+{"ts": 1794664818.365287, "node": "node2", "event": "message_received", "message": {"type": "ELECTION", "election_id": "node1:2d193924", "from": "node1", "to": "node2"}, "address": "172.22.0.6"}
+{"ts": 1794664818.3656058, "node": "node2", "event": "message_sent", "message": {"type": "OK", "election_id": "node1:2d193924", "from": "node2", "to": "node1"}}
+{"ts": 1794664818.3656492, "node": "node2", "event": "election_request_received", "peer": "node1", "election_id": "node1:2d193924"}
+{"ts": 1794664818.3657925, "node": "node2", "event": "election_started", "election_id": "node2:0db7d11e", "reason": "election_request_from_node1", "higher_peers": ["node3", "node4", "node5"]}
+{"ts": 1794664818.3661244, "node": "node2", "event": "message_sent", "message": {"type": "ELECTION", "election_id": "node2:0db7d11e", "from": "node2", "to": "node3"}}
+{"ts": 1794664818.3663101, "node": "node2", "event": "message_received", "message": {"type": "OK", "election_id": "node2:0db7d11e", "from": "node3", "to": "node2"}, "address": "172.22.0.3"}
+{"ts": 1794664818.3663394, "node": "node2", "event": "election_ok_received", "peer": "node3", "election_id": "node2:0db7d11e"}
+{"ts": 1794664818.3663561, "node": "node2", "event": "message_sent", "message": {"type": "ELECTION", "election_id": "node2:0db7d11e", "from": "node2", "to": "node4"}}
+{"ts": 1794664818.366955, "node": "node2", "event": "message_received", "message": {"type": "OK", "election_id": "node2:0db7d11e", "from": "node4", "to": "node2"}, "address": "172.22.0.4"}
+{"ts": 1794664818.3669734, "node": "node2", "event": "election_ok_received", "peer": "node4", "election_id": "node2:0db7d11e"}
+{"ts": 1794664818.369237, "node": "node2", "event": "message_send_error", "message": {"type": "ELECTION", "election_id": "node2:0db7d11e", "from": "node2", "to": "node5"}, "error": "[Errno -2] Name or service not known"}
+{"ts": 1794664818.3692753, "node": "node2", "event": "election_yielded", "election_id": "node2:0db7d11e", "reason": "higher_node_replied"}
+{"ts": 1794664818.3983138, "node": "node2", "event": "suspect", "peer": "node5", "silence": 2.034}
+{"ts": 1794664818.3983493, "node": "node2", "event": "election_already_running", "election_id": "node2:0db7d11e", "reason": "coordinator_suspected"}
+{"ts": 1794664818.5016556, "node": "node2", "event": "message_received", "message": {"type": "HEARTBEAT", "seq": 16, "from": "node3", "to": "node2"}, "address": "172.22.0.3"}
+{"ts": 1794664818.5674667, "node": "node2", "event": "message_received", "message": {"type": "HEARTBEAT", "seq": 16, "from": "node4", "to": "node2"}, "address": "172.22.0.4"}
+{"ts": 1794664818.6673777, "node": "node2", "event": "message_sent", "message": {"type": "HEARTBEAT", "seq": 16, "from": "node2", "to": "node1"}}
+{"ts": 1794664818.667608, "node": "node2", "event": "message_sent", "message": {"type": "HEARTBEAT", "seq": 16, "from": "node2", "to": "node3"}}
+{"ts": 1794664818.6679056, "node": "node2", "event": "message_sent", "message": {"type": "HEARTBEAT", "seq": 16, "from": "node2", "to": "node4"}}
+{"ts": 1794664818.6723402, "node": "node2", "event": "message_send_error", "message": {"type": "HEARTBEAT", "seq": 16, "from": "node2", "to": "node5"}, "error": "[Errno -2] Name or service not known"}
+{"ts": 1794664818.7633853, "node": "node2", "event": "message_received", "message": {"type": "HEARTBEAT", "seq": 16, "from": "node1", "to": "node2"}, "address": "172.22.0.6"}
+{"ts": 1794664819.0059338, "node": "node2", "event": "message_received", "message": {"type": "HEARTBEAT", "seq": 17, "from": "node3", "to": "node2"}, "address": "172.22.0.3"}
+{"ts": 1794664819.0715146, "node": "node2", "event": "message_received", "message": {"type": "HEARTBEAT", "seq": 17, "from": "node4", "to": "node2"}, "address": "172.22.0.4"}
+{"ts": 1794664819.1729844, "node": "node2", "event": "message_sent", "message": {"type": "HEARTBEAT", "seq": 17, "from": "node2", "to": "node1"}}
+{"ts": 1794664819.1732016, "node": "node2", "event": "message_sent", "message": {"type": "HEARTBEAT", "seq": 17, "from": "node2", "to": "node3"}}
+{"ts": 1794664819.1734536, "node": "node2", "event": "message_sent", "message": {"type": "HEARTBEAT", "seq": 17, "from": "node2", "to": "node4"}}
+{"ts": 1794664819.176959, "node": "node2", "event": "message_send_error", "message": {"type": "HEARTBEAT", "seq": 17, "from": "node2", "to": "node5"}, "error": "[Errno -2] Name or service not known"}
+{"ts": 1794664819.2689195, "node": "node2", "event": "message_received", "message": {"type": "HEARTBEAT", "seq": 17, "from": "node1", "to": "node2"}, "address": "172.22.0.6"}
+{"ts": 1794664819.5099676, "node": "node2", "event": "message_received", "message": {"type": "HEARTBEAT", "seq": 18, "from": "node3", "to": "node2"}, "address": "172.22.0.3"}
+{"ts": 1794664819.579563, "node": "node2", "event": "message_received", "message": {"type": "HEARTBEAT", "seq": 18, "from": "node4", "to": "node2"}, "address": "172.22.0.4"}
+{"ts": 1794664819.6774068, "node": "node2", "event": "message_sent", "message": {"type": "HEARTBEAT", "seq": 18, "from": "node2", "to": "node1"}}
+{"ts": 1794664819.6776474, "node": "node2", "event": "message_sent", "message": {"type": "HEARTBEAT", "seq": 18, "from": "node2", "to": "node3"}}
+{"ts": 1794664819.6778376, "node": "node2", "event": "message_sent", "message": {"type": "HEARTBEAT", "seq": 18, "from": "node2", "to": "node4"}}
+{"ts": 1794664819.690347, "node": "node2", "event": "message_send_error", "message": {"type": "HEARTBEAT", "seq": 18, "from": "node2", "to": "node5"}, "error": "[Errno -2] Name or service not known"}
+{"ts": 1794664819.7750812, "node": "node2", "event": "message_received", "message": {"type": "HEARTBEAT", "seq": 18, "from": "node1", "to": "node2"}, "address": "172.22.0.6"}
+{"ts": 1794664820.0140057, "node": "node2", "event": "message_received", "message": {"type": "HEARTBEAT", "seq": 19, "from": "node3", "to": "node2"}, "address": "172.22.0.3"}
+{"ts": 1794664820.0836246, "node": "node2", "event": "message_received", "message": {"type": "HEARTBEAT", "seq": 19, "from": "node4", "to": "node2"}, "address": "172.22.0.4"}
+{"ts": 1794664820.191339, "node": "node2", "event": "message_sent", "message": {"type": "HEARTBEAT", "seq": 19, "from": "node2", "to": "node1"}}
+{"ts": 1794664820.191689, "node": "node2", "event": "message_sent", "message": {"type": "HEARTBEAT", "seq": 19, "from": "node2", "to": "node3"}}
+{"ts": 1794664820.1919446, "node": "node2", "event": "message_sent", "message": {"type": "HEARTBEAT", "seq": 19, "from": "node2", "to": "node4"}}
+{"ts": 1794664820.194842, "node": "node2", "event": "message_send_error", "message": {"type": "HEARTBEAT", "seq": 19, "from": "node2", "to": "node5"}, "error": "[Errno -2] Name or service not known"}
+{"ts": 1794664820.2793489, "node": "node2", "event": "message_received", "message": {"type": "HEARTBEAT", "seq": 19, "from": "node1", "to": "node2"}, "address": "172.22.0.6"}
+{"ts": 1794664820.3701987, "node": "node2", "event": "message_received", "message": {"type": "ELECTION", "election_id": "node1:2a853262", "from": "node1", "to": "node2"}, "address": "172.22.0.6"}
+{"ts": 1794664820.3705194, "node": "node2", "event": "message_sent", "message": {"type": "OK", "election_id": "node1:2a853262", "from": "node2", "to": "node1"}}
+{"ts": 1794664820.37055, "node": "node2", "event": "election_request_received", "peer": "node1", "election_id": "node1:2a853262"}
+{"ts": 1794664820.3705788, "node": "node2", "event": "election_already_running", "election_id": "node2:0db7d11e", "reason": "election_request_from_node1"}
+{"ts": 1794664820.3706224, "node": "node2", "event": "message_received", "message": {"type": "COORDINATOR", "coordinator": "node4", "election_id": "node4:1a03d0a9", "from": "node4", "to": "node2"}, "address": "172.22.0.4"}
+{"ts": 1794664820.3706555, "node": "node2", "event": "coordinator_changed", "coordinator": "node4", "peer": "node4", "election_id": "node4:1a03d0a9"}
+{"ts": 1794664820.5200202, "node": "node2", "event": "message_received", "message": {"type": "HEARTBEAT", "seq": 20, "from": "node3", "to": "node2"}, "address": "172.22.0.3"}
+{"ts": 1794664820.5881915, "node": "node2", "event": "message_received", "message": {"type": "HEARTBEAT", "seq": 20, "from": "node4", "to": "node2"}, "address": "172.22.0.4"}
+{"ts": 1794664820.6956499, "node": "node2", "event": "message_sent", "message": {"type": "HEARTBEAT", "seq": 20, "from": "node2", "to": "node1"}}
+{"ts": 1794664820.6959507, "node": "node2", "event": "message_sent", "message": {"type": "HEARTBEAT", "seq": 20, "from": "node2", "to": "node3"}}
+{"ts": 1794664820.696203, "node": "node2", "event": "message_sent", "message": {"type": "HEARTBEAT", "seq": 20, "from": "node2", "to": "node4"}}
+{"ts": 1794664820.7014413, "node": "node2", "event": "message_send_error", "message": {"type": "HEARTBEAT", "seq": 20, "from": "node2", "to": "node5"}, "error": "[Errno -2] Name or service not known"}
+{"ts": 1794664820.7836564, "node": "node2", "event": "message_received", "message": {"type": "HEARTBEAT", "seq": 20, "from": "node1", "to": "node2"}, "address": "172.22.0.6"}
+{"ts": 1794664821.0253627, "node": "node2", "event": "message_received", "message": {"type": "HEARTBEAT", "seq": 21, "from": "node3", "to": "node2"}, "address": "172.22.0.3"}
+{"ts": 1794664821.0922847, "node": "node2", "event": "message_received", "message": {"type": "HEARTBEAT", "seq": 21, "from": "node4", "to": "node2"}, "address": "172.22.0.4"}
+{"ts": 1794664821.2022061, "node": "node2", "event": "message_sent", "message": {"type": "HEARTBEAT", "seq": 21, "from": "node2", "to": "node1"}}
+{"ts": 1794664821.2025492, "node": "node2", "event": "message_sent", "message": {"type": "HEARTBEAT", "seq": 21, "from": "node2", "to": "node3"}}
+{"ts": 1794664821.2028687, "node": "node2", "event": "message_sent", "message": {"type": "HEARTBEAT", "seq": 21, "from": "node2", "to": "node4"}}
+{"ts": 1794664821.2082744, "node": "node2", "event": "message_send_error", "message": {"type": "HEARTBEAT", "seq": 21, "from": "node2", "to": "node5"}, "error": "[Errno -2] Name or service not known"}
+{"ts": 1794664821.288251, "node": "node2", "event": "message_received", "message": {"type": "HEARTBEAT", "seq": 21, "from": "node1", "to": "node2"}, "address": "172.22.0.6"}
+{"ts": 1794664821.5313544, "node": "node2", "event": "message_received", "message": {"type": "HEARTBEAT", "seq": 22, "from": "node3", "to": "node2"}, "address": "172.22.0.3"}
+{"ts": 1794664821.5966682, "node": "node2", "event": "message_received", "message": {"type": "HEARTBEAT", "seq": 22, "from": "node4", "to": "node2"}, "address": "172.22.0.4"}
+{"ts": 1794664821.7087748, "node": "node2", "event": "message_sent", "message": {"type": "HEARTBEAT", "seq": 22, "from": "node2", "to": "node1"}}
+{"ts": 1794664821.7090456, "node": "node2", "event": "message_sent", "message": {"type": "HEARTBEAT", "seq": 22, "from": "node2", "to": "node3"}}
+{"ts": 1794664821.7092655, "node": "node2", "event": "message_sent", "message": {"type": "HEARTBEAT", "seq": 22, "from": "node2", "to": "node4"}}
+{"ts": 1794664821.7145495, "node": "node2", "event": "message_send_error", "message": {"type": "HEARTBEAT", "seq": 22, "from": "node2", "to": "node5"}, "error": "[Errno -2] Name or service not known"}
+{"ts": 1794664821.793273, "node": "node2", "event": "message_received", "message": {"type": "HEARTBEAT", "seq": 22, "from": "node1", "to": "node2"}, "address": "172.22.0.6"}
+{"ts": 1794664822.0438206, "node": "node2", "event": "message_received", "message": {"type": "HEARTBEAT", "seq": 23, "from": "node3", "to": "node2"}, "address": "172.22.0.3"}
+{"ts": 1794664822.1112487, "node": "node2", "event": "message_received", "message": {"type": "HEARTBEAT", "seq": 23, "from": "node4", "to": "node2"}, "address": "172.22.0.4"}
+{"ts": 1794664822.2151506, "node": "node2", "event": "message_sent", "message": {"type": "HEARTBEAT", "seq": 23, "from": "node2", "to": "node1"}}
+{"ts": 1794664822.2153893, "node": "node2", "event": "message_sent", "message": {"type": "HEARTBEAT", "seq": 23, "from": "node2", "to": "node3"}}
+{"ts": 1794664822.2156713, "node": "node2", "event": "message_sent", "message": {"type": "HEARTBEAT", "seq": 23, "from": "node2", "to": "node4"}}
+{"ts": 1794664822.2209191, "node": "node2", "event": "message_send_error", "message": {"type": "HEARTBEAT", "seq": 23, "from": "node2", "to": "node5"}, "error": "[Errno -2] Name or service not known"}
+{"ts": 1794664822.2980733, "node": "node2", "event": "message_received", "message": {"type": "HEARTBEAT", "seq": 23, "from": "node1", "to": "node2"}, "address": "172.22.0.6"}
+{"ts": 1794664822.376977, "node": "node2", "event": "message_received", "message": {"type": "COORDINATOR", "coordinator": "node4", "election_id": "node4:d612754c", "from": "node4", "to": "node2"}, "address": "172.22.0.4"}
+{"ts": 1794664822.3770504, "node": "node2", "event": "coordinator_changed", "coordinator": "node4", "peer": "node4", "election_id": "node4:d612754c"}
+{"ts": 1794664822.5504043, "node": "node2", "event": "message_received", "message": {"type": "HEARTBEAT", "seq": 24, "from": "node3", "to": "node2"}, "address": "172.22.0.3"}
+{"ts": 1794664822.6156046, "node": "node2", "event": "message_received", "message": {"type": "HEARTBEAT", "seq": 24, "from": "node4", "to": "node2"}, "address": "172.22.0.4"}
+{"ts": 1794664822.7215807, "node": "node2", "event": "message_sent", "message": {"type": "HEARTBEAT", "seq": 24, "from": "node2", "to": "node1"}}
+{"ts": 1794664822.7219436, "node": "node2", "event": "message_sent", "message": {"type": "HEARTBEAT", "seq": 24, "from": "node2", "to": "node3"}}
+{"ts": 1794664822.7222009, "node": "node2", "event": "message_sent", "message": {"type": "HEARTBEAT", "seq": 24, "from": "node2", "to": "node4"}}
+{"ts": 1794664822.7276845, "node": "node2", "event": "message_send_error", "message": {"type": "HEARTBEAT", "seq": 24, "from": "node2", "to": "node5"}, "error": "[Errno -2] Name or service not known"}
+{"ts": 1794664822.8029916, "node": "node2", "event": "message_received", "message": {"type": "HEARTBEAT", "seq": 24, "from": "node1", "to": "node2"}, "address": "172.22.0.6"}
+{"ts": 1794664823.0583599, "node": "node2", "event": "message_received", "message": {"type": "HEARTBEAT", "seq": 25, "from": "node3", "to": "node2"}, "address": "172.22.0.3"}
+{"ts": 1794664823.119666, "node": "node2", "event": "message_received", "message": {"type": "HEARTBEAT", "seq": 25, "from": "node4", "to": "node2"}, "address": "172.22.0.4"}
+{"ts": 1794664823.2283294, "node": "node2", "event": "message_sent", "message": {"type": "HEARTBEAT", "seq": 25, "from": "node2", "to": "node1"}}
+{"ts": 1794664823.2286232, "node": "node2", "event": "message_sent", "message": {"type": "HEARTBEAT", "seq": 25, "from": "node2", "to": "node3"}}
+{"ts": 1794664823.2288342, "node": "node2", "event": "message_sent", "message": {"type": "HEARTBEAT", "seq": 25, "from": "node2", "to": "node4"}}
+{"ts": 1794664823.2321577, "node": "node2", "event": "message_send_error", "message": {"type": "HEARTBEAT", "seq": 25, "from": "node2", "to": "node5"}, "error": "[Errno -2] Name or service not known"}
+{"ts": 1794664823.3075578, "node": "node2", "event": "message_received", "message": {"type": "HEARTBEAT", "seq": 25, "from": "node1", "to": "node2"}, "address": "172.22.0.6"}
+{"ts": 1794664823.5635269, "node": "node2", "event": "message_received", "message": {"type": "HEARTBEAT", "seq": 26, "from": "node3", "to": "node2"}, "address": "172.22.0.3"}
+{"ts": 1794664823.6250584, "node": "node2", "event": "message_received", "message": {"type": "HEARTBEAT", "seq": 26, "from": "node4", "to": "node2"}, "address": "172.22.0.4"}
+{"ts": 1794664823.7326987, "node": "node2", "event": "message_sent", "message": {"type": "HEARTBEAT", "seq": 26, "from": "node2", "to": "node1"}}
+{"ts": 1794664823.7329493, "node": "node2", "event": "message_sent", "message": {"type": "HEARTBEAT", "seq": 26, "from": "node2", "to": "node3"}}
+{"ts": 1794664823.733152, "node": "node2", "event": "message_sent", "message": {"type": "HEARTBEAT", "seq": 26, "from": "node2", "to": "node4"}}
+{"ts": 1794664823.7388504, "node": "node2", "event": "message_send_error", "message": {"type": "HEARTBEAT", "seq": 26, "from": "node2", "to": "node5"}, "error": "[Errno -2] Name or service not known"}
+{"ts": 1794664823.8122456, "node": "node2", "event": "message_received", "message": {"type": "HEARTBEAT", "seq": 26, "from": "node1", "to": "node2"}, "address": "172.22.0.6"}
+{"ts": 1794664824.0711136, "node": "node2", "event": "message_received", "message": {"type": "HEARTBEAT", "seq": 27, "from": "node3", "to": "node2"}, "address": "172.22.0.3"}
+{"ts": 1794664824.1374564, "node": "node2", "event": "message_received", "message": {"type": "HEARTBEAT", "seq": 27, "from": "node4", "to": "node2"}, "address": "172.22.0.4"}
+{"ts": 1794664824.2394729, "node": "node2", "event": "message_sent", "message": {"type": "HEARTBEAT", "seq": 27, "from": "node2", "to": "node1"}}
+{"ts": 1794664824.2397556, "node": "node2", "event": "message_sent", "message": {"type": "HEARTBEAT", "seq": 27, "from": "node2", "to": "node3"}}
+{"ts": 1794664824.2399962, "node": "node2", "event": "message_sent", "message": {"type": "HEARTBEAT", "seq": 27, "from": "node2", "to": "node4"}}
+{"ts": 1794664824.2427175, "node": "node2", "event": "message_send_error", "message": {"type": "HEARTBEAT", "seq": 27, "from": "node2", "to": "node5"}, "error": "[Errno -2] Name or service not known"}
+{"ts": 1794664824.3168514, "node": "node2", "event": "message_received", "message": {"type": "HEARTBEAT", "seq": 27, "from": "node1", "to": "node2"}, "address": "172.22.0.6"}
+{"ts": 1794664824.588524, "node": "node2", "event": "message_received", "message": {"type": "HEARTBEAT", "seq": 28, "from": "node3", "to": "node2"}, "address": "172.22.0.3"}
+{"ts": 1794664824.6414561, "node": "node2", "event": "message_received", "message": {"type": "HEARTBEAT", "seq": 28, "from": "node4", "to": "node2"}, "address": "172.22.0.4"}
+{"ts": 1794664824.7431262, "node": "node2", "event": "message_sent", "message": {"type": "HEARTBEAT", "seq": 28, "from": "node2", "to": "node1"}}
+{"ts": 1794664824.743301, "node": "node2", "event": "message_sent", "message": {"type": "HEARTBEAT", "seq": 28, "from": "node2", "to": "node3"}}
+{"ts": 1794664824.7434402, "node": "node2", "event": "message_sent", "message": {"type": "HEARTBEAT", "seq": 28, "from": "node2", "to": "node4"}}
+{"ts": 1794664824.7479272, "node": "node2", "event": "message_send_error", "message": {"type": "HEARTBEAT", "seq": 28, "from": "node2", "to": "node5"}, "error": "[Errno -2] Name or service not known"}
+{"ts": 1794664824.820395, "node": "node2", "event": "message_received", "message": {"type": "HEARTBEAT", "seq": 28, "from": "node1", "to": "node2"}, "address": "172.22.0.6"}
+{"ts": 1794664810.534553, "node": "node4", "event": "start", "peers": ["node1", "node2", "node3", "node5"], "interval": 0.5, "timeout": 2.0, "election_timeout": 2.0, "loss": 0.0, "seed": 1}
+{"ts": 1794664810.5350225, "node": "node4", "event": "election_started", "election_id": "node4:7d386940", "reason": "no_coordinator", "higher_peers": ["node5"]}
+{"ts": 1794664810.535354, "node": "node4", "event": "message_sent", "message": {"type": "ELECTION", "election_id": "node4:7d386940", "from": "node4", "to": "node5"}}
+{"ts": 1794664810.5356321, "node": "node4", "event": "message_received", "message": {"type": "OK", "election_id": "node4:7d386940", "from": "node5", "to": "node4"}, "address": "172.22.0.2"}
+{"ts": 1794664810.535657, "node": "node4", "event": "election_ok_received", "peer": "node5", "election_id": "node4:7d386940"}
+{"ts": 1794664810.5357037, "node": "node4", "event": "election_yielded", "election_id": "node4:7d386940", "reason": "higher_node_replied"}
+{"ts": 1794664810.5380847, "node": "node4", "event": "message_send_error", "message": {"type": "HEARTBEAT", "seq": 0, "from": "node4", "to": "node1"}, "error": "[Errno -2] Name or service not known"}
+{"ts": 1794664810.5382714, "node": "node4", "event": "message_sent", "message": {"type": "HEARTBEAT", "seq": 0, "from": "node4", "to": "node2"}}
+{"ts": 1794664810.5384014, "node": "node4", "event": "message_sent", "message": {"type": "HEARTBEAT", "seq": 0, "from": "node4", "to": "node3"}}
+{"ts": 1794664810.5385175, "node": "node4", "event": "message_sent", "message": {"type": "HEARTBEAT", "seq": 0, "from": "node4", "to": "node5"}}
+{"ts": 1794664810.6349125, "node": "node4", "event": "message_received", "message": {"type": "ELECTION", "election_id": "node2:68dc7f01", "from": "node2", "to": "node4"}, "address": "172.22.0.5"}
+{"ts": 1794664810.6351523, "node": "node4", "event": "message_sent", "message": {"type": "OK", "election_id": "node2:68dc7f01", "from": "node4", "to": "node2"}}
+{"ts": 1794664810.635182, "node": "node4", "event": "election_request_received", "peer": "node2", "election_id": "node2:68dc7f01"}
+{"ts": 1794664810.63521, "node": "node4", "event": "election_already_running", "election_id": "node4:7d386940", "reason": "election_request_from_node2"}
+{"ts": 1794664810.6352327, "node": "node4", "event": "message_received", "message": {"type": "HEARTBEAT", "seq": 0, "from": "node2", "to": "node4"}, "address": "172.22.0.5"}
+{"ts": 1794664810.728264, "node": "node4", "event": "message_received", "message": {"type": "HEARTBEAT", "seq": 0, "from": "node1", "to": "node4"}, "address": "172.22.0.6"}
+{"ts": 1794664810.72832, "node": "node4", "event": "message_received", "message": {"type": "ELECTION", "election_id": "node1:cb5dca3c", "from": "node1", "to": "node4"}, "address": "172.22.0.6"}
+{"ts": 1794664810.7284896, "node": "node4", "event": "message_sent", "message": {"type": "OK", "election_id": "node1:cb5dca3c", "from": "node4", "to": "node1"}}
+{"ts": 1794664810.7285123, "node": "node4", "event": "election_request_received", "peer": "node1", "election_id": "node1:cb5dca3c"}
+{"ts": 1794664810.7285335, "node": "node4", "event": "election_already_running", "election_id": "node4:7d386940", "reason": "election_request_from_node1"}
+{"ts": 1794664810.3357646, "node": "node5", "event": "start", "peers": ["node1", "node2", "node3", "node4"], "interval": 0.5, "timeout": 2.0, "election_timeout": 2.0, "loss": 0.0, "seed": 1}
+{"ts": 1794664810.3361697, "node": "node5", "event": "election_started", "election_id": "node5:431ffb91", "reason": "no_coordinator", "higher_peers": []}
+{"ts": 1794664810.3405306, "node": "node5", "event": "message_send_error", "message": {"type": "HEARTBEAT", "seq": 0, "from": "node5", "to": "node1"}, "error": "[Errno -2] Name or service not known"}
+{"ts": 1794664810.3459344, "node": "node5", "event": "message_send_error", "message": {"type": "HEARTBEAT", "seq": 0, "from": "node5", "to": "node2"}, "error": "[Errno -2] Name or service not known"}
+{"ts": 1794664810.3462296, "node": "node5", "event": "message_sent", "message": {"type": "HEARTBEAT", "seq": 0, "from": "node5", "to": "node3"}}
+{"ts": 1794664810.850231, "node": "node4", "event": "message_received", "message": {"type": "HEARTBEAT", "seq": 1, "from": "node5", "to": "node4"}, "address": "172.22.0.2"}
+{"ts": 1794664810.9532378, "node": "node4", "event": "message_received", "message": {"type": "HEARTBEAT", "seq": 1, "from": "node3", "to": "node4"}, "address": "172.22.0.3"}
+{"ts": 1794664811.0392904, "node": "node4", "event": "message_sent", "message": {"type": "HEARTBEAT", "seq": 1, "from": "node4", "to": "node1"}}
+{"ts": 1794664811.0395632, "node": "node4", "event": "message_sent", "message": {"type": "HEARTBEAT", "seq": 1, "from": "node4", "to": "node2"}}
+{"ts": 1794664810.4381468, "node": "node3", "event": "start", "peers": ["node1", "node2", "node4", "node5"], "interval": 0.5, "timeout": 2.0, "election_timeout": 2.0, "loss": 0.0, "seed": 1}
+{"ts": 1794664810.4385622, "node": "node3", "event": "election_started", "election_id": "node3:dbff4fc2", "reason": "no_coordinator", "higher_peers": ["node4", "node5"]}
+{"ts": 1794664811.0398428, "node": "node4", "event": "message_sent", "message": {"type": "HEARTBEAT", "seq": 1, "from": "node4", "to": "node3"}}
+{"ts": 1794664810.438987, "node": "node3", "event": "message_sent", "message": {"type": "ELECTION", "election_id": "node3:dbff4fc2", "from": "node3", "to": "node4"}}
+{"ts": 1794664810.4391441, "node": "node3", "event": "message_sent", "message": {"type": "ELECTION", "election_id": "node3:dbff4fc2", "from": "node3", "to": "node5"}}
+{"ts": 1794664810.726748, "node": "node1", "event": "start", "peers": ["node2", "node3", "node4", "node5"], "interval": 0.5, "timeout": 2.0, "election_timeout": 2.0, "loss": 0.0, "seed": 1}
+{"ts": 1794664810.3488784, "node": "node5", "event": "message_send_error", "message": {"type": "HEARTBEAT", "seq": 0, "from": "node5", "to": "node4"}, "error": "[Errno -2] Name or service not known"}
+{"ts": 1794664810.7273345, "node": "node1", "event": "election_started", "election_id": "node1:cb5dca3c", "reason": "no_coordinator", "higher_peers": ["node2", "node3", "node4", "node5"]}
+{"ts": 1794664810.7277641, "node": "node1", "event": "message_sent", "message": {"type": "HEARTBEAT", "seq": 0, "from": "node1", "to": "node2"}}
+{"ts": 1794664810.7278483, "node": "node1", "event": "message_sent", "message": {"type": "ELECTION", "election_id": "node1:cb5dca3c", "from": "node1", "to": "node2"}}
+{"ts": 1794664810.728032, "node": "node1", "event": "message_sent", "message": {"type": "HEARTBEAT", "seq": 0, "from": "node1", "to": "node3"}}
+{"ts": 1794664810.4392047, "node": "node5", "event": "message_received", "message": {"type": "ELECTION", "election_id": "node3:dbff4fc2", "from": "node3", "to": "node5"}, "address": "172.22.0.3"}
+{"ts": 1794664810.7280834, "node": "node1", "event": "message_sent", "message": {"type": "ELECTION", "election_id": "node1:cb5dca3c", "from": "node1", "to": "node3"}}
+{"ts": 1794664811.0400624, "node": "node4", "event": "message_sent", "message": {"type": "HEARTBEAT", "seq": 1, "from": "node4", "to": "node5"}}
+{"ts": 1794664810.7282064, "node": "node1", "event": "message_received", "message": {"type": "OK", "election_id": "node1:cb5dca3c", "from": "node2", "to": "node1"}, "address": "172.22.0.5"}{"ts": 1794664810.7282248, "node": "node1", "event": "message_sent", "message": {"type": "HEARTBEAT", "seq": 0, "from": "node1", "to": "node4"}}
+{"ts": 1794664810.4394746, "node": "node3", "event": "message_received", "message": {"type": "OK", "election_id": "node3:dbff4fc2", "from": "node5", "to": "node3"}, "address": "172.22.0.2"}
+
+{"ts": 1794664811.136309, "node": "node4", "event": "message_received", "message": {"type": "HEARTBEAT", "seq": 1, "from": "node2", "to": "node4"}, "address": "172.22.0.5"}
+{"ts": 1794664810.7282822, "node": "node1", "event": "election_ok_received", "peer": "node2", "election_id": "node1:cb5dca3c"}
+{"ts": 1794664810.7283087, "node": "node1", "event": "message_sent", "message": {"type": "ELECTION", "election_id": "node1:cb5dca3c", "from": "node1", "to": "node4"}}
+{"ts": 1794664810.7283554, "node": "node1", "event": "message_received", "message": {"type": "OK", "election_id": "node1:cb5dca3c", "from": "node3", "to": "node1"}, "address": "172.22.0.3"}
+{"ts": 1794664810.728381, "node": "node1", "event": "election_ok_received", "peer": "node3", "election_id": "node1:cb5dca3c"}
+{"ts": 1794664810.7284389, "node": "node1", "event": "message_sent", "message": {"type": "HEARTBEAT", "seq": 0, "from": "node1", "to": "node5"}}
+{"ts": 1794664810.728506, "node": "node1", "event": "message_received", "message": {"type": "OK", "election_id": "node1:cb5dca3c", "from": "node4", "to": "node1"}, "address": "172.22.0.4"}
+{"ts": 1794664810.7285273, "node": "node1", "event": "election_ok_received", "peer": "node4", "election_id": "node1:cb5dca3c"}
+{"ts": 1794664810.728573, "node": "node1", "event": "message_sent", "message": {"type": "ELECTION", "election_id": "node1:cb5dca3c", "from": "node1", "to": "node5"}}
+{"ts": 1794664810.728607, "node": "node1", "event": "election_yielded", "election_id": "node1:cb5dca3c", "reason": "higher_node_replied"}
+{"ts": 1794664810.7287655, "node": "node1", "event": "message_received", "message": {"type": "OK", "election_id": "node1:cb5dca3c", "from": "node5", "to": "node1"}, "address": "172.22.0.2"}
+{"ts": 1794664811.2297263, "node": "node4", "event": "message_received", "message": {"type": "HEARTBEAT", "seq": 1, "from": "node1", "to": "node4"}, "address": "172.22.0.6"}
+{"ts": 1794664811.3515277, "node": "node4", "event": "message_received", "message": {"type": "HEARTBEAT", "seq": 2, "from": "node5", "to": "node4"}, "address": "172.22.0.2"}
+{"ts": 1794664811.454868, "node": "node4", "event": "message_received", "message": {"type": "HEARTBEAT", "seq": 2, "from": "node3", "to": "node4"}, "address": "172.22.0.3"}
+{"ts": 1794664811.5411942, "node": "node4", "event": "message_sent", "message": {"type": "HEARTBEAT", "seq": 2, "from": "node4", "to": "node1"}}
+{"ts": 1794664811.5414553, "node": "node4", "event": "message_sent", "message": {"type": "HEARTBEAT", "seq": 2, "from": "node4", "to": "node2"}}
+{"ts": 1794664811.5416887, "node": "node4", "event": "message_sent", "message": {"type": "HEARTBEAT", "seq": 2, "from": "node4", "to": "node3"}}
+{"ts": 1794664811.5418994, "node": "node4", "event": "message_sent", "message": {"type": "HEARTBEAT", "seq": 2, "from": "node4", "to": "node5"}}
+{"ts": 1794664810.439441, "node": "node5", "event": "message_sent", "message": {"type": "OK", "election_id": "node3:dbff4fc2", "from": "node5", "to": "node3"}}
+{"ts": 1794664811.6376197, "node": "node4", "event": "message_received", "message": {"type": "HEARTBEAT", "seq": 2, "from": "node2", "to": "node4"}, "address": "172.22.0.5"}
+{"ts": 1794664811.7310116, "node": "node4", "event": "message_received", "message": {"type": "HEARTBEAT", "seq": 2, "from": "node1", "to": "node4"}, "address": "172.22.0.6"}
+{"ts": 1794664811.8528, "node": "node4", "event": "message_received", "message": {"type": "HEARTBEAT", "seq": 3, "from": "node5", "to": "node4"}, "address": "172.22.0.2"}
+{"ts": 1794664811.9564652, "node": "node4", "event": "message_received", "message": {"type": "HEARTBEAT", "seq": 3, "from": "node3", "to": "node4"}, "address": "172.22.0.3"}
+{"ts": 1794664812.042458, "node": "node4", "event": "message_sent", "message": {"type": "HEARTBEAT", "seq": 3, "from": "node4", "to": "node1"}}
+{"ts": 1794664812.0427444, "node": "node4", "event": "message_sent", "message": {"type": "HEARTBEAT", "seq": 3, "from": "node4", "to": "node2"}}
+{"ts": 1794664812.0430183, "node": "node4", "event": "message_sent", "message": {"type": "HEARTBEAT", "seq": 3, "from": "node4", "to": "node3"}}
+{"ts": 1794664810.7287838, "node": "node1", "event": "election_ok_received", "peer": "node5", "election_id": "node1:cb5dca3c"}
+{"ts": 1794664810.8495128, "node": "node1", "event": "message_received", "message": {"type": "HEARTBEAT", "seq": 1, "from": "node5", "to": "node1"}, "address": "172.22.0.2"}
+{"ts": 1794664810.952708, "node": "node1", "event": "message_received", "message": {"type": "HEARTBEAT", "seq": 1, "from": "node3", "to": "node1"}, "address": "172.22.0.3"}
+{"ts": 1794664811.0393605, "node": "node1", "event": "message_received", "message": {"type": "HEARTBEAT", "seq": 1, "from": "node4", "to": "node1"}, "address": "172.22.0.4"}
+{"ts": 1794664811.13593, "node": "node1", "event": "message_received", "message": {"type": "HEARTBEAT", "seq": 1, "from": "node2", "to": "node1"}, "address": "172.22.0.5"}
+{"ts": 1794664811.2290835, "node": "node1", "event": "message_sent", "message": {"type": "HEARTBEAT", "seq": 1, "from": "node1", "to": "node2"}}
+{"ts": 1794664810.4394758, "node": "node5", "event": "election_request_received", "peer": "node3", "election_id": "node3:dbff4fc2"}
+{"ts": 1794664811.2293873, "node": "node1", "event": "message_sent", "message": {"type": "HEARTBEAT", "seq": 1, "from": "node1", "to": "node3"}}
+{"ts": 1794664812.0432558, "node": "node4", "event": "message_sent", "message": {"type": "HEARTBEAT", "seq": 3, "from": "node4", "to": "node5"}}
+{"ts": 1794664812.1388474, "node": "node4", "event": "message_received", "message": {"type": "HEARTBEAT", "seq": 3, "from": "node2", "to": "node4"}, "address": "172.22.0.5"}
+{"ts": 1794664812.2322593, "node": "node4", "event": "message_received", "message": {"type": "HEARTBEAT", "seq": 3, "from": "node1", "to": "node4"}, "address": "172.22.0.6"}
+{"ts": 1794664810.4395087, "node": "node3", "event": "election_ok_received", "peer": "node5", "election_id": "node3:dbff4fc2"}
+{"ts": 1794664812.3376813, "node": "node4", "event": "message_received", "message": {"type": "COORDINATOR", "coordinator": "node5", "election_id": "node5:431ffb91", "from": "node5", "to": "node4"}, "address": "172.22.0.2"}
+{"ts": 1794664812.3377447, "node": "node4", "event": "coordinator_changed", "coordinator": "node5", "peer": "node5", "election_id": "node5:431ffb91"}
+{"ts": 1794664812.3537605, "node": "node4", "event": "message_received", "message": {"type": "HEARTBEAT", "seq": 4, "from": "node5", "to": "node4"}, "address": "172.22.0.2"}
+{"ts": 1794664812.4579403, "node": "node4", "event": "message_received", "message": {"type": "HEARTBEAT", "seq": 4, "from": "node3", "to": "node4"}, "address": "172.22.0.3"}
+{"ts": 1794664810.4395516, "node": "node3", "event": "election_yielded", "election_id": "node3:dbff4fc2", "reason": "higher_node_replied"}
+{"ts": 1794664810.444376, "node": "node3", "event": "message_send_error", "message": {"type": "HEARTBEAT", "seq": 0, "from": "node3", "to": "node1"}, "error": "[Errno -2] Name or service not known"}
+{"ts": 1794664810.4517276, "node": "node3", "event": "message_send_error", "message": {"type": "HEARTBEAT", "seq": 0, "from": "node3", "to": "node2"}, "error": "[Errno -2] Name or service not known"}
+{"ts": 1794664810.4519596, "node": "node3", "event": "message_sent", "message": {"type": "HEARTBEAT", "seq": 0, "from": "node3", "to": "node4"}}
+{"ts": 1794664810.4520798, "node": "node3", "event": "message_sent", "message": {"type": "HEARTBEAT", "seq": 0, "from": "node3", "to": "node5"}}
+{"ts": 1794664812.5437174, "node": "node4", "event": "message_sent", "message": {"type": "HEARTBEAT", "seq": 4, "from": "node4", "to": "node1"}}
+{"ts": 1794664812.5439854, "node": "node4", "event": "message_sent", "message": {"type": "HEARTBEAT", "seq": 4, "from": "node4", "to": "node2"}}
+{"ts": 1794664812.5442264, "node": "node4", "event": "message_sent", "message": {"type": "HEARTBEAT", "seq": 4, "from": "node4", "to": "node3"}}
+{"ts": 1794664812.544439, "node": "node4", "event": "message_sent", "message": {"type": "HEARTBEAT", "seq": 4, "from": "node4", "to": "node5"}}
+{"ts": 1794664812.6404006, "node": "node4", "event": "message_received", "message": {"type": "HEARTBEAT", "seq": 4, "from": "node2", "to": "node4"}, "address": "172.22.0.5"}
+{"ts": 1794664812.7332778, "node": "node4", "event": "message_received", "message": {"type": "HEARTBEAT", "seq": 4, "from": "node1", "to": "node4"}, "address": "172.22.0.6"}
+{"ts": 1794664812.8551242, "node": "node4", "event": "message_received", "message": {"type": "HEARTBEAT", "seq": 5, "from": "node5", "to": "node4"}, "address": "172.22.0.2"}
+{"ts": 1794664810.4395144, "node": "node5", "event": "election_already_running", "election_id": "node5:431ffb91", "reason": "election_request_from_node3"}
+{"ts": 1794664810.4521382, "node": "node5", "event": "message_received", "message": {"type": "HEARTBEAT", "seq": 0, "from": "node3", "to": "node5"}, "address": "172.22.0.3"}
+{"ts": 1794664810.535409, "node": "node5", "event": "message_received", "message": {"type": "ELECTION", "election_id": "node4:7d386940", "from": "node4", "to": "node5"}, "address": "172.22.0.4"}
+{"ts": 1794664810.5356112, "node": "node5", "event": "message_sent", "message": {"type": "OK", "election_id": "node4:7d386940", "from": "node5", "to": "node4"}}
+{"ts": 1794664810.5356371, "node": "node5", "event": "election_request_received", "peer": "node4", "election_id": "node4:7d386940"}
+{"ts": 1794664810.5356665, "node": "node5", "event": "election_already_running", "election_id": "node5:431ffb91", "reason": "election_request_from_node4"}
+{"ts": 1794664810.5385456, "node": "node5", "event": "message_received", "message": {"type": "HEARTBEAT", "seq": 0, "from": "node4", "to": "node5"}, "address": "172.22.0.4"}
+{"ts": 1794664810.635065, "node": "node5", "event": "message_received", "message": {"type": "ELECTION", "election_id": "node2:68dc7f01", "from": "node2", "to": "node5"}, "address": "172.22.0.5"}
+{"ts": 1794664812.9595187, "node": "node4", "event": "message_received", "message": {"type": "HEARTBEAT", "seq": 5, "from": "node3", "to": "node4"}, "address": "172.22.0.3"}
+{"ts": 1794664810.5384672, "node": "node3", "event": "message_received", "message": {"type": "HEARTBEAT", "seq": 0, "from": "node4", "to": "node3"}, "address": "172.22.0.4"}
+{"ts": 1794664813.0451996, "node": "node4", "event": "message_sent", "message": {"type": "HEARTBEAT", "seq": 5, "from": "node4", "to": "node1"}}
+{"ts": 1794664813.04548, "node": "node4", "event": "message_sent", "message": {"type": "HEARTBEAT", "seq": 5, "from": "node4", "to": "node2"}}
+{"ts": 1794664813.0457058, "node": "node4", "event": "message_sent", "message": {"type": "HEARTBEAT", "seq": 5, "from": "node4", "to": "node3"}}
+{"ts": 1794664813.0459023, "node": "node4", "event": "message_sent", "message": {"type": "HEARTBEAT", "seq": 5, "from": "node4", "to": "node5"}}
+{"ts": 1794664813.1414773, "node": "node4", "event": "message_received", "message": {"type": "HEARTBEAT", "seq": 5, "from": "node2", "to": "node4"}, "address": "172.22.0.5"}
+{"ts": 1794664810.635312, "node": "node5", "event": "message_sent", "message": {"type": "OK", "election_id": "node2:68dc7f01", "from": "node5", "to": "node2"}}
+{"ts": 1794664813.2344677, "node": "node4", "event": "message_received", "message": {"type": "HEARTBEAT", "seq": 5, "from": "node1", "to": "node4"}, "address": "172.22.0.6"}
+{"ts": 1794664810.6353421, "node": "node5", "event": "election_request_received", "peer": "node2", "election_id": "node2:68dc7f01"}
+{"ts": 1794664813.3567033, "node": "node4", "event": "message_received", "message": {"type": "HEARTBEAT", "seq": 6, "from": "node5", "to": "node4"}, "address": "172.22.0.2"}
+{"ts": 1794664813.4610164, "node": "node4", "event": "message_received", "message": {"type": "HEARTBEAT", "seq": 6, "from": "node3", "to": "node4"}, "address": "172.22.0.3"}
+{"ts": 1794664813.54651, "node": "node4", "event": "message_sent", "message": {"type": "HEARTBEAT", "seq": 6, "from": "node4", "to": "node1"}}
+{"ts": 1794664813.5467596, "node": "node4", "event": "message_sent", "message": {"type": "HEARTBEAT", "seq": 6, "from": "node4", "to": "node2"}}
+{"ts": 1794664813.54696, "node": "node4", "event": "message_sent", "message": {"type": "HEARTBEAT", "seq": 6, "from": "node4", "to": "node3"}}
+{"ts": 1794664813.5470932, "node": "node4", "event": "message_sent", "message": {"type": "HEARTBEAT", "seq": 6, "from": "node4", "to": "node5"}}
+{"ts": 1794664813.6428175, "node": "node4", "event": "message_received", "message": {"type": "HEARTBEAT", "seq": 6, "from": "node2", "to": "node4"}, "address": "172.22.0.5"}
+{"ts": 1794664810.6347415, "node": "node3", "event": "message_received", "message": {"type": "ELECTION", "election_id": "node2:68dc7f01", "from": "node2", "to": "node3"}, "address": "172.22.0.5"}
+{"ts": 1794664813.735609, "node": "node4", "event": "message_received", "message": {"type": "HEARTBEAT", "seq": 6, "from": "node1", "to": "node4"}, "address": "172.22.0.6"}
+{"ts": 1794664810.6349516, "node": "node3", "event": "message_sent", "message": {"type": "OK", "election_id": "node2:68dc7f01", "from": "node3", "to": "node2"}}
+{"ts": 1794664810.6349857, "node": "node3", "event": "election_request_received", "peer": "node2", "election_id": "node2:68dc7f01"}
+{"ts": 1794664810.6350164, "node": "node3", "event": "election_already_running", "election_id": "node3:dbff4fc2", "reason": "election_request_from_node2"}
+{"ts": 1794664810.6350453, "node": "node3", "event": "message_received", "message": {"type": "HEARTBEAT", "seq": 0, "from": "node2", "to": "node3"}, "address": "172.22.0.5"}
+{"ts": 1794664810.7280712, "node": "node3", "event": "message_received", "message": {"type": "HEARTBEAT", "seq": 0, "from": "node1", "to": "node3"}, "address": "172.22.0.6"}
+{"ts": 1794664810.7281258, "node": "node3", "event": "message_received", "message": {"type": "ELECTION", "election_id": "node1:cb5dca3c", "from": "node1", "to": "node3"}, "address": "172.22.0.6"}
+{"ts": 1794664810.7283118, "node": "node3", "event": "message_sent", "message": {"type": "OK", "election_id": "node1:cb5dca3c", "from": "node3", "to": "node1"}}
+{"ts": 1794664810.7283394, "node": "node3", "event": "election_request_received", "peer": "node1", "election_id": "node1:cb5dca3c"}
+{"ts": 1794664813.857921, "node": "node4", "event": "message_received", "message": {"type": "HEARTBEAT", "seq": 7, "from": "node5", "to": "node4"}, "address": "172.22.0.2"}
+{"ts": 1794664810.7283676, "node": "node3", "event": "election_already_running", "election_id": "node3:dbff4fc2", "reason": "election_request_from_node1"}
+{"ts": 1794664810.6353798, "node": "node5", "event": "election_already_running", "election_id": "node5:431ffb91", "reason": "election_request_from_node2"}
+{"ts": 1794664810.6354725, "node": "node5", "event": "message_received", "message": {"type": "HEARTBEAT", "seq": 0, "from": "node2", "to": "node5"}, "address": "172.22.0.5"}
+{"ts": 1794664810.7285173, "node": "node5", "event": "message_received", "message": {"type": "HEARTBEAT", "seq": 0, "from": "node1", "to": "node5"}, "address": "172.22.0.6"}
+{"ts": 1794664810.7285802, "node": "node5", "event": "message_received", "message": {"type": "ELECTION", "election_id": "node1:cb5dca3c", "from": "node1", "to": "node5"}, "address": "172.22.0.6"}
+{"ts": 1794664810.8500414, "node": "node3", "event": "message_received", "message": {"type": "HEARTBEAT", "seq": 1, "from": "node5", "to": "node3"}, "address": "172.22.0.2"}
+{"ts": 1794664810.952636, "node": "node3", "event": "message_sent", "message": {"type": "HEARTBEAT", "seq": 1, "from": "node3", "to": "node1"}}
+{"ts": 1794664810.9529326, "node": "node3", "event": "message_sent", "message": {"type": "HEARTBEAT", "seq": 1, "from": "node3", "to": "node2"}}
+{"ts": 1794664810.9531689, "node": "node3", "event": "message_sent", "message": {"type": "HEARTBEAT", "seq": 1, "from": "node3", "to": "node4"}}
+{"ts": 1794664810.9533744, "node": "node3", "event": "message_sent", "message": {"type": "HEARTBEAT", "seq": 1, "from": "node3", "to": "node5"}}
+{"ts": 1794664811.03991, "node": "node3", "event": "message_received", "message": {"type": "HEARTBEAT", "seq": 1, "from": "node4", "to": "node3"}, "address": "172.22.0.4"}
+{"ts": 1794664811.13613, "node": "node3", "event": "message_received", "message": {"type": "HEARTBEAT", "seq": 1, "from": "node2", "to": "node3"}, "address": "172.22.0.5"}
+{"ts": 1794664811.2294714, "node": "node3", "event": "message_received", "message": {"type": "HEARTBEAT", "seq": 1, "from": "node1", "to": "node3"}, "address": "172.22.0.6"}
+{"ts": 1794664811.3512576, "node": "node3", "event": "message_received", "message": {"type": "HEARTBEAT", "seq": 2, "from": "node5", "to": "node3"}, "address": "172.22.0.2"}
+{"ts": 1794664811.4542134, "node": "node3", "event": "message_sent", "message": {"type": "HEARTBEAT", "seq": 2, "from": "node3", "to": "node1"}}
+{"ts": 1794664811.4544907, "node": "node3", "event": "message_sent", "message": {"type": "HEARTBEAT", "seq": 2, "from": "node3", "to": "node2"}}
+{"ts": 1794664811.4547844, "node": "node3", "event": "message_sent", "message": {"type": "HEARTBEAT", "seq": 2, "from": "node3", "to": "node4"}}
+{"ts": 1794664811.455051, "node": "node3", "event": "message_sent", "message": {"type": "HEARTBEAT", "seq": 2, "from": "node3", "to": "node5"}}
+{"ts": 1794664811.541759, "node": "node3", "event": "message_received", "message": {"type": "HEARTBEAT", "seq": 2, "from": "node4", "to": "node3"}, "address": "172.22.0.4"}
+{"ts": 1794664811.6373634, "node": "node3", "event": "message_received", "message": {"type": "HEARTBEAT", "seq": 2, "from": "node2", "to": "node3"}, "address": "172.22.0.5"}
+{"ts": 1794664811.7307298, "node": "node3", "event": "message_received", "message": {"type": "HEARTBEAT", "seq": 2, "from": "node1", "to": "node3"}, "address": "172.22.0.6"}
+{"ts": 1794664810.7287533, "node": "node5", "event": "message_sent", "message": {"type": "OK", "election_id": "node1:cb5dca3c", "from": "node5", "to": "node1"}}
+{"ts": 1794664811.8526115, "node": "node3", "event": "message_received", "message": {"type": "HEARTBEAT", "seq": 3, "from": "node5", "to": "node3"}, "address": "172.22.0.2"}
+{"ts": 1794664811.9558878, "node": "node3", "event": "message_sent", "message": {"type": "HEARTBEAT", "seq": 3, "from": "node3", "to": "node1"}}
+{"ts": 1794664811.9561226, "node": "node3", "event": "message_sent", "message": {"type": "HEARTBEAT", "seq": 3, "from": "node3", "to": "node2"}}
+{"ts": 1794664811.9563973, "node": "node3", "event": "message_sent", "message": {"type": "HEARTBEAT", "seq": 3, "from": "node3", "to": "node4"}}
+{"ts": 1794664811.95667, "node": "node3", "event": "message_sent", "message": {"type": "HEARTBEAT", "seq": 3, "from": "node3", "to": "node5"}}
+{"ts": 1794664812.0430744, "node": "node3", "event": "message_received", "message": {"type": "HEARTBEAT", "seq": 3, "from": "node4", "to": "node3"}, "address": "172.22.0.4"}
+{"ts": 1794664812.1386483, "node": "node3", "event": "message_received", "message": {"type": "HEARTBEAT", "seq": 3, "from": "node2", "to": "node3"}, "address": "172.22.0.5"}
+{"ts": 1794664812.2320259, "node": "node3", "event": "message_received", "message": {"type": "HEARTBEAT", "seq": 3, "from": "node1", "to": "node3"}, "address": "172.22.0.6"}
+{"ts": 1794664812.3374515, "node": "node3", "event": "message_received", "message": {"type": "COORDINATOR", "coordinator": "node5", "election_id": "node5:431ffb91", "from": "node5", "to": "node3"}, "address": "172.22.0.2"}
+{"ts": 1794664813.9626877, "node": "node4", "event": "message_received", "message": {"type": "HEARTBEAT", "seq": 7, "from": "node3", "to": "node4"}, "address": "172.22.0.3"}
+{"ts": 1794664812.3375187, "node": "node3", "event": "coordinator_changed", "coordinator": "node5", "peer": "node5", "election_id": "node5:431ffb91"}
+{"ts": 1794664814.0474646, "node": "node4", "event": "message_sent", "message": {"type": "HEARTBEAT", "seq": 7, "from": "node4", "to": "node1"}}
+{"ts": 1794664814.0476468, "node": "node4", "event": "message_sent", "message": {"type": "HEARTBEAT", "seq": 7, "from": "node4", "to": "node2"}}
+{"ts": 1794664814.0477898, "node": "node4", "event": "message_sent", "message": {"type": "HEARTBEAT", "seq": 7, "from": "node4", "to": "node3"}}
+{"ts": 1794664814.047939, "node": "node4", "event": "message_sent", "message": {"type": "HEARTBEAT", "seq": 7, "from": "node4", "to": "node5"}}
+{"ts": 1794664814.1441433, "node": "node4", "event": "message_received", "message": {"type": "HEARTBEAT", "seq": 7, "from": "node2", "to": "node4"}, "address": "172.22.0.5"}
+{"ts": 1794664814.236949, "node": "node4", "event": "message_received", "message": {"type": "HEARTBEAT", "seq": 7, "from": "node1", "to": "node4"}, "address": "172.22.0.6"}
+{"ts": 1794664814.3592257, "node": "node4", "event": "message_received", "message": {"type": "HEARTBEAT", "seq": 8, "from": "node5", "to": "node4"}, "address": "172.22.0.2"}
+{"ts": 1794664814.4643173, "node": "node4", "event": "message_received", "message": {"type": "HEARTBEAT", "seq": 8, "from": "node3", "to": "node4"}, "address": "172.22.0.3"}
+{"ts": 1794664810.728772, "node": "node5", "event": "election_request_received", "peer": "node1", "election_id": "node1:cb5dca3c"}
+{"ts": 1794664810.7287924, "node": "node5", "event": "election_already_running", "election_id": "node5:431ffb91", "reason": "election_request_from_node1"}
+{"ts": 1794664810.849442, "node": "node5", "event": "message_sent", "message": {"type": "HEARTBEAT", "seq": 1, "from": "node5", "to": "node1"}}
+{"ts": 1794664810.849736, "node": "node5", "event": "message_sent", "message": {"type": "HEARTBEAT", "seq": 1, "from": "node5", "to": "node2"}}
+{"ts": 1794664810.8499715, "node": "node5", "event": "message_sent", "message": {"type": "HEARTBEAT", "seq": 1, "from": "node5", "to": "node3"}}
+{"ts": 1794664810.8501668, "node": "node5", "event": "message_sent", "message": {"type": "HEARTBEAT", "seq": 1, "from": "node5", "to": "node4"}}
+{"ts": 1794664814.5484035, "node": "node4", "event": "message_sent", "message": {"type": "HEARTBEAT", "seq": 8, "from": "node4", "to": "node1"}}
+{"ts": 1794664810.9534495, "node": "node5", "event": "message_received", "message": {"type": "HEARTBEAT", "seq": 1, "from": "node3", "to": "node5"}, "address": "172.22.0.3"}
+{"ts": 1794664811.2296195, "node": "node1", "event": "message_sent", "message": {"type": "HEARTBEAT", "seq": 1, "from": "node1", "to": "node4"}}
+{"ts": 1794664811.0401344, "node": "node5", "event": "message_received", "message": {"type": "HEARTBEAT", "seq": 1, "from": "node4", "to": "node5"}, "address": "172.22.0.4"}
+{"ts": 1794664811.136484, "node": "node5", "event": "message_received", "message": {"type": "HEARTBEAT", "seq": 1, "from": "node2", "to": "node5"}, "address": "172.22.0.5"}
+{"ts": 1794664811.2299411, "node": "node5", "event": "message_received", "message": {"type": "HEARTBEAT", "seq": 1, "from": "node1", "to": "node5"}, "address": "172.22.0.6"}
+{"ts": 1794664811.350648, "node": "node5", "event": "message_sent", "message": {"type": "HEARTBEAT", "seq": 2, "from": "node5", "to": "node1"}}
+{"ts": 1794664811.3509097, "node": "node5", "event": "message_sent", "message": {"type": "HEARTBEAT", "seq": 2, "from": "node5", "to": "node2"}}
+{"ts": 1794664814.548617, "node": "node4", "event": "message_sent", "message": {"type": "HEARTBEAT", "seq": 8, "from": "node4", "to": "node2"}}
+{"ts": 1794664811.3511944, "node": "node5", "event": "message_sent", "message": {"type": "HEARTBEAT", "seq": 2, "from": "node5", "to": "node3"}}
+{"ts": 1794664811.3514562, "node": "node5", "event": "message_sent", "message": {"type": "HEARTBEAT", "seq": 2, "from": "node5", "to": "node4"}}
+{"ts": 1794664811.455127, "node": "node5", "event": "message_received", "message": {"type": "HEARTBEAT", "seq": 2, "from": "node3", "to": "node5"}, "address": "172.22.0.3"}
+{"ts": 1794664811.5419526, "node": "node5", "event": "message_received", "message": {"type": "HEARTBEAT", "seq": 2, "from": "node4", "to": "node5"}, "address": "172.22.0.4"}
+{"ts": 1794664811.6378317, "node": "node5", "event": "message_received", "message": {"type": "HEARTBEAT", "seq": 2, "from": "node2", "to": "node5"}, "address": "172.22.0.5"}
+{"ts": 1794664811.7312138, "node": "node5", "event": "message_received", "message": {"type": "HEARTBEAT", "seq": 2, "from": "node1", "to": "node5"}, "address": "172.22.0.6"}
+{"ts": 1794664814.548772, "node": "node4", "event": "message_sent", "message": {"type": "HEARTBEAT", "seq": 8, "from": "node4", "to": "node3"}}
+{"ts": 1794664814.5488896, "node": "node4", "event": "message_sent", "message": {"type": "HEARTBEAT", "seq": 8, "from": "node4", "to": "node5"}}
+{"ts": 1794664811.851998, "node": "node5", "event": "message_sent", "message": {"type": "HEARTBEAT", "seq": 3, "from": "node5", "to": "node1"}}
+{"ts": 1794664811.8522823, "node": "node5", "event": "message_sent", "message": {"type": "HEARTBEAT", "seq": 3, "from": "node5", "to": "node2"}}
+{"ts": 1794664811.852538, "node": "node5", "event": "message_sent", "message": {"type": "HEARTBEAT", "seq": 3, "from": "node5", "to": "node3"}}
+{"ts": 1794664811.8527315, "node": "node5", "event": "message_sent", "message": {"type": "HEARTBEAT", "seq": 3, "from": "node5", "to": "node4"}}
+{"ts": 1794664811.9567447, "node": "node5", "event": "message_received", "message": {"type": "HEARTBEAT", "seq": 3, "from": "node3", "to": "node5"}, "address": "172.22.0.3"}
+{"ts": 1794664812.3535733, "node": "node3", "event": "message_received", "message": {"type": "HEARTBEAT", "seq": 4, "from": "node5", "to": "node3"}, "address": "172.22.0.2"}
+{"ts": 1794664812.4573228, "node": "node3", "event": "message_sent", "message": {"type": "HEARTBEAT", "seq": 4, "from": "node3", "to": "node1"}}
+{"ts": 1794664812.4576137, "node": "node3", "event": "message_sent", "message": {"type": "HEARTBEAT", "seq": 4, "from": "node3", "to": "node2"}}
+{"ts": 1794664811.2298503, "node": "node1", "event": "message_sent", "message": {"type": "HEARTBEAT", "seq": 1, "from": "node1", "to": "node5"}}
+{"ts": 1794664812.4578705, "node": "node3", "event": "message_sent", "message": {"type": "HEARTBEAT", "seq": 4, "from": "node3", "to": "node4"}}
+{"ts": 1794664812.458112, "node": "node3", "event": "message_sent", "message": {"type": "HEARTBEAT", "seq": 4, "from": "node3", "to": "node5"}}
+{"ts": 1794664812.544273, "node": "node3", "event": "message_received", "message": {"type": "HEARTBEAT", "seq": 4, "from": "node4", "to": "node3"}, "address": "172.22.0.4"}
+{"ts": 1794664812.640124, "node": "node3", "event": "message_received", "message": {"type": "HEARTBEAT", "seq": 4, "from": "node2", "to": "node3"}, "address": "172.22.0.5"}
+{"ts": 1794664812.7331305, "node": "node3", "event": "message_received", "message": {"type": "HEARTBEAT", "seq": 4, "from": "node1", "to": "node3"}, "address": "172.22.0.6"}
+{"ts": 1794664812.8549287, "node": "node3", "event": "message_received", "message": {"type": "HEARTBEAT", "seq": 5, "from": "node5", "to": "node3"}, "address": "172.22.0.2"}
+{"ts": 1794664811.3507164, "node": "node1", "event": "message_received", "message": {"type": "HEARTBEAT", "seq": 2, "from": "node5", "to": "node1"}, "address": "172.22.0.2"}
+{"ts": 1794664812.9589207, "node": "node3", "event": "message_sent", "message": {"type": "HEARTBEAT", "seq": 5, "from": "node3", "to": "node1"}}
+{"ts": 1794664812.959223, "node": "node3", "event": "message_sent", "message": {"type": "HEARTBEAT", "seq": 5, "from": "node3", "to": "node2"}}
+{"ts": 1794664812.9594493, "node": "node3", "event": "message_sent", "message": {"type": "HEARTBEAT", "seq": 5, "from": "node3", "to": "node4"}}
+{"ts": 1794664812.9596665, "node": "node3", "event": "message_sent", "message": {"type": "HEARTBEAT", "seq": 5, "from": "node3", "to": "node5"}}
+{"ts": 1794664813.0457735, "node": "node3", "event": "message_received", "message": {"type": "HEARTBEAT", "seq": 5, "from": "node4", "to": "node3"}, "address": "172.22.0.4"}
+{"ts": 1794664813.1414618, "node": "node3", "event": "message_received", "message": {"type": "HEARTBEAT", "seq": 5, "from": "node2", "to": "node3"}, "address": "172.22.0.5"}
+{"ts": 1794664813.2341733, "node": "node3", "event": "message_received", "message": {"type": "HEARTBEAT", "seq": 5, "from": "node1", "to": "node3"}, "address": "172.22.0.6"}
+{"ts": 1794664811.4543056, "node": "node1", "event": "message_received", "message": {"type": "HEARTBEAT", "seq": 2, "from": "node3", "to": "node1"}, "address": "172.22.0.3"}
+{"ts": 1794664813.3564484, "node": "node3", "event": "message_received", "message": {"type": "HEARTBEAT", "seq": 6, "from": "node5", "to": "node3"}, "address": "172.22.0.2"}
+{"ts": 1794664814.6453893, "node": "node4", "event": "message_received", "message": {"type": "HEARTBEAT", "seq": 8, "from": "node2", "to": "node4"}, "address": "172.22.0.5"}
+{"ts": 1794664814.738218, "node": "node4", "event": "message_received", "message": {"type": "HEARTBEAT", "seq": 8, "from": "node1", "to": "node4"}, "address": "172.22.0.6"}
+{"ts": 1794664814.8607092, "node": "node4", "event": "message_received", "message": {"type": "HEARTBEAT", "seq": 9, "from": "node5", "to": "node4"}, "address": "172.22.0.2"}
+{"ts": 1794664814.965423, "node": "node4", "event": "message_received", "message": {"type": "HEARTBEAT", "seq": 9, "from": "node3", "to": "node4"}, "address": "172.22.0.3"}
+{"ts": 1794664815.0494065, "node": "node4", "event": "message_sent", "message": {"type": "HEARTBEAT", "seq": 9, "from": "node4", "to": "node1"}}
+{"ts": 1794664815.049679, "node": "node4", "event": "message_sent", "message": {"type": "HEARTBEAT", "seq": 9, "from": "node4", "to": "node2"}}
+{"ts": 1794664812.0433156, "node": "node5", "event": "message_received", "message": {"type": "HEARTBEAT", "seq": 3, "from": "node4", "to": "node5"}, "address": "172.22.0.4"}
+{"ts": 1794664813.4604352, "node": "node3", "event": "message_sent", "message": {"type": "HEARTBEAT", "seq": 6, "from": "node3", "to": "node1"}}
+{"ts": 1794664813.4607155, "node": "node3", "event": "message_sent", "message": {"type": "HEARTBEAT", "seq": 6, "from": "node3", "to": "node2"}}
+{"ts": 1794664813.4609523, "node": "node3", "event": "message_sent", "message": {"type": "HEARTBEAT", "seq": 6, "from": "node3", "to": "node4"}}
+{"ts": 1794664813.4611542, "node": "node3", "event": "message_sent", "message": {"type": "HEARTBEAT", "seq": 6, "from": "node3", "to": "node5"}}
+{"ts": 1794664813.5470085, "node": "node3", "event": "message_received", "message": {"type": "HEARTBEAT", "seq": 6, "from": "node4", "to": "node3"}, "address": "172.22.0.4"}
+{"ts": 1794664813.6424816, "node": "node3", "event": "message_received", "message": {"type": "HEARTBEAT", "seq": 6, "from": "node2", "to": "node3"}, "address": "172.22.0.5"}
+{"ts": 1794664813.7353885, "node": "node3", "event": "message_received", "message": {"type": "HEARTBEAT", "seq": 6, "from": "node1", "to": "node3"}, "address": "172.22.0.6"}
+{"ts": 1794664813.8577454, "node": "node3", "event": "message_received", "message": {"type": "HEARTBEAT", "seq": 7, "from": "node5", "to": "node3"}, "address": "172.22.0.2"}
+{"ts": 1794664813.9620728, "node": "node3", "event": "message_sent", "message": {"type": "HEARTBEAT", "seq": 7, "from": "node3", "to": "node1"}}
+{"ts": 1794664812.1390915, "node": "node5", "event": "message_received", "message": {"type": "HEARTBEAT", "seq": 3, "from": "node2", "to": "node5"}, "address": "172.22.0.5"}
+{"ts": 1794664813.9623501, "node": "node3", "event": "message_sent", "message": {"type": "HEARTBEAT", "seq": 7, "from": "node3", "to": "node2"}}
+{"ts": 1794664811.5412703, "node": "node1", "event": "message_received", "message": {"type": "HEARTBEAT", "seq": 2, "from": "node4", "to": "node1"}, "address": "172.22.0.4"}
+{"ts": 1794664813.9626217, "node": "node3", "event": "message_sent", "message": {"type": "HEARTBEAT", "seq": 7, "from": "node3", "to": "node4"}}
+{"ts": 1794664813.9628744, "node": "node3", "event": "message_sent", "message": {"type": "HEARTBEAT", "seq": 7, "from": "node3", "to": "node5"}}
+{"ts": 1794664814.0478373, "node": "node3", "event": "message_received", "message": {"type": "HEARTBEAT", "seq": 7, "from": "node4", "to": "node3"}, "address": "172.22.0.4"}
+{"ts": 1794664814.1439095, "node": "node3", "event": "message_received", "message": {"type": "HEARTBEAT", "seq": 7, "from": "node2", "to": "node3"}, "address": "172.22.0.5"}
+{"ts": 1794664814.2366989, "node": "node3", "event": "message_received", "message": {"type": "HEARTBEAT", "seq": 7, "from": "node1", "to": "node3"}, "address": "172.22.0.6"}
+{"ts": 1794664814.3590648, "node": "node3", "event": "message_received", "message": {"type": "HEARTBEAT", "seq": 8, "from": "node5", "to": "node3"}, "address": "172.22.0.2"}
+{"ts": 1794664814.463711, "node": "node3", "event": "message_sent", "message": {"type": "HEARTBEAT", "seq": 8, "from": "node3", "to": "node1"}}
+{"ts": 1794664814.464009, "node": "node3", "event": "message_sent", "message": {"type": "HEARTBEAT", "seq": 8, "from": "node3", "to": "node2"}}
+{"ts": 1794664814.46426, "node": "node3", "event": "message_sent", "message": {"type": "HEARTBEAT", "seq": 8, "from": "node3", "to": "node4"}}
+{"ts": 1794664814.4644969, "node": "node3", "event": "message_sent", "message": {"type": "HEARTBEAT", "seq": 8, "from": "node3", "to": "node5"}}
+{"ts": 1794664814.5488153, "node": "node3", "event": "message_received", "message": {"type": "HEARTBEAT", "seq": 8, "from": "node4", "to": "node3"}, "address": "172.22.0.4"}
+{"ts": 1794664814.6451466, "node": "node3", "event": "message_received", "message": {"type": "HEARTBEAT", "seq": 8, "from": "node2", "to": "node3"}, "address": "172.22.0.5"}
+{"ts": 1794664814.7379527, "node": "node3", "event": "message_received", "message": {"type": "HEARTBEAT", "seq": 8, "from": "node1", "to": "node3"}, "address": "172.22.0.6"}
+{"ts": 1794664814.8604295, "node": "node3", "event": "message_received", "message": {"type": "HEARTBEAT", "seq": 9, "from": "node5", "to": "node3"}, "address": "172.22.0.2"}
+{"ts": 1794664814.9649, "node": "node3", "event": "message_sent", "message": {"type": "HEARTBEAT", "seq": 9, "from": "node3", "to": "node1"}}
+{"ts": 1794664812.232489, "node": "node5", "event": "message_received", "message": {"type": "HEARTBEAT", "seq": 3, "from": "node1", "to": "node5"}, "address": "172.22.0.6"}
+{"ts": 1794664812.3368948, "node": "node5", "event": "message_sent", "message": {"type": "COORDINATOR", "coordinator": "node5", "election_id": "node5:431ffb91", "from": "node5", "to": "node1"}}
+{"ts": 1794664812.3371027, "node": "node5", "event": "message_sent", "message": {"type": "COORDINATOR", "coordinator": "node5", "election_id": "node5:431ffb91", "from": "node5", "to": "node2"}}
+{"ts": 1794664812.3373945, "node": "node5", "event": "message_sent", "message": {"type": "COORDINATOR", "coordinator": "node5", "election_id": "node5:431ffb91", "from": "node5", "to": "node3"}}
+{"ts": 1794664812.3375664, "node": "node5", "event": "message_sent", "message": {"type": "COORDINATOR", "coordinator": "node5", "election_id": "node5:431ffb91", "from": "node5", "to": "node4"}}
+{"ts": 1794664812.3375955, "node": "node5", "event": "coordinator_elected", "coordinator": "node5", "election_id": "node5:431ffb91"}
+{"ts": 1794664812.3531668, "node": "node5", "event": "message_sent", "message": {"type": "HEARTBEAT", "seq": 4, "from": "node5", "to": "node1"}}
+{"ts": 1794664812.353375, "node": "node5", "event": "message_sent", "message": {"type": "HEARTBEAT", "seq": 4, "from": "node5", "to": "node2"}}
+{"ts": 1794664812.3535488, "node": "node5", "event": "message_sent", "message": {"type": "HEARTBEAT", "seq": 4, "from": "node5", "to": "node3"}}
+{"ts": 1794664812.3537297, "node": "node5", "event": "message_sent", "message": {"type": "HEARTBEAT", "seq": 4, "from": "node5", "to": "node4"}}
+{"ts": 1794664812.458175, "node": "node5", "event": "message_received", "message": {"type": "HEARTBEAT", "seq": 4, "from": "node3", "to": "node5"}, "address": "172.22.0.3"}
+{"ts": 1794664812.5445087, "node": "node5", "event": "message_received", "message": {"type": "HEARTBEAT", "seq": 4, "from": "node4", "to": "node5"}, "address": "172.22.0.4"}
+{"ts": 1794664812.6406667, "node": "node5", "event": "message_received", "message": {"type": "HEARTBEAT", "seq": 4, "from": "node2", "to": "node5"}, "address": "172.22.0.5"}
+{"ts": 1794664812.7334132, "node": "node5", "event": "message_received", "message": {"type": "HEARTBEAT", "seq": 4, "from": "node1", "to": "node5"}, "address": "172.22.0.6"}
+{"ts": 1794664812.8543324, "node": "node5", "event": "message_sent", "message": {"type": "HEARTBEAT", "seq": 5, "from": "node5", "to": "node1"}}
+{"ts": 1794664812.8545861, "node": "node5", "event": "message_sent", "message": {"type": "HEARTBEAT", "seq": 5, "from": "node5", "to": "node2"}}
+{"ts": 1794664815.049912, "node": "node4", "event": "message_sent", "message": {"type": "HEARTBEAT", "seq": 9, "from": "node4", "to": "node3"}}
+{"ts": 1794664815.0501466, "node": "node4", "event": "message_sent", "message": {"type": "HEARTBEAT", "seq": 9, "from": "node4", "to": "node5"}}
+{"ts": 1794664815.1468365, "node": "node4", "event": "message_received", "message": {"type": "HEARTBEAT", "seq": 9, "from": "node2", "to": "node4"}, "address": "172.22.0.5"}
+{"ts": 1794664815.2395806, "node": "node4", "event": "message_received", "message": {"type": "HEARTBEAT", "seq": 9, "from": "node1", "to": "node4"}, "address": "172.22.0.6"}
+{"ts": 1794664814.965144, "node": "node3", "event": "message_sent", "message": {"type": "HEARTBEAT", "seq": 9, "from": "node3", "to": "node2"}}
+{"ts": 1794664814.965342, "node": "node3", "event": "message_sent", "message": {"type": "HEARTBEAT", "seq": 9, "from": "node3", "to": "node4"}}
+{"ts": 1794664811.6371076, "node": "node1", "event": "message_received", "message": {"type": "HEARTBEAT", "seq": 2, "from": "node2", "to": "node1"}, "address": "172.22.0.5"}
+{"ts": 1794664811.730398, "node": "node1", "event": "message_sent", "message": {"type": "HEARTBEAT", "seq": 2, "from": "node1", "to": "node2"}}
+{"ts": 1794664811.7306955, "node": "node1", "event": "message_sent", "message": {"type": "HEARTBEAT", "seq": 2, "from": "node1", "to": "node3"}}
+{"ts": 1794664814.9655387, "node": "node3", "event": "message_sent", "message": {"type": "HEARTBEAT", "seq": 9, "from": "node3", "to": "node5"}}
+{"ts": 1794664815.0499918, "node": "node3", "event": "message_received", "message": {"type": "HEARTBEAT", "seq": 9, "from": "node4", "to": "node3"}, "address": "172.22.0.4"}
+{"ts": 1794664815.1465585, "node": "node3", "event": "message_received", "message": {"type": "HEARTBEAT", "seq": 9, "from": "node2", "to": "node3"}, "address": "172.22.0.5"}
+{"ts": 1794664815.239378, "node": "node3", "event": "message_received", "message": {"type": "HEARTBEAT", "seq": 9, "from": "node1", "to": "node3"}, "address": "172.22.0.6"}
+{"ts": 1794664815.361666, "node": "node3", "event": "message_received", "message": {"type": "HEARTBEAT", "seq": 10, "from": "node5", "to": "node3"}, "address": "172.22.0.2"}
+{"ts": 1794664815.4661994, "node": "node3", "event": "message_sent", "message": {"type": "HEARTBEAT", "seq": 10, "from": "node3", "to": "node1"}}
+{"ts": 1794664815.4664829, "node": "node3", "event": "message_sent", "message": {"type": "HEARTBEAT", "seq": 10, "from": "node3", "to": "node2"}}
+{"ts": 1794664815.4668002, "node": "node3", "event": "message_sent", "message": {"type": "HEARTBEAT", "seq": 10, "from": "node3", "to": "node4"}}
+{"ts": 1794664811.7309484, "node": "node1", "event": "message_sent", "message": {"type": "HEARTBEAT", "seq": 2, "from": "node1", "to": "node4"}}
+{"ts": 1794664812.8548644, "node": "node5", "event": "message_sent", "message": {"type": "HEARTBEAT", "seq": 5, "from": "node5", "to": "node3"}}
+{"ts": 1794664811.7311437, "node": "node1", "event": "message_sent", "message": {"type": "HEARTBEAT", "seq": 2, "from": "node1", "to": "node5"}}
+{"ts": 1794664811.852073, "node": "node1", "event": "message_received", "message": {"type": "HEARTBEAT", "seq": 3, "from": "node5", "to": "node1"}, "address": "172.22.0.2"}
+{"ts": 1794664811.9559603, "node": "node1", "event": "message_received", "message": {"type": "HEARTBEAT", "seq": 3, "from": "node3", "to": "node1"}, "address": "172.22.0.3"}
+{"ts": 1794664812.0425298, "node": "node1", "event": "message_received", "message": {"type": "HEARTBEAT", "seq": 3, "from": "node4", "to": "node1"}, "address": "172.22.0.4"}
+{"ts": 1794664812.8550708, "node": "node5", "event": "message_sent", "message": {"type": "HEARTBEAT", "seq": 5, "from": "node5", "to": "node4"}}
+{"ts": 1794664812.9597156, "node": "node5", "event": "message_received", "message": {"type": "HEARTBEAT", "seq": 5, "from": "node3", "to": "node5"}, "address": "172.22.0.3"}
+{"ts": 1794664813.045962, "node": "node5", "event": "message_received", "message": {"type": "HEARTBEAT", "seq": 5, "from": "node4", "to": "node5"}, "address": "172.22.0.4"}
+{"ts": 1794664813.1417716, "node": "node5", "event": "message_received", "message": {"type": "HEARTBEAT", "seq": 5, "from": "node2", "to": "node5"}, "address": "172.22.0.5"}
+{"ts": 1794664813.2347107, "node": "node5", "event": "message_received", "message": {"type": "HEARTBEAT", "seq": 5, "from": "node1", "to": "node5"}, "address": "172.22.0.6"}
+{"ts": 1794664813.3558564, "node": "node5", "event": "message_sent", "message": {"type": "HEARTBEAT", "seq": 6, "from": "node5", "to": "node1"}}
+{"ts": 1794664813.3561168, "node": "node5", "event": "message_sent", "message": {"type": "HEARTBEAT", "seq": 6, "from": "node5", "to": "node2"}}
+{"ts": 1794664813.3563561, "node": "node5", "event": "message_sent", "message": {"type": "HEARTBEAT", "seq": 6, "from": "node5", "to": "node3"}}
+{"ts": 1794664812.1383657, "node": "node1", "event": "message_received", "message": {"type": "HEARTBEAT", "seq": 3, "from": "node2", "to": "node1"}, "address": "172.22.0.5"}
+{"ts": 1794664812.2316325, "node": "node1", "event": "message_sent", "message": {"type": "HEARTBEAT", "seq": 3, "from": "node1", "to": "node2"}}
+{"ts": 1794664812.2319558, "node": "node1", "event": "message_sent", "message": {"type": "HEARTBEAT", "seq": 3, "from": "node1", "to": "node3"}}
+{"ts": 1794664812.232198, "node": "node1", "event": "message_sent", "message": {"type": "HEARTBEAT", "seq": 3, "from": "node1", "to": "node4"}}
+{"ts": 1794664812.2324185, "node": "node1", "event": "message_sent", "message": {"type": "HEARTBEAT", "seq": 3, "from": "node1", "to": "node5"}}
+{"ts": 1794664812.3369498, "node": "node1", "event": "message_received", "message": {"type": "COORDINATOR", "coordinator": "node5", "election_id": "node5:431ffb91", "from": "node5", "to": "node1"}, "address": "172.22.0.2"}
+{"ts": 1794664812.337034, "node": "node1", "event": "coordinator_changed", "coordinator": "node5", "peer": "node5", "election_id": "node5:431ffb91"}
+{"ts": 1794664812.3531914, "node": "node1", "event": "message_received", "message": {"type": "HEARTBEAT", "seq": 4, "from": "node5", "to": "node1"}, "address": "172.22.0.2"}
+{"ts": 1794664812.4573944, "node": "node1", "event": "message_received", "message": {"type": "HEARTBEAT", "seq": 4, "from": "node3", "to": "node1"}, "address": "172.22.0.3"}
+{"ts": 1794664812.543777, "node": "node1", "event": "message_received", "message": {"type": "HEARTBEAT", "seq": 4, "from": "node4", "to": "node1"}, "address": "172.22.0.4"}
+{"ts": 1794664813.356586, "node": "node5", "event": "message_sent", "message": {"type": "HEARTBEAT", "seq": 6, "from": "node5", "to": "node4"}}
+{"ts": 1794664813.4612012, "node": "node5", "event": "message_received", "message": {"type": "HEARTBEAT", "seq": 6, "from": "node3", "to": "node5"}, "address": "172.22.0.3"}
+{"ts": 1794664813.547145, "node": "node5", "event": "message_received", "message": {"type": "HEARTBEAT", "seq": 6, "from": "node4", "to": "node5"}, "address": "172.22.0.4"}
+{"ts": 1794664813.643054, "node": "node5", "event": "message_received", "message": {"type": "HEARTBEAT", "seq": 6, "from": "node2", "to": "node5"}, "address": "172.22.0.5"}
+{"ts": 1794664813.735849, "node": "node5", "event": "message_received", "message": {"type": "HEARTBEAT", "seq": 6, "from": "node1", "to": "node5"}, "address": "172.22.0.6"}
+{"ts": 1794664813.857154, "node": "node5", "event": "message_sent", "message": {"type": "HEARTBEAT", "seq": 7, "from": "node5", "to": "node1"}}
+{"ts": 1794664813.8574593, "node": "node5", "event": "message_sent", "message": {"type": "HEARTBEAT", "seq": 7, "from": "node5", "to": "node2"}}
+{"ts": 1794664813.857694, "node": "node5", "event": "message_sent", "message": {"type": "HEARTBEAT", "seq": 7, "from": "node5", "to": "node3"}}
+{"ts": 1794664813.8578672, "node": "node5", "event": "message_sent", "message": {"type": "HEARTBEAT", "seq": 7, "from": "node5", "to": "node4"}}
+{"ts": 1794664813.962936, "node": "node5", "event": "message_received", "message": {"type": "HEARTBEAT", "seq": 7, "from": "node3", "to": "node5"}, "address": "172.22.0.3"}
+{"ts": 1794664814.0479887, "node": "node5", "event": "message_received", "message": {"type": "HEARTBEAT", "seq": 7, "from": "node4", "to": "node5"}, "address": "172.22.0.4"}
+{"ts": 1794664814.1443527, "node": "node5", "event": "message_received", "message": {"type": "HEARTBEAT", "seq": 7, "from": "node2", "to": "node5"}, "address": "172.22.0.5"}
+{"ts": 1794664814.2371485, "node": "node5", "event": "message_received", "message": {"type": "HEARTBEAT", "seq": 7, "from": "node1", "to": "node5"}, "address": "172.22.0.6"}
+{"ts": 1794664814.358529, "node": "node5", "event": "message_sent", "message": {"type": "HEARTBEAT", "seq": 8, "from": "node5", "to": "node1"}}
+{"ts": 1794664814.3588006, "node": "node5", "event": "message_sent", "message": {"type": "HEARTBEAT", "seq": 8, "from": "node5", "to": "node2"}}
+{"ts": 1794664814.3590176, "node": "node5", "event": "message_sent", "message": {"type": "HEARTBEAT", "seq": 8, "from": "node5", "to": "node3"}}
+{"ts": 1794664814.3591754, "node": "node5", "event": "message_sent", "message": {"type": "HEARTBEAT", "seq": 8, "from": "node5", "to": "node4"}}
+{"ts": 1794664815.361872, "node": "node4", "event": "message_received", "message": {"type": "HEARTBEAT", "seq": 10, "from": "node5", "to": "node4"}, "address": "172.22.0.2"}
+{"ts": 1794664815.4668489, "node": "node4", "event": "message_received", "message": {"type": "HEARTBEAT", "seq": 10, "from": "node3", "to": "node4"}, "address": "172.22.0.3"}
+{"ts": 1794664815.5505598, "node": "node4", "event": "message_sent", "message": {"type": "HEARTBEAT", "seq": 10, "from": "node4", "to": "node1"}}
+{"ts": 1794664815.5507987, "node": "node4", "event": "message_sent", "message": {"type": "HEARTBEAT", "seq": 10, "from": "node4", "to": "node2"}}
+{"ts": 1794664815.5510104, "node": "node4", "event": "message_sent", "message": {"type": "HEARTBEAT", "seq": 10, "from": "node4", "to": "node3"}}
+{"ts": 1794664815.5512054, "node": "node4", "event": "message_sent", "message": {"type": "HEARTBEAT", "seq": 10, "from": "node4", "to": "node5"}}
+{"ts": 1794664815.4670157, "node": "node3", "event": "message_sent", "message": {"type": "HEARTBEAT", "seq": 10, "from": "node3", "to": "node5"}}
+{"ts": 1794664815.64812, "node": "node4", "event": "message_received", "message": {"type": "HEARTBEAT", "seq": 10, "from": "node2", "to": "node4"}, "address": "172.22.0.5"}
+{"ts": 1794664815.551078, "node": "node3", "event": "message_received", "message": {"type": "HEARTBEAT", "seq": 10, "from": "node4", "to": "node3"}, "address": "172.22.0.4"}
+{"ts": 1794664815.647895, "node": "node3", "event": "message_received", "message": {"type": "HEARTBEAT", "seq": 10, "from": "node2", "to": "node3"}, "address": "172.22.0.5"}
+{"ts": 1794664815.740615, "node": "node3", "event": "message_received", "message": {"type": "HEARTBEAT", "seq": 10, "from": "node1", "to": "node3"}, "address": "172.22.0.6"}
+{"ts": 1794664815.8629124, "node": "node3", "event": "message_received", "message": {"type": "HEARTBEAT", "seq": 11, "from": "node5", "to": "node3"}, "address": "172.22.0.2"}
+{"ts": 1794664815.9679108, "node": "node3", "event": "message_sent", "message": {"type": "HEARTBEAT", "seq": 11, "from": "node3", "to": "node1"}}
+{"ts": 1794664815.9681807, "node": "node3", "event": "message_sent", "message": {"type": "HEARTBEAT", "seq": 11, "from": "node3", "to": "node2"}}
+{"ts": 1794664815.968446, "node": "node3", "event": "message_sent", "message": {"type": "HEARTBEAT", "seq": 11, "from": "node3", "to": "node4"}}
+{"ts": 1794664815.9686613, "node": "node3", "event": "message_sent", "message": {"type": "HEARTBEAT", "seq": 11, "from": "node3", "to": "node5"}}
+{"ts": 1794664812.639898, "node": "node1", "event": "message_received", "message": {"type": "HEARTBEAT", "seq": 4, "from": "node2", "to": "node1"}, "address": "172.22.0.5"}
+{"ts": 1794664814.4645617, "node": "node5", "event": "message_received", "message": {"type": "HEARTBEAT", "seq": 8, "from": "node3", "to": "node5"}, "address": "172.22.0.3"}
+{"ts": 1794664814.548932, "node": "node5", "event": "message_received", "message": {"type": "HEARTBEAT", "seq": 8, "from": "node4", "to": "node5"}, "address": "172.22.0.4"}
+{"ts": 1794664815.740887, "node": "node4", "event": "message_received", "message": {"type": "HEARTBEAT", "seq": 10, "from": "node1", "to": "node4"}, "address": "172.22.0.6"}
+{"ts": 1794664814.645583, "node": "node5", "event": "message_received", "message": {"type": "HEARTBEAT", "seq": 8, "from": "node2", "to": "node5"}, "address": "172.22.0.5"}
+{"ts": 1794664814.7384908, "node": "node5", "event": "message_received", "message": {"type": "HEARTBEAT", "seq": 8, "from": "node1", "to": "node5"}, "address": "172.22.0.6"}
+{"ts": 1794664814.8598106, "node": "node5", "event": "message_sent", "message": {"type": "HEARTBEAT", "seq": 9, "from": "node5", "to": "node1"}}
+{"ts": 1794664814.8601024, "node": "node5", "event": "message_sent", "message": {"type": "HEARTBEAT", "seq": 9, "from": "node5", "to": "node2"}}
+{"ts": 1794664814.8603678, "node": "node5", "event": "message_sent", "message": {"type": "HEARTBEAT", "seq": 9, "from": "node5", "to": "node3"}}
+{"ts": 1794664814.8606408, "node": "node5", "event": "message_sent", "message": {"type": "HEARTBEAT", "seq": 9, "from": "node5", "to": "node4"}}
+{"ts": 1794664814.965607, "node": "node5", "event": "message_received", "message": {"type": "HEARTBEAT", "seq": 9, "from": "node3", "to": "node5"}, "address": "172.22.0.3"}
+{"ts": 1794664812.73287, "node": "node1", "event": "message_sent", "message": {"type": "HEARTBEAT", "seq": 4, "from": "node1", "to": "node2"}}
+{"ts": 1794664812.7330768, "node": "node1", "event": "message_sent", "message": {"type": "HEARTBEAT", "seq": 4, "from": "node1", "to": "node3"}}
+{"ts": 1794664815.0502245, "node": "node5", "event": "message_received", "message": {"type": "HEARTBEAT", "seq": 9, "from": "node4", "to": "node5"}, "address": "172.22.0.4"}
+{"ts": 1794664815.147083, "node": "node5", "event": "message_received", "message": {"type": "HEARTBEAT", "seq": 9, "from": "node2", "to": "node5"}, "address": "172.22.0.5"}
+{"ts": 1794664815.2398717, "node": "node5", "event": "message_received", "message": {"type": "HEARTBEAT", "seq": 9, "from": "node1", "to": "node5"}, "address": "172.22.0.6"}
+{"ts": 1794664815.361131, "node": "node5", "event": "message_sent", "message": {"type": "HEARTBEAT", "seq": 10, "from": "node5", "to": "node1"}}
+{"ts": 1794664815.3613787, "node": "node5", "event": "message_sent", "message": {"type": "HEARTBEAT", "seq": 10, "from": "node5", "to": "node2"}}
+{"ts": 1794664815.8630779, "node": "node4", "event": "message_received", "message": {"type": "HEARTBEAT", "seq": 11, "from": "node5", "to": "node4"}, "address": "172.22.0.2"}
+{"ts": 1794664815.968509, "node": "node4", "event": "message_received", "message": {"type": "HEARTBEAT", "seq": 11, "from": "node3", "to": "node4"}, "address": "172.22.0.3"}
+{"ts": 1794664816.0519917, "node": "node4", "event": "message_sent", "message": {"type": "HEARTBEAT", "seq": 11, "from": "node4", "to": "node1"}}
+{"ts": 1794664816.0523055, "node": "node4", "event": "message_sent", "message": {"type": "HEARTBEAT", "seq": 11, "from": "node4", "to": "node2"}}
+{"ts": 1794664816.052498, "node": "node4", "event": "message_sent", "message": {"type": "HEARTBEAT", "seq": 11, "from": "node4", "to": "node3"}}
+{"ts": 1794664816.052741, "node": "node4", "event": "message_sent", "message": {"type": "HEARTBEAT", "seq": 11, "from": "node4", "to": "node5"}}
+{"ts": 1794664816.1495612, "node": "node4", "event": "message_received", "message": {"type": "HEARTBEAT", "seq": 11, "from": "node2", "to": "node4"}, "address": "172.22.0.5"}
+{"ts": 1794664816.2422621, "node": "node4", "event": "message_received", "message": {"type": "HEARTBEAT", "seq": 11, "from": "node1", "to": "node4"}, "address": "172.22.0.6"}
+{"ts": 1794664816.3647294, "node": "node4", "event": "message_received", "message": {"type": "HEARTBEAT", "seq": 12, "from": "node5", "to": "node4"}, "address": "172.22.0.2"}
+{"ts": 1794664815.361617, "node": "node5", "event": "message_sent", "message": {"type": "HEARTBEAT", "seq": 10, "from": "node5", "to": "node3"}}
+{"ts": 1794664812.7332273, "node": "node1", "event": "message_sent", "message": {"type": "HEARTBEAT", "seq": 4, "from": "node1", "to": "node4"}}
+{"ts": 1794664815.3618138, "node": "node5", "event": "message_sent", "message": {"type": "HEARTBEAT", "seq": 10, "from": "node5", "to": "node4"}}
+{"ts": 1794664812.7333653, "node": "node1", "event": "message_sent", "message": {"type": "HEARTBEAT", "seq": 4, "from": "node1", "to": "node5"}}
+{"ts": 1794664812.8544106, "node": "node1", "event": "message_received", "message": {"type": "HEARTBEAT", "seq": 5, "from": "node5", "to": "node1"}, "address": "172.22.0.2"}
+{"ts": 1794664816.0525796, "node": "node3", "event": "message_received", "message": {"type": "HEARTBEAT", "seq": 11, "from": "node4", "to": "node3"}, "address": "172.22.0.4"}
+{"ts": 1794664812.9589975, "node": "node1", "event": "message_received", "message": {"type": "HEARTBEAT", "seq": 5, "from": "node3", "to": "node1"}, "address": "172.22.0.3"}
+{"ts": 1794664813.0452716, "node": "node1", "event": "message_received", "message": {"type": "HEARTBEAT", "seq": 5, "from": "node4", "to": "node1"}, "address": "172.22.0.4"}
+{"ts": 1794664813.141458, "node": "node1", "event": "message_received", "message": {"type": "HEARTBEAT", "seq": 5, "from": "node2", "to": "node1"}, "address": "172.22.0.5"}
+{"ts": 1794664813.233845, "node": "node1", "event": "message_sent", "message": {"type": "HEARTBEAT", "seq": 5, "from": "node1", "to": "node2"}}
+{"ts": 1794664813.2341235, "node": "node1", "event": "message_sent", "message": {"type": "HEARTBEAT", "seq": 5, "from": "node1", "to": "node3"}}
+{"ts": 1794664815.4670846, "node": "node5", "event": "message_received", "message": {"type": "HEARTBEAT", "seq": 10, "from": "node3", "to": "node5"}, "address": "172.22.0.3"}
+{"ts": 1794664815.5512516, "node": "node5", "event": "message_received", "message": {"type": "HEARTBEAT", "seq": 10, "from": "node4", "to": "node5"}, "address": "172.22.0.4"}
+{"ts": 1794664813.234402, "node": "node1", "event": "message_sent", "message": {"type": "HEARTBEAT", "seq": 5, "from": "node1", "to": "node4"}}
+{"ts": 1794664815.6483474, "node": "node5", "event": "message_received", "message": {"type": "HEARTBEAT", "seq": 10, "from": "node2", "to": "node5"}, "address": "172.22.0.5"}
+{"ts": 1794664816.4699087, "node": "node4", "event": "message_received", "message": {"type": "HEARTBEAT", "seq": 12, "from": "node3", "to": "node4"}, "address": "172.22.0.3"}
+{"ts": 1794664816.5532253, "node": "node4", "event": "message_sent", "message": {"type": "HEARTBEAT", "seq": 12, "from": "node4", "to": "node1"}}
+{"ts": 1794664816.5535266, "node": "node4", "event": "message_sent", "message": {"type": "HEARTBEAT", "seq": 12, "from": "node4", "to": "node2"}}
+{"ts": 1794664816.5537796, "node": "node4", "event": "message_sent", "message": {"type": "HEARTBEAT", "seq": 12, "from": "node4", "to": "node3"}}
+{"ts": 1794664816.149281, "node": "node3", "event": "message_received", "message": {"type": "HEARTBEAT", "seq": 11, "from": "node2", "to": "node3"}, "address": "172.22.0.5"}
+{"ts": 1794664816.5539699, "node": "node4", "event": "message_sent", "message": {"type": "HEARTBEAT", "seq": 12, "from": "node4", "to": "node5"}}
+{"ts": 1794664816.2420192, "node": "node3", "event": "message_received", "message": {"type": "HEARTBEAT", "seq": 11, "from": "node1", "to": "node3"}, "address": "172.22.0.6"}
+{"ts": 1794664816.650618, "node": "node4", "event": "message_received", "message": {"type": "HEARTBEAT", "seq": 12, "from": "node2", "to": "node4"}, "address": "172.22.0.5"}
+{"ts": 1794664816.3644826, "node": "node3", "event": "message_received", "message": {"type": "HEARTBEAT", "seq": 12, "from": "node5", "to": "node3"}, "address": "172.22.0.2"}
+{"ts": 1794664816.469308, "node": "node3", "event": "message_sent", "message": {"type": "HEARTBEAT", "seq": 12, "from": "node3", "to": "node1"}}
+{"ts": 1794664816.4695647, "node": "node3", "event": "message_sent", "message": {"type": "HEARTBEAT", "seq": 12, "from": "node3", "to": "node2"}}
+{"ts": 1794664816.469842, "node": "node3", "event": "message_sent", "message": {"type": "HEARTBEAT", "seq": 12, "from": "node3", "to": "node4"}}
+{"ts": 1794664816.4700806, "node": "node3", "event": "message_sent", "message": {"type": "HEARTBEAT", "seq": 12, "from": "node3", "to": "node5"}}
+{"ts": 1794664816.553845, "node": "node3", "event": "message_received", "message": {"type": "HEARTBEAT", "seq": 12, "from": "node4", "to": "node3"}, "address": "172.22.0.4"}
+{"ts": 1794664816.6504521, "node": "node3", "event": "message_received", "message": {"type": "HEARTBEAT", "seq": 12, "from": "node2", "to": "node3"}, "address": "172.22.0.5"}
+{"ts": 1794664816.743006, "node": "node3", "event": "message_received", "message": {"type": "HEARTBEAT", "seq": 12, "from": "node1", "to": "node3"}, "address": "172.22.0.6"}
+{"ts": 1794664816.7431588, "node": "node4", "event": "message_received", "message": {"type": "HEARTBEAT", "seq": 12, "from": "node1", "to": "node4"}, "address": "172.22.0.6"}
+{"ts": 1794664816.9720945, "node": "node4", "event": "message_received", "message": {"type": "HEARTBEAT", "seq": 13, "from": "node3", "to": "node4"}, "address": "172.22.0.3"}
+{"ts": 1794664817.0546365, "node": "node4", "event": "message_sent", "message": {"type": "HEARTBEAT", "seq": 13, "from": "node4", "to": "node1"}}
+{"ts": 1794664817.0548556, "node": "node4", "event": "message_sent", "message": {"type": "HEARTBEAT", "seq": 13, "from": "node4", "to": "node2"}}
+{"ts": 1794664817.055058, "node": "node4", "event": "message_sent", "message": {"type": "HEARTBEAT", "seq": 13, "from": "node4", "to": "node3"}}
+{"ts": 1794664817.058255, "node": "node4", "event": "message_send_error", "message": {"type": "HEARTBEAT", "seq": 13, "from": "node4", "to": "node5"}, "error": "[Errno -2] Name or service not known"}
+{"ts": 1794664817.1518261, "node": "node4", "event": "message_received", "message": {"type": "HEARTBEAT", "seq": 13, "from": "node2", "to": "node4"}, "address": "172.22.0.5"}
+{"ts": 1794664817.2445729, "node": "node4", "event": "message_received", "message": {"type": "HEARTBEAT", "seq": 13, "from": "node1", "to": "node4"}, "address": "172.22.0.6"}
+{"ts": 1794664817.4880252, "node": "node4", "event": "message_received", "message": {"type": "HEARTBEAT", "seq": 14, "from": "node3", "to": "node4"}, "address": "172.22.0.3"}
+{"ts": 1794664817.5587919, "node": "node4", "event": "message_sent", "message": {"type": "HEARTBEAT", "seq": 14, "from": "node4", "to": "node1"}}
+{"ts": 1794664817.55907, "node": "node4", "event": "message_sent", "message": {"type": "HEARTBEAT", "seq": 14, "from": "node4", "to": "node2"}}
+{"ts": 1794664815.7411063, "node": "node5", "event": "message_received", "message": {"type": "HEARTBEAT", "seq": 10, "from": "node1", "to": "node5"}, "address": "172.22.0.6"}
+{"ts": 1794664815.8623056, "node": "node5", "event": "message_sent", "message": {"type": "HEARTBEAT", "seq": 11, "from": "node5", "to": "node1"}}
+{"ts": 1794664815.8625822, "node": "node5", "event": "message_sent", "message": {"type": "HEARTBEAT", "seq": 11, "from": "node5", "to": "node2"}}
+{"ts": 1794664815.8628333, "node": "node5", "event": "message_sent", "message": {"type": "HEARTBEAT", "seq": 11, "from": "node5", "to": "node3"}}
+{"ts": 1794664815.863025, "node": "node5", "event": "message_sent", "message": {"type": "HEARTBEAT", "seq": 11, "from": "node5", "to": "node4"}}
+{"ts": 1794664815.9687223, "node": "node5", "event": "message_received", "message": {"type": "HEARTBEAT", "seq": 11, "from": "node3", "to": "node5"}, "address": "172.22.0.3"}
+{"ts": 1794664816.0528128, "node": "node5", "event": "message_received", "message": {"type": "HEARTBEAT", "seq": 11, "from": "node4", "to": "node5"}, "address": "172.22.0.4"}
+{"ts": 1794664816.1497834, "node": "node5", "event": "message_received", "message": {"type": "HEARTBEAT", "seq": 11, "from": "node2", "to": "node5"}, "address": "172.22.0.5"}
+{"ts": 1794664817.5592487, "node": "node4", "event": "message_sent", "message": {"type": "HEARTBEAT", "seq": 14, "from": "node4", "to": "node3"}}
+{"ts": 1794664816.9708245, "node": "node3", "event": "message_sent", "message": {"type": "HEARTBEAT", "seq": 13, "from": "node3", "to": "node1"}}
+{"ts": 1794664817.562244, "node": "node4", "event": "message_send_error", "message": {"type": "HEARTBEAT", "seq": 14, "from": "node4", "to": "node5"}, "error": "[Errno -2] Name or service not known"}
+{"ts": 1794664817.6577022, "node": "node4", "event": "message_received", "message": {"type": "HEARTBEAT", "seq": 14, "from": "node2", "to": "node4"}, "address": "172.22.0.5"}
+{"ts": 1794664817.7506497, "node": "node4", "event": "message_received", "message": {"type": "HEARTBEAT", "seq": 14, "from": "node1", "to": "node4"}, "address": "172.22.0.6"}
+{"ts": 1794664817.9940567, "node": "node4", "event": "message_received", "message": {"type": "HEARTBEAT", "seq": 15, "from": "node3", "to": "node4"}, "address": "172.22.0.3"}
+{"ts": 1794664818.0628157, "node": "node4", "event": "message_sent", "message": {"type": "HEARTBEAT", "seq": 15, "from": "node4", "to": "node1"}}
+{"ts": 1794664818.063065, "node": "node4", "event": "message_sent", "message": {"type": "HEARTBEAT", "seq": 15, "from": "node4", "to": "node2"}}
+{"ts": 1794664818.0633008, "node": "node4", "event": "message_sent", "message": {"type": "HEARTBEAT", "seq": 15, "from": "node4", "to": "node3"}}
+{"ts": 1794664818.0666735, "node": "node4", "event": "message_send_error", "message": {"type": "HEARTBEAT", "seq": 15, "from": "node4", "to": "node5"}, "error": "[Errno -2] Name or service not known"}
+{"ts": 1794664818.1638114, "node": "node4", "event": "message_received", "message": {"type": "HEARTBEAT", "seq": 15, "from": "node2", "to": "node4"}, "address": "172.22.0.5"}
+{"ts": 1794664813.2346613, "node": "node1", "event": "message_sent", "message": {"type": "HEARTBEAT", "seq": 5, "from": "node1", "to": "node5"}}
+{"ts": 1794664818.2572725, "node": "node4", "event": "message_received", "message": {"type": "HEARTBEAT", "seq": 15, "from": "node1", "to": "node4"}, "address": "172.22.0.6"}
+{"ts": 1794664818.3659527, "node": "node4", "event": "message_received", "message": {"type": "ELECTION", "election_id": "node1:2d193924", "from": "node1", "to": "node4"}, "address": "172.22.0.6"}
+{"ts": 1794664818.366155, "node": "node4", "event": "message_sent", "message": {"type": "OK", "election_id": "node1:2d193924", "from": "node4", "to": "node1"}}
+{"ts": 1794664818.3661892, "node": "node4", "event": "election_request_received", "peer": "node1", "election_id": "node1:2d193924"}
+{"ts": 1794664818.3662453, "node": "node4", "event": "election_started", "election_id": "node4:1a03d0a9", "reason": "election_request_from_node1", "higher_peers": ["node5"]}
+{"ts": 1794664818.3664372, "node": "node4", "event": "message_received", "message": {"type": "ELECTION", "election_id": "node3:31423742", "from": "node3", "to": "node4"}, "address": "172.22.0.3"}
+{"ts": 1794664818.366689, "node": "node4", "event": "message_sent", "message": {"type": "OK", "election_id": "node3:31423742", "from": "node4", "to": "node3"}}
+{"ts": 1794664816.9717393, "node": "node3", "event": "message_sent", "message": {"type": "HEARTBEAT", "seq": 13, "from": "node3", "to": "node2"}}
+{"ts": 1794664816.9720223, "node": "node3", "event": "message_sent", "message": {"type": "HEARTBEAT", "seq": 13, "from": "node3", "to": "node4"}}
+{"ts": 1794664816.986696, "node": "node3", "event": "message_send_error", "message": {"type": "HEARTBEAT", "seq": 13, "from": "node3", "to": "node5"}, "error": "[Errno -2] Name or service not known"}
+{"ts": 1794664817.055126, "node": "node3", "event": "message_received", "message": {"type": "HEARTBEAT", "seq": 13, "from": "node4", "to": "node3"}, "address": "172.22.0.4"}
+{"ts": 1794664817.1516023, "node": "node3", "event": "message_received", "message": {"type": "HEARTBEAT", "seq": 13, "from": "node2", "to": "node3"}, "address": "172.22.0.5"}
+{"ts": 1794664817.2443805, "node": "node3", "event": "message_received", "message": {"type": "HEARTBEAT", "seq": 13, "from": "node1", "to": "node3"}, "address": "172.22.0.6"}
+{"ts": 1794664817.4874592, "node": "node3", "event": "message_sent", "message": {"type": "HEARTBEAT", "seq": 14, "from": "node3", "to": "node1"}}
+{"ts": 1794664817.487736, "node": "node3", "event": "message_sent", "message": {"type": "HEARTBEAT", "seq": 14, "from": "node3", "to": "node2"}}
+{"ts": 1794664818.3667195, "node": "node4", "event": "election_request_received", "peer": "node3", "election_id": "node3:31423742"}
+{"ts": 1794664817.4879522, "node": "node3", "event": "message_sent", "message": {"type": "HEARTBEAT", "seq": 14, "from": "node3", "to": "node4"}}
+{"ts": 1794664818.3667476, "node": "node4", "event": "election_already_running", "election_id": "node4:1a03d0a9", "reason": "election_request_from_node3"}
+{"ts": 1794664817.4928205, "node": "node3", "event": "message_send_error", "message": {"type": "HEARTBEAT", "seq": 14, "from": "node3", "to": "node5"}, "error": "[Errno -2] Name or service not known"}
+{"ts": 1794664817.559314, "node": "node3", "event": "message_received", "message": {"type": "HEARTBEAT", "seq": 14, "from": "node4", "to": "node3"}, "address": "172.22.0.4"}
+{"ts": 1794664817.6574335, "node": "node3", "event": "message_received", "message": {"type": "HEARTBEAT", "seq": 14, "from": "node2", "to": "node3"}, "address": "172.22.0.5"}
+{"ts": 1794664817.7505076, "node": "node3", "event": "message_received", "message": {"type": "HEARTBEAT", "seq": 14, "from": "node1", "to": "node3"}, "address": "172.22.0.6"}
+{"ts": 1794664817.9933372, "node": "node3", "event": "message_sent", "message": {"type": "HEARTBEAT", "seq": 15, "from": "node3", "to": "node1"}}
+{"ts": 1794664817.9936445, "node": "node3", "event": "message_sent", "message": {"type": "HEARTBEAT", "seq": 15, "from": "node3", "to": "node2"}}
+{"ts": 1794664817.9939888, "node": "node3", "event": "message_sent", "message": {"type": "HEARTBEAT", "seq": 15, "from": "node3", "to": "node4"}}
+{"ts": 1794664818.3667846, "node": "node4", "event": "message_received", "message": {"type": "ELECTION", "election_id": "node2:0db7d11e", "from": "node2", "to": "node4"}, "address": "172.22.0.5"}
+{"ts": 1794664818.0007584, "node": "node3", "event": "message_send_error", "message": {"type": "HEARTBEAT", "seq": 15, "from": "node3", "to": "node5"}, "error": "[Errno -2] Name or service not known"}
+{"ts": 1794664813.3559344, "node": "node1", "event": "message_received", "message": {"type": "HEARTBEAT", "seq": 6, "from": "node5", "to": "node1"}, "address": "172.22.0.2"}
+{"ts": 1794664818.0633724, "node": "node3", "event": "message_received", "message": {"type": "HEARTBEAT", "seq": 15, "from": "node4", "to": "node3"}, "address": "172.22.0.4"}
+{"ts": 1794664818.1635208, "node": "node3", "event": "message_received", "message": {"type": "HEARTBEAT", "seq": 15, "from": "node2", "to": "node3"}, "address": "172.22.0.5"}
+{"ts": 1794664818.2570245, "node": "node3", "event": "message_received", "message": {"type": "HEARTBEAT", "seq": 15, "from": "node1", "to": "node3"}, "address": "172.22.0.6"}
+{"ts": 1794664818.3655515, "node": "node3", "event": "message_received", "message": {"type": "ELECTION", "election_id": "node1:2d193924", "from": "node1", "to": "node3"}, "address": "172.22.0.6"}
+{"ts": 1794664816.2424786, "node": "node5", "event": "message_received", "message": {"type": "HEARTBEAT", "seq": 11, "from": "node1", "to": "node5"}, "address": "172.22.0.6"}
+{"ts": 1794664816.3638291, "node": "node5", "event": "message_sent", "message": {"type": "HEARTBEAT", "seq": 12, "from": "node5", "to": "node1"}}
+{"ts": 1794664816.3641276, "node": "node5", "event": "message_sent", "message": {"type": "HEARTBEAT", "seq": 12, "from": "node5", "to": "node2"}}
+{"ts": 1794664816.3643818, "node": "node5", "event": "message_sent", "message": {"type": "HEARTBEAT", "seq": 12, "from": "node5", "to": "node3"}}
+{"ts": 1794664816.3646493, "node": "node5", "event": "message_sent", "message": {"type": "HEARTBEAT", "seq": 12, "from": "node5", "to": "node4"}}
+{"ts": 1794664813.4605122, "node": "node1", "event": "message_received", "message": {"type": "HEARTBEAT", "seq": 6, "from": "node3", "to": "node1"}, "address": "172.22.0.3"}
+{"ts": 1794664813.5465672, "node": "node1", "event": "message_received", "message": {"type": "HEARTBEAT", "seq": 6, "from": "node4", "to": "node1"}, "address": "172.22.0.4"}
+{"ts": 1794664813.6422617, "node": "node1", "event": "message_received", "message": {"type": "HEARTBEAT", "seq": 6, "from": "node2", "to": "node1"}, "address": "172.22.0.5"}
+{"ts": 1794664813.7350736, "node": "node1", "event": "message_sent", "message": {"type": "HEARTBEAT", "seq": 6, "from": "node1", "to": "node2"}}
+{"ts": 1794664813.7353218, "node": "node1", "event": "message_sent", "message": {"type": "HEARTBEAT", "seq": 6, "from": "node1", "to": "node3"}}
+{"ts": 1794664813.7355475, "node": "node1", "event": "message_sent", "message": {"type": "HEARTBEAT", "seq": 6, "from": "node1", "to": "node4"}}
+{"ts": 1794664813.7357967, "node": "node1", "event": "message_sent", "message": {"type": "HEARTBEAT", "seq": 6, "from": "node1", "to": "node5"}}
+{"ts": 1794664813.8572202, "node": "node1", "event": "message_received", "message": {"type": "HEARTBEAT", "seq": 7, "from": "node5", "to": "node1"}, "address": "172.22.0.2"}
+{"ts": 1794664816.4701438, "node": "node5", "event": "message_received", "message": {"type": "HEARTBEAT", "seq": 12, "from": "node3", "to": "node5"}, "address": "172.22.0.3"}
+{"ts": 1794664816.5540273, "node": "node5", "event": "message_received", "message": {"type": "HEARTBEAT", "seq": 12, "from": "node4", "to": "node5"}, "address": "172.22.0.4"}
+{"ts": 1794664816.6507585, "node": "node5", "event": "message_received", "message": {"type": "HEARTBEAT", "seq": 12, "from": "node2", "to": "node5"}, "address": "172.22.0.5"}
+{"ts": 1794664818.3669384, "node": "node4", "event": "message_sent", "message": {"type": "OK", "election_id": "node2:0db7d11e", "from": "node4", "to": "node2"}}
+{"ts": 1794664818.3669636, "node": "node4", "event": "election_request_received", "peer": "node2", "election_id": "node2:0db7d11e"}
+{"ts": 1794664818.3669925, "node": "node4", "event": "election_already_running", "election_id": "node4:1a03d0a9", "reason": "election_request_from_node2"}
+{"ts": 1794664813.9621427, "node": "node1", "event": "message_received", "message": {"type": "HEARTBEAT", "seq": 7, "from": "node3", "to": "node1"}, "address": "172.22.0.3"}
+{"ts": 1794664818.3692374, "node": "node4", "event": "message_send_error", "message": {"type": "ELECTION", "election_id": "node4:1a03d0a9", "from": "node4", "to": "node5"}, "error": "[Errno -2] Name or service not known"}
+{"ts": 1794664818.4224973, "node": "node4", "event": "suspect", "peer": "node5", "silence": 2.058}
+{"ts": 1794664818.422538, "node": "node4", "event": "election_already_running", "election_id": "node4:1a03d0a9", "reason": "coordinator_suspected"}
+{"ts": 1794664818.5018787, "node": "node4", "event": "message_received", "message": {"type": "HEARTBEAT", "seq": 16, "from": "node3", "to": "node4"}, "address": "172.22.0.3"}
+{"ts": 1794664818.5671616, "node": "node4", "event": "message_sent", "message": {"type": "HEARTBEAT", "seq": 16, "from": "node4", "to": "node1"}}
+{"ts": 1794664818.5673902, "node": "node4", "event": "message_sent", "message": {"type": "HEARTBEAT", "seq": 16, "from": "node4", "to": "node2"}}
+{"ts": 1794664818.5675747, "node": "node4", "event": "message_sent", "message": {"type": "HEARTBEAT", "seq": 16, "from": "node4", "to": "node3"}}
+{"ts": 1794664814.0475173, "node": "node1", "event": "message_received", "message": {"type": "HEARTBEAT", "seq": 7, "from": "node4", "to": "node1"}, "address": "172.22.0.4"}
+{"ts": 1794664818.570442, "node": "node4", "event": "message_send_error", "message": {"type": "HEARTBEAT", "seq": 16, "from": "node4", "to": "node5"}, "error": "[Errno -2] Name or service not known"}
+{"ts": 1794664814.1435678, "node": "node1", "event": "message_received", "message": {"type": "HEARTBEAT", "seq": 7, "from": "node2", "to": "node1"}, "address": "172.22.0.5"}
+{"ts": 1794664818.3658288, "node": "node3", "event": "message_sent", "message": {"type": "OK", "election_id": "node1:2d193924", "from": "node3", "to": "node1"}}
+{"ts": 1794664814.2363477, "node": "node1", "event": "message_sent", "message": {"type": "HEARTBEAT", "seq": 7, "from": "node1", "to": "node2"}}
+{"ts": 1794664818.3658595, "node": "node3", "event": "election_request_received", "peer": "node1", "election_id": "node1:2d193924"}
+{"ts": 1794664814.2366292, "node": "node1", "event": "message_sent", "message": {"type": "HEARTBEAT", "seq": 7, "from": "node1", "to": "node3"}}
+{"ts": 1794664818.3659148, "node": "node3", "event": "election_started", "election_id": "node3:31423742", "reason": "election_request_from_node1", "higher_peers": ["node4", "node5"]}
+{"ts": 1794664818.3661423, "node": "node3", "event": "message_received", "message": {"type": "ELECTION", "election_id": "node2:0db7d11e", "from": "node2", "to": "node3"}, "address": "172.22.0.5"}
+{"ts": 1794664818.366203, "node": "node3", "event": "message_sent", "message": {"type": "ELECTION", "election_id": "node3:31423742", "from": "node3", "to": "node4"}}
+{"ts": 1794664818.366285, "node": "node3", "event": "message_sent", "message": {"type": "OK", "election_id": "node2:0db7d11e", "from": "node3", "to": "node2"}}
+{"ts": 1794664818.3663042, "node": "node3", "event": "election_request_received", "peer": "node2", "election_id": "node2:0db7d11e"}
+{"ts": 1794664818.3663256, "node": "node3", "event": "election_already_running", "election_id": "node3:31423742", "reason": "election_request_from_node2"}
+{"ts": 1794664818.3667045, "node": "node3", "event": "message_received", "message": {"type": "OK", "election_id": "node3:31423742", "from": "node4", "to": "node3"}, "address": "172.22.0.4"}
+{"ts": 1794664818.366726, "node": "node3", "event": "election_ok_received", "peer": "node4", "election_id": "node3:31423742"}
+{"ts": 1794664818.6679752, "node": "node4", "event": "message_received", "message": {"type": "HEARTBEAT", "seq": 16, "from": "node2", "to": "node4"}, "address": "172.22.0.5"}
+{"ts": 1794664818.763746, "node": "node4", "event": "message_received", "message": {"type": "HEARTBEAT", "seq": 16, "from": "node1", "to": "node4"}, "address": "172.22.0.6"}
+{"ts": 1794664819.0060828, "node": "node4", "event": "message_received", "message": {"type": "HEARTBEAT", "seq": 17, "from": "node3", "to": "node4"}, "address": "172.22.0.3"}
+{"ts": 1794664819.0712013, "node": "node4", "event": "message_sent", "message": {"type": "HEARTBEAT", "seq": 17, "from": "node4", "to": "node1"}}
+{"ts": 1794664819.071443, "node": "node4", "event": "message_sent", "message": {"type": "HEARTBEAT", "seq": 17, "from": "node4", "to": "node2"}}
+{"ts": 1794664819.0716968, "node": "node4", "event": "message_sent", "message": {"type": "HEARTBEAT", "seq": 17, "from": "node4", "to": "node3"}}
+{"ts": 1794664818.369226, "node": "node3", "event": "message_send_error", "message": {"type": "ELECTION", "election_id": "node3:31423742", "from": "node3", "to": "node5"}, "error": "[Errno -2] Name or service not known"}
+{"ts": 1794664819.0787067, "node": "node4", "event": "message_send_error", "message": {"type": "HEARTBEAT", "seq": 17, "from": "node4", "to": "node5"}, "error": "[Errno -2] Name or service not known"}
+{"ts": 1794664819.1735091, "node": "node4", "event": "message_received", "message": {"type": "HEARTBEAT", "seq": 17, "from": "node2", "to": "node4"}, "address": "172.22.0.5"}
+{"ts": 1794664819.2694285, "node": "node4", "event": "message_received", "message": {"type": "HEARTBEAT", "seq": 17, "from": "node1", "to": "node4"}, "address": "172.22.0.6"}
+{"ts": 1794664814.2368832, "node": "node1", "event": "message_sent", "message": {"type": "HEARTBEAT", "seq": 7, "from": "node1", "to": "node4"}}
+{"ts": 1794664819.5102522, "node": "node4", "event": "message_received", "message": {"type": "HEARTBEAT", "seq": 18, "from": "node3", "to": "node4"}, "address": "172.22.0.3"}
+{"ts": 1794664814.2370794, "node": "node1", "event": "message_sent", "message": {"type": "HEARTBEAT", "seq": 7, "from": "node1", "to": "node5"}}
+{"ts": 1794664819.5792592, "node": "node4", "event": "message_sent", "message": {"type": "HEARTBEAT", "seq": 18, "from": "node4", "to": "node1"}}
+{"ts": 1794664819.579478, "node": "node4", "event": "message_sent", "message": {"type": "HEARTBEAT", "seq": 18, "from": "node4", "to": "node2"}}
+{"ts": 1794664819.5797198, "node": "node4", "event": "message_sent", "message": {"type": "HEARTBEAT", "seq": 18, "from": "node4", "to": "node3"}}
+{"ts": 1794664819.5827782, "node": "node4", "event": "message_send_error", "message": {"type": "HEARTBEAT", "seq": 18, "from": "node4", "to": "node5"}, "error": "[Errno -2] Name or service not known"}
+{"ts": 1794664819.6778958, "node": "node4", "event": "message_received", "message": {"type": "HEARTBEAT", "seq": 18, "from": "node2", "to": "node4"}, "address": "172.22.0.5"}
+{"ts": 1794664819.7756093, "node": "node4", "event": "message_received", "message": {"type": "HEARTBEAT", "seq": 18, "from": "node1", "to": "node4"}, "address": "172.22.0.6"}
+{"ts": 1794664820.0142746, "node": "node4", "event": "message_received", "message": {"type": "HEARTBEAT", "seq": 19, "from": "node3", "to": "node4"}, "address": "172.22.0.3"}
+{"ts": 1794664814.3586059, "node": "node1", "event": "message_received", "message": {"type": "HEARTBEAT", "seq": 8, "from": "node5", "to": "node1"}, "address": "172.22.0.2"}
+{"ts": 1794664814.4637327, "node": "node1", "event": "message_received", "message": {"type": "HEARTBEAT", "seq": 8, "from": "node3", "to": "node1"}, "address": "172.22.0.3"}
+{"ts": 1794664814.5484638, "node": "node1", "event": "message_received", "message": {"type": "HEARTBEAT", "seq": 8, "from": "node4", "to": "node1"}, "address": "172.22.0.4"}
+{"ts": 1794664814.6448786, "node": "node1", "event": "message_received", "message": {"type": "HEARTBEAT", "seq": 8, "from": "node2", "to": "node1"}, "address": "172.22.0.5"}
+{"ts": 1794664814.7376533, "node": "node1", "event": "message_sent", "message": {"type": "HEARTBEAT", "seq": 8, "from": "node1", "to": "node2"}}
+{"ts": 1794664814.7379012, "node": "node1", "event": "message_sent", "message": {"type": "HEARTBEAT", "seq": 8, "from": "node1", "to": "node3"}}
+{"ts": 1794664814.7381496, "node": "node1", "event": "message_sent", "message": {"type": "HEARTBEAT", "seq": 8, "from": "node1", "to": "node4"}}
+{"ts": 1794664814.738422, "node": "node1", "event": "message_sent", "message": {"type": "HEARTBEAT", "seq": 8, "from": "node1", "to": "node5"}}
+{"ts": 1794664818.3692539, "node": "node3", "event": "election_yielded", "election_id": "node3:31423742", "reason": "higher_node_replied"}
+{"ts": 1794664818.4521058, "node": "node3", "event": "suspect", "peer": "node5", "silence": 2.088}
+{"ts": 1794664818.4521606, "node": "node3", "event": "election_already_running", "election_id": "node3:31423742", "reason": "coordinator_suspected"}
+{"ts": 1794664818.501275, "node": "node3", "event": "message_sent", "message": {"type": "HEARTBEAT", "seq": 16, "from": "node3", "to": "node1"}}
+{"ts": 1794664818.5015738, "node": "node3", "event": "message_sent", "message": {"type": "HEARTBEAT", "seq": 16, "from": "node3", "to": "node2"}}
+{"ts": 1794664814.859878, "node": "node1", "event": "message_received", "message": {"type": "HEARTBEAT", "seq": 9, "from": "node5", "to": "node1"}, "address": "172.22.0.2"}
+{"ts": 1794664814.9649763, "node": "node1", "event": "message_received", "message": {"type": "HEARTBEAT", "seq": 9, "from": "node3", "to": "node1"}, "address": "172.22.0.3"}
+{"ts": 1794664815.0494773, "node": "node1", "event": "message_received", "message": {"type": "HEARTBEAT", "seq": 9, "from": "node4", "to": "node1"}, "address": "172.22.0.4"}
+{"ts": 1794664815.1463232, "node": "node1", "event": "message_received", "message": {"type": "HEARTBEAT", "seq": 9, "from": "node2", "to": "node1"}, "address": "172.22.0.5"}
+{"ts": 1794664815.2390337, "node": "node1", "event": "message_sent", "message": {"type": "HEARTBEAT", "seq": 9, "from": "node1", "to": "node2"}}
+{"ts": 1794664815.2392926, "node": "node1", "event": "message_sent", "message": {"type": "HEARTBEAT", "seq": 9, "from": "node1", "to": "node3"}}
+{"ts": 1794664815.2395098, "node": "node1", "event": "message_sent", "message": {"type": "HEARTBEAT", "seq": 9, "from": "node1", "to": "node4"}}
+{"ts": 1794664815.2397883, "node": "node1", "event": "message_sent", "message": {"type": "HEARTBEAT", "seq": 9, "from": "node1", "to": "node5"}}
+{"ts": 1794664815.3611941, "node": "node1", "event": "message_received", "message": {"type": "HEARTBEAT", "seq": 10, "from": "node5", "to": "node1"}, "address": "172.22.0.2"}
+{"ts": 1794664818.5018258, "node": "node3", "event": "message_sent", "message": {"type": "HEARTBEAT", "seq": 16, "from": "node3", "to": "node4"}}
+{"ts": 1794664815.4662614, "node": "node1", "event": "message_received", "message": {"type": "HEARTBEAT", "seq": 10, "from": "node3", "to": "node1"}, "address": "172.22.0.3"}
+{"ts": 1794664818.5047224, "node": "node3", "event": "message_send_error", "message": {"type": "HEARTBEAT", "seq": 16, "from": "node3", "to": "node5"}, "error": "[Errno -2] Name or service not known"}
+{"ts": 1794664818.5676992, "node": "node3", "event": "message_received", "message": {"type": "HEARTBEAT", "seq": 16, "from": "node4", "to": "node3"}, "address": "172.22.0.4"}
+{"ts": 1794664818.667659, "node": "node3", "event": "message_received", "message": {"type": "HEARTBEAT", "seq": 16, "from": "node2", "to": "node3"}, "address": "172.22.0.5"}
+{"ts": 1794664818.7635632, "node": "node3", "event": "message_received", "message": {"type": "HEARTBEAT", "seq": 16, "from": "node1", "to": "node3"}, "address": "172.22.0.6"}
+{"ts": 1794664819.00553, "node": "node3", "event": "message_sent", "message": {"type": "HEARTBEAT", "seq": 17, "from": "node3", "to": "node1"}}
+{"ts": 1794664819.0058398, "node": "node3", "event": "message_sent", "message": {"type": "HEARTBEAT", "seq": 17, "from": "node3", "to": "node2"}}
+{"ts": 1794664819.0060065, "node": "node3", "event": "message_sent", "message": {"type": "HEARTBEAT", "seq": 17, "from": "node3", "to": "node4"}}
+{"ts": 1794664819.0089333, "node": "node3", "event": "message_send_error", "message": {"type": "HEARTBEAT", "seq": 17, "from": "node3", "to": "node5"}, "error": "[Errno -2] Name or service not known"}
+{"ts": 1794664819.0717158, "node": "node3", "event": "message_received", "message": {"type": "HEARTBEAT", "seq": 17, "from": "node4", "to": "node3"}, "address": "172.22.0.4"}
+{"ts": 1794664819.1732528, "node": "node3", "event": "message_received", "message": {"type": "HEARTBEAT", "seq": 17, "from": "node2", "to": "node3"}, "address": "172.22.0.5"}
+{"ts": 1794664819.2691765, "node": "node3", "event": "message_received", "message": {"type": "HEARTBEAT", "seq": 17, "from": "node1", "to": "node3"}, "address": "172.22.0.6"}
+{"ts": 1794664819.5096126, "node": "node3", "event": "message_sent", "message": {"type": "HEARTBEAT", "seq": 18, "from": "node3", "to": "node1"}}
+{"ts": 1794664819.5098917, "node": "node3", "event": "message_sent", "message": {"type": "HEARTBEAT", "seq": 18, "from": "node3", "to": "node2"}}
+{"ts": 1794664819.5101607, "node": "node3", "event": "message_sent", "message": {"type": "HEARTBEAT", "seq": 18, "from": "node3", "to": "node4"}}
+{"ts": 1794664819.513148, "node": "node3", "event": "message_send_error", "message": {"type": "HEARTBEAT", "seq": 18, "from": "node3", "to": "node5"}, "error": "[Errno -2] Name or service not known"}
+{"ts": 1794664819.5797977, "node": "node3", "event": "message_received", "message": {"type": "HEARTBEAT", "seq": 18, "from": "node4", "to": "node3"}, "address": "172.22.0.4"}
+{"ts": 1794664819.6776962, "node": "node3", "event": "message_received", "message": {"type": "HEARTBEAT", "seq": 18, "from": "node2", "to": "node3"}, "address": "172.22.0.5"}
+{"ts": 1794664819.7753427, "node": "node3", "event": "message_received", "message": {"type": "HEARTBEAT", "seq": 18, "from": "node1", "to": "node3"}, "address": "172.22.0.6"}
+{"ts": 1794664820.083328, "node": "node4", "event": "message_sent", "message": {"type": "HEARTBEAT", "seq": 19, "from": "node4", "to": "node1"}}
+{"ts": 1794664815.5506692, "node": "node1", "event": "message_received", "message": {"type": "HEARTBEAT", "seq": 10, "from": "node4", "to": "node1"}, "address": "172.22.0.4"}
+{"ts": 1794664815.6476274, "node": "node1", "event": "message_received", "message": {"type": "HEARTBEAT", "seq": 10, "from": "node2", "to": "node1"}, "address": "172.22.0.5"}
+{"ts": 1794664815.7402809, "node": "node1", "event": "message_sent", "message": {"type": "HEARTBEAT", "seq": 10, "from": "node1", "to": "node2"}}
+{"ts": 1794664815.7405584, "node": "node1", "event": "message_sent", "message": {"type": "HEARTBEAT", "seq": 10, "from": "node1", "to": "node3"}}
+{"ts": 1794664815.7408152, "node": "node1", "event": "message_sent", "message": {"type": "HEARTBEAT", "seq": 10, "from": "node1", "to": "node4"}}
+{"ts": 1794664815.7410483, "node": "node1", "event": "message_sent", "message": {"type": "HEARTBEAT", "seq": 10, "from": "node1", "to": "node5"}}
+{"ts": 1794664815.8623548, "node": "node1", "event": "message_received", "message": {"type": "HEARTBEAT", "seq": 11, "from": "node5", "to": "node1"}, "address": "172.22.0.2"}
+{"ts": 1794664815.9679778, "node": "node1", "event": "message_received", "message": {"type": "HEARTBEAT", "seq": 11, "from": "node3", "to": "node1"}, "address": "172.22.0.3"}
+{"ts": 1794664820.0835543, "node": "node4", "event": "message_sent", "message": {"type": "HEARTBEAT", "seq": 19, "from": "node4", "to": "node2"}}
+{"ts": 1794664820.0838068, "node": "node4", "event": "message_sent", "message": {"type": "HEARTBEAT", "seq": 19, "from": "node4", "to": "node3"}}
+{"ts": 1794664820.0869942, "node": "node4", "event": "message_send_error", "message": {"type": "HEARTBEAT", "seq": 19, "from": "node4", "to": "node5"}, "error": "[Errno -2] Name or service not known"}
+{"ts": 1794664820.1920369, "node": "node4", "event": "message_received", "message": {"type": "HEARTBEAT", "seq": 19, "from": "node2", "to": "node4"}, "address": "172.22.0.5"}
+{"ts": 1794664820.2798746, "node": "node4", "event": "message_received", "message": {"type": "HEARTBEAT", "seq": 19, "from": "node1", "to": "node4"}, "address": "172.22.0.6"}
+{"ts": 1794664820.3698585, "node": "node4", "event": "message_sent", "message": {"type": "COORDINATOR", "coordinator": "node4", "election_id": "node4:1a03d0a9", "from": "node4", "to": "node1"}}
+{"ts": 1794664820.370136, "node": "node4", "event": "message_sent", "message": {"type": "COORDINATOR", "coordinator": "node4", "election_id": "node4:1a03d0a9", "from": "node4", "to": "node2"}}
+{"ts": 1794664820.370421, "node": "node4", "event": "message_sent", "message": {"type": "COORDINATOR", "coordinator": "node4", "election_id": "node4:1a03d0a9", "from": "node4", "to": "node3"}}
+{"ts": 1794664820.013672, "node": "node3", "event": "message_sent", "message": {"type": "HEARTBEAT", "seq": 19, "from": "node3", "to": "node1"}}
+{"ts": 1794664820.3707237, "node": "node4", "event": "message_received", "message": {"type": "ELECTION", "election_id": "node1:2a853262", "from": "node1", "to": "node4"}, "address": "172.22.0.6"}
+{"ts": 1794664820.0139353, "node": "node3", "event": "message_sent", "message": {"type": "HEARTBEAT", "seq": 19, "from": "node3", "to": "node2"}}
+{"ts": 1794664820.3709333, "node": "node4", "event": "message_sent", "message": {"type": "OK", "election_id": "node1:2a853262", "from": "node4", "to": "node1"}}
+{"ts": 1794664820.014202, "node": "node3", "event": "message_sent", "message": {"type": "HEARTBEAT", "seq": 19, "from": "node3", "to": "node4"}}
+{"ts": 1794664820.3709648, "node": "node4", "event": "election_request_received", "peer": "node1", "election_id": "node1:2a853262"}
+{"ts": 1794664820.3710089, "node": "node4", "event": "election_started", "election_id": "node4:d612754c", "reason": "election_request_from_node1", "higher_peers": ["node5"]}
+{"ts": 1794664820.3757663, "node": "node4", "event": "message_send_error", "message": {"type": "ELECTION", "election_id": "node4:d612754c", "from": "node4", "to": "node5"}, "error": "[Errno -2] Name or service not known"}
+{"ts": 1794664820.375816, "node": "node4", "event": "message_send_error", "message": {"type": "COORDINATOR", "coordinator": "node4", "election_id": "node4:1a03d0a9", "from": "node4", "to": "node5"}, "error": "[Errno -2] Name or service not known"}
+{"ts": 1794664820.375847, "node": "node4", "event": "coordinator_elected", "coordinator": "node4", "election_id": "node4:1a03d0a9"}
+{"ts": 1794664820.5202286, "node": "node4", "event": "message_received", "message": {"type": "HEARTBEAT", "seq": 20, "from": "node3", "to": "node4"}, "address": "172.22.0.3"}
+{"ts": 1794664820.5875206, "node": "node4", "event": "message_sent", "message": {"type": "HEARTBEAT", "seq": 20, "from": "node4", "to": "node1"}}
+{"ts": 1794664820.5880942, "node": "node4", "event": "message_sent", "message": {"type": "HEARTBEAT", "seq": 20, "from": "node4", "to": "node2"}}
+{"ts": 1794664820.5883634, "node": "node4", "event": "message_sent", "message": {"type": "HEARTBEAT", "seq": 20, "from": "node4", "to": "node3"}}
+{"ts": 1794664820.5914404, "node": "node4", "event": "message_send_error", "message": {"type": "HEARTBEAT", "seq": 20, "from": "node4", "to": "node5"}, "error": "[Errno -2] Name or service not known"}
+{"ts": 1794664820.6962585, "node": "node4", "event": "message_received", "message": {"type": "HEARTBEAT", "seq": 20, "from": "node2", "to": "node4"}, "address": "172.22.0.5"}
+{"ts": 1794664820.784139, "node": "node4", "event": "message_received", "message": {"type": "HEARTBEAT", "seq": 20, "from": "node1", "to": "node4"}, "address": "172.22.0.6"}
+{"ts": 1794664821.0256443, "node": "node4", "event": "message_received", "message": {"type": "HEARTBEAT", "seq": 21, "from": "node3", "to": "node4"}, "address": "172.22.0.3"}
+{"ts": 1794664821.0919669, "node": "node4", "event": "message_sent", "message": {"type": "HEARTBEAT", "seq": 21, "from": "node4", "to": "node1"}}
+{"ts": 1794664821.092214, "node": "node4", "event": "message_sent", "message": {"type": "HEARTBEAT", "seq": 21, "from": "node4", "to": "node2"}}
+{"ts": 1794664821.0924764, "node": "node4", "event": "message_sent", "message": {"type": "HEARTBEAT", "seq": 21, "from": "node4", "to": "node3"}}
+{"ts": 1794664816.0520546, "node": "node1", "event": "message_received", "message": {"type": "HEARTBEAT", "seq": 11, "from": "node4", "to": "node1"}, "address": "172.22.0.4"}
+{"ts": 1794664820.0192153, "node": "node3", "event": "message_send_error", "message": {"type": "HEARTBEAT", "seq": 19, "from": "node3", "to": "node5"}, "error": "[Errno -2] Name or service not known"}
+{"ts": 1794664816.1489785, "node": "node1", "event": "message_received", "message": {"type": "HEARTBEAT", "seq": 11, "from": "node2", "to": "node1"}, "address": "172.22.0.5"}
+{"ts": 1794664821.0957034, "node": "node4", "event": "message_send_error", "message": {"type": "HEARTBEAT", "seq": 21, "from": "node4", "to": "node5"}, "error": "[Errno -2] Name or service not known"}
+{"ts": 1794664816.2416842, "node": "node1", "event": "message_sent", "message": {"type": "HEARTBEAT", "seq": 11, "from": "node1", "to": "node2"}}
+{"ts": 1794664816.2419536, "node": "node1", "event": "message_sent", "message": {"type": "HEARTBEAT", "seq": 11, "from": "node1", "to": "node3"}}
+{"ts": 1794664816.2421937, "node": "node1", "event": "message_sent", "message": {"type": "HEARTBEAT", "seq": 11, "from": "node1", "to": "node4"}}
+{"ts": 1794664816.2424262, "node": "node1", "event": "message_sent", "message": {"type": "HEARTBEAT", "seq": 11, "from": "node1", "to": "node5"}}
+{"ts": 1794664821.2029188, "node": "node4", "event": "message_received", "message": {"type": "HEARTBEAT", "seq": 21, "from": "node2", "to": "node4"}, "address": "172.22.0.5"}
+{"ts": 1794664816.363921, "node": "node1", "event": "message_received", "message": {"type": "HEARTBEAT", "seq": 12, "from": "node5", "to": "node1"}, "address": "172.22.0.2"}
+{"ts": 1794664816.4693785, "node": "node1", "event": "message_received", "message": {"type": "HEARTBEAT", "seq": 12, "from": "node3", "to": "node1"}, "address": "172.22.0.3"}
+{"ts": 1794664821.2888606, "node": "node4", "event": "message_received", "message": {"type": "HEARTBEAT", "seq": 21, "from": "node1", "to": "node4"}, "address": "172.22.0.6"}
+{"ts": 1794664816.553286, "node": "node1", "event": "message_received", "message": {"type": "HEARTBEAT", "seq": 12, "from": "node4", "to": "node1"}, "address": "172.22.0.4"}
+{"ts": 1794664821.5315993, "node": "node4", "event": "message_received", "message": {"type": "HEARTBEAT", "seq": 22, "from": "node3", "to": "node4"}, "address": "172.22.0.3"}
+{"ts": 1794664816.6502292, "node": "node1", "event": "message_received", "message": {"type": "HEARTBEAT", "seq": 12, "from": "node2", "to": "node1"}, "address": "172.22.0.5"}
+{"ts": 1794664816.7427833, "node": "node1", "event": "message_sent", "message": {"type": "HEARTBEAT", "seq": 12, "from": "node1", "to": "node2"}}
+{"ts": 1794664816.7429588, "node": "node1", "event": "message_sent", "message": {"type": "HEARTBEAT", "seq": 12, "from": "node1", "to": "node3"}}
+{"ts": 1794664820.083874, "node": "node3", "event": "message_received", "message": {"type": "HEARTBEAT", "seq": 19, "from": "node4", "to": "node3"}, "address": "172.22.0.4"}
+{"ts": 1794664816.7431118, "node": "node1", "event": "message_sent", "message": {"type": "HEARTBEAT", "seq": 12, "from": "node1", "to": "node4"}}
+{"ts": 1794664816.7432613, "node": "node1", "event": "message_sent", "message": {"type": "HEARTBEAT", "seq": 12, "from": "node1", "to": "node5"}}
+{"ts": 1794664816.9709113, "node": "node1", "event": "message_received", "message": {"type": "HEARTBEAT", "seq": 13, "from": "node3", "to": "node1"}, "address": "172.22.0.3"}
+{"ts": 1794664817.0546937, "node": "node1", "event": "message_received", "message": {"type": "HEARTBEAT", "seq": 13, "from": "node4", "to": "node1"}, "address": "172.22.0.4"}
+{"ts": 1794664817.1512952, "node": "node1", "event": "message_received", "message": {"type": "HEARTBEAT", "seq": 13, "from": "node2", "to": "node1"}, "address": "172.22.0.5"}
+{"ts": 1794664817.2440407, "node": "node1", "event": "message_sent", "message": {"type": "HEARTBEAT", "seq": 13, "from": "node1", "to": "node2"}}
+{"ts": 1794664821.5962746, "node": "node4", "event": "message_sent", "message": {"type": "HEARTBEAT", "seq": 22, "from": "node4", "to": "node1"}}
+{"ts": 1794664817.2443104, "node": "node1", "event": "message_sent", "message": {"type": "HEARTBEAT", "seq": 13, "from": "node1", "to": "node3"}}
+{"ts": 1794664821.5965471, "node": "node4", "event": "message_sent", "message": {"type": "HEARTBEAT", "seq": 22, "from": "node4", "to": "node2"}}
+{"ts": 1794664817.2445157, "node": "node1", "event": "message_sent", "message": {"type": "HEARTBEAT", "seq": 13, "from": "node1", "to": "node4"}}
+{"ts": 1794664817.2497804, "node": "node1", "event": "message_send_error", "message": {"type": "HEARTBEAT", "seq": 13, "from": "node1", "to": "node5"}, "error": "[Errno -2] Name or service not known"}
+{"ts": 1794664817.487526, "node": "node1", "event": "message_received", "message": {"type": "HEARTBEAT", "seq": 14, "from": "node3", "to": "node1"}, "address": "172.22.0.3"}
+{"ts": 1794664817.5588617, "node": "node1", "event": "message_received", "message": {"type": "HEARTBEAT", "seq": 14, "from": "node4", "to": "node1"}, "address": "172.22.0.4"}
+{"ts": 1794664821.596814, "node": "node4", "event": "message_sent", "message": {"type": "HEARTBEAT", "seq": 22, "from": "node4", "to": "node3"}}
+{"ts": 1794664821.6102202, "node": "node4", "event": "message_send_error", "message": {"type": "HEARTBEAT", "seq": 22, "from": "node4", "to": "node5"}, "error": "[Errno -2] Name or service not known"}
+{"ts": 1794664821.7093065, "node": "node4", "event": "message_received", "message": {"type": "HEARTBEAT", "seq": 22, "from": "node2", "to": "node4"}, "address": "172.22.0.5"}
+{"ts": 1794664821.7937827, "node": "node4", "event": "message_received", "message": {"type": "HEARTBEAT", "seq": 22, "from": "node1", "to": "node4"}, "address": "172.22.0.6"}
+{"ts": 1794664822.0440388, "node": "node4", "event": "message_received", "message": {"type": "HEARTBEAT", "seq": 23, "from": "node3", "to": "node4"}, "address": "172.22.0.3"}
+{"ts": 1794664822.1108742, "node": "node4", "event": "message_sent", "message": {"type": "HEARTBEAT", "seq": 23, "from": "node4", "to": "node1"}}
+{"ts": 1794664822.111178, "node": "node4", "event": "message_sent", "message": {"type": "HEARTBEAT", "seq": 23, "from": "node4", "to": "node2"}}
+{"ts": 1794664822.1114354, "node": "node4", "event": "message_sent", "message": {"type": "HEARTBEAT", "seq": 23, "from": "node4", "to": "node3"}}
+{"ts": 1794664822.114318, "node": "node4", "event": "message_send_error", "message": {"type": "HEARTBEAT", "seq": 23, "from": "node4", "to": "node5"}, "error": "[Errno -2] Name or service not known"}
+{"ts": 1794664822.2157476, "node": "node4", "event": "message_received", "message": {"type": "HEARTBEAT", "seq": 23, "from": "node2", "to": "node4"}, "address": "172.22.0.5"}
+{"ts": 1794664817.6571157, "node": "node1", "event": "message_received", "message": {"type": "HEARTBEAT", "seq": 14, "from": "node2", "to": "node1"}, "address": "172.22.0.5"}
+{"ts": 1794664820.1917827, "node": "node3", "event": "message_received", "message": {"type": "HEARTBEAT", "seq": 19, "from": "node2", "to": "node3"}, "address": "172.22.0.5"}
+{"ts": 1794664820.2796392, "node": "node3", "event": "message_received", "message": {"type": "HEARTBEAT", "seq": 19, "from": "node1", "to": "node3"}, "address": "172.22.0.6"}
+{"ts": 1794664820.3704886, "node": "node3", "event": "message_received", "message": {"type": "ELECTION", "election_id": "node1:2a853262", "from": "node1", "to": "node3"}, "address": "172.22.0.6"}
+{"ts": 1794664820.370746, "node": "node3", "event": "message_sent", "message": {"type": "OK", "election_id": "node1:2a853262", "from": "node3", "to": "node1"}}
+{"ts": 1794664820.370775, "node": "node3", "event": "election_request_received", "peer": "node1", "election_id": "node1:2a853262"}
+{"ts": 1794664820.3708014, "node": "node3", "event": "election_already_running", "election_id": "node3:31423742", "reason": "election_request_from_node1"}
+{"ts": 1794664817.7502334, "node": "node1", "event": "message_sent", "message": {"type": "HEARTBEAT", "seq": 14, "from": "node1", "to": "node2"}}
+{"ts": 1794664820.370829, "node": "node3", "event": "message_received", "message": {"type": "COORDINATOR", "coordinator": "node4", "election_id": "node4:1a03d0a9", "from": "node4", "to": "node3"}, "address": "172.22.0.4"}
+{"ts": 1794664817.750439, "node": "node1", "event": "message_sent", "message": {"type": "HEARTBEAT", "seq": 14, "from": "node1", "to": "node3"}}
+{"ts": 1794664822.2986314, "node": "node4", "event": "message_received", "message": {"type": "HEARTBEAT", "seq": 23, "from": "node1", "to": "node4"}, "address": "172.22.0.6"}
+{"ts": 1794664817.7505977, "node": "node1", "event": "message_sent", "message": {"type": "HEARTBEAT", "seq": 14, "from": "node1", "to": "node4"}}
+{"ts": 1794664822.3765671, "node": "node4", "event": "message_sent", "message": {"type": "COORDINATOR", "coordinator": "node4", "election_id": "node4:d612754c", "from": "node4", "to": "node1"}}
+{"ts": 1794664817.7560635, "node": "node1", "event": "message_send_error", "message": {"type": "HEARTBEAT", "seq": 14, "from": "node1", "to": "node5"}, "error": "[Errno -2] Name or service not known"}
+{"ts": 1794664822.3769097, "node": "node4", "event": "message_sent", "message": {"type": "COORDINATOR", "coordinator": "node4", "election_id": "node4:d612754c", "from": "node4", "to": "node2"}}
+{"ts": 1794664817.993412, "node": "node1", "event": "message_received", "message": {"type": "HEARTBEAT", "seq": 15, "from": "node3", "to": "node1"}, "address": "172.22.0.3"}
+{"ts": 1794664818.062888, "node": "node1", "event": "message_received", "message": {"type": "HEARTBEAT", "seq": 15, "from": "node4", "to": "node1"}, "address": "172.22.0.4"}
+{"ts": 1794664818.1632519, "node": "node1", "event": "message_received", "message": {"type": "HEARTBEAT", "seq": 15, "from": "node2", "to": "node1"}, "address": "172.22.0.5"}
+{"ts": 1794664818.2566512, "node": "node1", "event": "message_sent", "message": {"type": "HEARTBEAT", "seq": 15, "from": "node1", "to": "node2"}}
+{"ts": 1794664818.256959, "node": "node1", "event": "message_sent", "message": {"type": "HEARTBEAT", "seq": 15, "from": "node1", "to": "node3"}}
+{"ts": 1794664818.2572055, "node": "node1", "event": "message_sent", "message": {"type": "HEARTBEAT", "seq": 15, "from": "node1", "to": "node4"}}
+{"ts": 1794664820.370855, "node": "node3", "event": "coordinator_changed", "coordinator": "node4", "peer": "node4", "election_id": "node4:1a03d0a9"}
+{"ts": 1794664820.5197043, "node": "node3", "event": "message_sent", "message": {"type": "HEARTBEAT", "seq": 20, "from": "node3", "to": "node1"}}
+{"ts": 1794664820.5199652, "node": "node3", "event": "message_sent", "message": {"type": "HEARTBEAT", "seq": 20, "from": "node3", "to": "node2"}}
+{"ts": 1794664818.262845, "node": "node1", "event": "message_send_error", "message": {"type": "HEARTBEAT", "seq": 15, "from": "node1", "to": "node5"}, "error": "[Errno -2] Name or service not known"}
+{"ts": 1794664818.3645582, "node": "node1", "event": "suspect", "peer": "node5", "silence": 2.001}
+{"ts": 1794664818.3646502, "node": "node1", "event": "election_started", "election_id": "node1:2d193924", "reason": "coordinator_suspected", "higher_peers": ["node2", "node3", "node4", "node5"]}
+{"ts": 1794664818.365215, "node": "node1", "event": "message_sent", "message": {"type": "ELECTION", "election_id": "node1:2d193924", "from": "node1", "to": "node2"}}
+{"ts": 1794664818.365485, "node": "node1", "event": "message_sent", "message": {"type": "ELECTION", "election_id": "node1:2d193924", "from": "node1", "to": "node3"}}
+{"ts": 1794664818.3656378, "node": "node1", "event": "message_received", "message": {"type": "OK", "election_id": "node1:2d193924", "from": "node2", "to": "node1"}, "address": "172.22.0.5"}
+{"ts": 1794664818.3658571, "node": "node1", "event": "election_ok_received", "peer": "node2", "election_id": "node1:2d193924"}
+{"ts": 1794664818.3658962, "node": "node1", "event": "message_received", "message": {"type": "OK", "election_id": "node1:2d193924", "from": "node3", "to": "node1"}, "address": "172.22.0.3"}
+{"ts": 1794664818.3659084, "node": "node1", "event": "election_ok_received", "peer": "node3", "election_id": "node1:2d193924"}
+{"ts": 1794664818.3659189, "node": "node1", "event": "message_sent", "message": {"type": "ELECTION", "election_id": "node1:2d193924", "from": "node1", "to": "node4"}}
+{"ts": 1794664822.3771582, "node": "node4", "event": "message_sent", "message": {"type": "COORDINATOR", "coordinator": "node4", "election_id": "node4:d612754c", "from": "node4", "to": "node3"}}
+{"ts": 1794664822.380471, "node": "node4", "event": "message_send_error", "message": {"type": "COORDINATOR", "coordinator": "node4", "election_id": "node4:d612754c", "from": "node4", "to": "node5"}, "error": "[Errno -2] Name or service not known"}
+{"ts": 1794664822.3804984, "node": "node4", "event": "coordinator_elected", "coordinator": "node4", "election_id": "node4:d612754c"}
+{"ts": 1794664822.5506814, "node": "node4", "event": "message_received", "message": {"type": "HEARTBEAT", "seq": 24, "from": "node3", "to": "node4"}, "address": "172.22.0.3"}
+{"ts": 1794664822.6152177, "node": "node4", "event": "message_sent", "message": {"type": "HEARTBEAT", "seq": 24, "from": "node4", "to": "node1"}}
+{"ts": 1794664822.6154952, "node": "node4", "event": "message_sent", "message": {"type": "HEARTBEAT", "seq": 24, "from": "node4", "to": "node2"}}
+{"ts": 1794664822.615696, "node": "node4", "event": "message_sent", "message": {"type": "HEARTBEAT", "seq": 24, "from": "node4", "to": "node3"}}
+{"ts": 1794664822.618548, "node": "node4", "event": "message_send_error", "message": {"type": "HEARTBEAT", "seq": 24, "from": "node4", "to": "node5"}, "error": "[Errno -2] Name or service not known"}
+{"ts": 1794664820.520153, "node": "node3", "event": "message_sent", "message": {"type": "HEARTBEAT", "seq": 20, "from": "node3", "to": "node4"}}
+{"ts": 1794664820.5244126, "node": "node3", "event": "message_send_error", "message": {"type": "HEARTBEAT", "seq": 20, "from": "node3", "to": "node5"}, "error": "[Errno -2] Name or service not known"}
+{"ts": 1794664820.588422, "node": "node3", "event": "message_received", "message": {"type": "HEARTBEAT", "seq": 20, "from": "node4", "to": "node3"}, "address": "172.22.0.4"}
+{"ts": 1794664820.6960182, "node": "node3", "event": "message_received", "message": {"type": "HEARTBEAT", "seq": 20, "from": "node2", "to": "node3"}, "address": "172.22.0.5"}
+{"ts": 1794664820.783929, "node": "node3", "event": "message_received", "message": {"type": "HEARTBEAT", "seq": 20, "from": "node1", "to": "node3"}, "address": "172.22.0.6"}
+{"ts": 1794664818.3661714, "node": "node1", "event": "message_received", "message": {"type": "OK", "election_id": "node1:2d193924", "from": "node4", "to": "node1"}, "address": "172.22.0.4"}
+{"ts": 1794664821.025031, "node": "node3", "event": "message_sent", "message": {"type": "HEARTBEAT", "seq": 21, "from": "node3", "to": "node1"}}
+{"ts": 1794664818.3661947, "node": "node1", "event": "election_ok_received", "peer": "node4", "election_id": "node1:2d193924"}
+{"ts": 1794664818.369244, "node": "node1", "event": "message_send_error", "message": {"type": "ELECTION", "election_id": "node1:2d193924", "from": "node1", "to": "node5"}, "error": "[Errno -2] Name or service not known"}
+{"ts": 1794664818.3692884, "node": "node1", "event": "election_yielded", "election_id": "node1:2d193924", "reason": "higher_node_replied"}
+{"ts": 1794664818.5013578, "node": "node1", "event": "message_received", "message": {"type": "HEARTBEAT", "seq": 16, "from": "node3", "to": "node1"}, "address": "172.22.0.3"}
+{"ts": 1794664818.5672376, "node": "node1", "event": "message_received", "message": {"type": "HEARTBEAT", "seq": 16, "from": "node4", "to": "node1"}, "address": "172.22.0.4"}
+{"ts": 1794664818.6674504, "node": "node1", "event": "message_received", "message": {"type": "HEARTBEAT", "seq": 16, "from": "node2", "to": "node1"}, "address": "172.22.0.5"}
+{"ts": 1794664818.7633235, "node": "node1", "event": "message_sent", "message": {"type": "HEARTBEAT", "seq": 16, "from": "node1", "to": "node2"}}
+{"ts": 1794664818.7635157, "node": "node1", "event": "message_sent", "message": {"type": "HEARTBEAT", "seq": 16, "from": "node1", "to": "node3"}}
+{"ts": 1794664818.7637005, "node": "node1", "event": "message_sent", "message": {"type": "HEARTBEAT", "seq": 16, "from": "node1", "to": "node4"}}
+{"ts": 1794664818.7680697, "node": "node1", "event": "message_send_error", "message": {"type": "HEARTBEAT", "seq": 16, "from": "node1", "to": "node5"}, "error": "[Errno -2] Name or service not known"}
+{"ts": 1794664821.0252938, "node": "node3", "event": "message_sent", "message": {"type": "HEARTBEAT", "seq": 21, "from": "node3", "to": "node2"}}
+{"ts": 1794664822.7222772, "node": "node4", "event": "message_received", "message": {"type": "HEARTBEAT", "seq": 24, "from": "node2", "to": "node4"}, "address": "172.22.0.5"}
+{"ts": 1794664821.0255623, "node": "node3", "event": "message_sent", "message": {"type": "HEARTBEAT", "seq": 21, "from": "node3", "to": "node4"}}
+{"ts": 1794664822.8035235, "node": "node4", "event": "message_received", "message": {"type": "HEARTBEAT", "seq": 24, "from": "node1", "to": "node4"}, "address": "172.22.0.6"}
+{"ts": 1794664823.0586185, "node": "node4", "event": "message_received", "message": {"type": "HEARTBEAT", "seq": 25, "from": "node3", "to": "node4"}, "address": "172.22.0.3"}
+{"ts": 1794664823.119326, "node": "node4", "event": "message_sent", "message": {"type": "HEARTBEAT", "seq": 25, "from": "node4", "to": "node1"}}
+{"ts": 1794664821.0305014, "node": "node3", "event": "message_send_error", "message": {"type": "HEARTBEAT", "seq": 21, "from": "node3", "to": "node5"}, "error": "[Errno -2] Name or service not known"}
+{"ts": 1794664821.0925453, "node": "node3", "event": "message_received", "message": {"type": "HEARTBEAT", "seq": 21, "from": "node4", "to": "node3"}, "address": "172.22.0.4"}
+{"ts": 1794664823.1196191, "node": "node4", "event": "message_sent", "message": {"type": "HEARTBEAT", "seq": 25, "from": "node4", "to": "node2"}}
+{"ts": 1794664823.119877, "node": "node4", "event": "message_sent", "message": {"type": "HEARTBEAT", "seq": 25, "from": "node4", "to": "node3"}}
+{"ts": 1794664823.124216, "node": "node4", "event": "message_send_error", "message": {"type": "HEARTBEAT", "seq": 25, "from": "node4", "to": "node5"}, "error": "[Errno -2] Name or service not known"}
+{"ts": 1794664823.2289271, "node": "node4", "event": "message_received", "message": {"type": "HEARTBEAT", "seq": 25, "from": "node2", "to": "node4"}, "address": "172.22.0.5"}
+{"ts": 1794664823.3081284, "node": "node4", "event": "message_received", "message": {"type": "HEARTBEAT", "seq": 25, "from": "node1", "to": "node4"}, "address": "172.22.0.6"}
+{"ts": 1794664823.5638, "node": "node4", "event": "message_received", "message": {"type": "HEARTBEAT", "seq": 26, "from": "node3", "to": "node4"}, "address": "172.22.0.3"}
+{"ts": 1794664819.0056074, "node": "node1", "event": "message_received", "message": {"type": "HEARTBEAT", "seq": 17, "from": "node3", "to": "node1"}, "address": "172.22.0.3"}
+{"ts": 1794664823.624725, "node": "node4", "event": "message_sent", "message": {"type": "HEARTBEAT", "seq": 26, "from": "node4", "to": "node1"}}
+{"ts": 1794664823.624991, "node": "node4", "event": "message_sent", "message": {"type": "HEARTBEAT", "seq": 26, "from": "node4", "to": "node2"}}
+{"ts": 1794664819.0712798, "node": "node1", "event": "message_received", "message": {"type": "HEARTBEAT", "seq": 17, "from": "node4", "to": "node1"}, "address": "172.22.0.4"}
+{"ts": 1794664823.6251917, "node": "node4", "event": "message_sent", "message": {"type": "HEARTBEAT", "seq": 26, "from": "node4", "to": "node3"}}
+{"ts": 1794664823.6365373, "node": "node4", "event": "message_send_error", "message": {"type": "HEARTBEAT", "seq": 26, "from": "node4", "to": "node5"}, "error": "[Errno -2] Name or service not known"}
+{"ts": 1794664823.733234, "node": "node4", "event": "message_received", "message": {"type": "HEARTBEAT", "seq": 26, "from": "node2", "to": "node4"}, "address": "172.22.0.5"}
+{"ts": 1794664821.2026303, "node": "node3", "event": "message_received", "message": {"type": "HEARTBEAT", "seq": 21, "from": "node2", "to": "node3"}, "address": "172.22.0.5"}
+{"ts": 1794664821.2885535, "node": "node3", "event": "message_received", "message": {"type": "HEARTBEAT", "seq": 21, "from": "node1", "to": "node3"}, "address": "172.22.0.6"}
+{"ts": 1794664821.5310564, "node": "node3", "event": "message_sent", "message": {"type": "HEARTBEAT", "seq": 22, "from": "node3", "to": "node1"}}
+{"ts": 1794664821.5312927, "node": "node3", "event": "message_sent", "message": {"type": "HEARTBEAT", "seq": 22, "from": "node3", "to": "node2"}}
+{"ts": 1794664821.531521, "node": "node3", "event": "message_sent", "message": {"type": "HEARTBEAT", "seq": 22, "from": "node3", "to": "node4"}}
+{"ts": 1794664821.54272, "node": "node3", "event": "message_send_error", "message": {"type": "HEARTBEAT", "seq": 22, "from": "node3", "to": "node5"}, "error": "[Errno -2] Name or service not known"}
+{"ts": 1794664821.5969014, "node": "node3", "event": "message_received", "message": {"type": "HEARTBEAT", "seq": 22, "from": "node4", "to": "node3"}, "address": "172.22.0.4"}
+{"ts": 1794664821.7091033, "node": "node3", "event": "message_received", "message": {"type": "HEARTBEAT", "seq": 22, "from": "node2", "to": "node3"}, "address": "172.22.0.5"}
+{"ts": 1794664821.7935536, "node": "node3", "event": "message_received", "message": {"type": "HEARTBEAT", "seq": 22, "from": "node1", "to": "node3"}, "address": "172.22.0.6"}
+{"ts": 1794664822.0434895, "node": "node3", "event": "message_sent", "message": {"type": "HEARTBEAT", "seq": 23, "from": "node3", "to": "node1"}}
+{"ts": 1794664822.0437465, "node": "node3", "event": "message_sent", "message": {"type": "HEARTBEAT", "seq": 23, "from": "node3", "to": "node2"}}
+{"ts": 1794664822.043966, "node": "node3", "event": "message_sent", "message": {"type": "HEARTBEAT", "seq": 23, "from": "node3", "to": "node4"}}
+{"ts": 1794664822.0493357, "node": "node3", "event": "message_send_error", "message": {"type": "HEARTBEAT", "seq": 23, "from": "node3", "to": "node5"}, "error": "[Errno -2] Name or service not known"}
+{"ts": 1794664822.1114872, "node": "node3", "event": "message_received", "message": {"type": "HEARTBEAT", "seq": 23, "from": "node4", "to": "node3"}, "address": "172.22.0.4"}
+{"ts": 1794664822.2154737, "node": "node3", "event": "message_received", "message": {"type": "HEARTBEAT", "seq": 23, "from": "node2", "to": "node3"}, "address": "172.22.0.5"}
+{"ts": 1794664822.2983515, "node": "node3", "event": "message_received", "message": {"type": "HEARTBEAT", "seq": 23, "from": "node1", "to": "node3"}, "address": "172.22.0.6"}
+{"ts": 1794664822.3772285, "node": "node3", "event": "message_received", "message": {"type": "COORDINATOR", "coordinator": "node4", "election_id": "node4:d612754c", "from": "node4", "to": "node3"}, "address": "172.22.0.4"}
+{"ts": 1794664822.3772984, "node": "node3", "event": "coordinator_changed", "coordinator": "node4", "peer": "node4", "election_id": "node4:d612754c"}
+{"ts": 1794664822.550076, "node": "node3", "event": "message_sent", "message": {"type": "HEARTBEAT", "seq": 24, "from": "node3", "to": "node1"}}
+{"ts": 1794664819.17306, "node": "node1", "event": "message_received", "message": {"type": "HEARTBEAT", "seq": 17, "from": "node2", "to": "node1"}, "address": "172.22.0.5"}
+{"ts": 1794664822.550336, "node": "node3", "event": "message_sent", "message": {"type": "HEARTBEAT", "seq": 24, "from": "node3", "to": "node2"}}
+{"ts": 1794664823.8127196, "node": "node4", "event": "message_received", "message": {"type": "HEARTBEAT", "seq": 26, "from": "node1", "to": "node4"}, "address": "172.22.0.6"}
+{"ts": 1794664822.5506105, "node": "node3", "event": "message_sent", "message": {"type": "HEARTBEAT", "seq": 24, "from": "node3", "to": "node4"}}
+{"ts": 1794664822.5566094, "node": "node3", "event": "message_send_error", "message": {"type": "HEARTBEAT", "seq": 24, "from": "node3", "to": "node5"}, "error": "[Errno -2] Name or service not known"}
+{"ts": 1794664822.6157873, "node": "node3", "event": "message_received", "message": {"type": "HEARTBEAT", "seq": 24, "from": "node4", "to": "node3"}, "address": "172.22.0.4"}
+{"ts": 1794664822.722028, "node": "node3", "event": "message_received", "message": {"type": "HEARTBEAT", "seq": 24, "from": "node2", "to": "node3"}, "address": "172.22.0.5"}
+{"ts": 1794664822.8032963, "node": "node3", "event": "message_received", "message": {"type": "HEARTBEAT", "seq": 24, "from": "node1", "to": "node3"}, "address": "172.22.0.6"}
+{"ts": 1794664823.0579598, "node": "node3", "event": "message_sent", "message": {"type": "HEARTBEAT", "seq": 25, "from": "node3", "to": "node1"}}
+{"ts": 1794664824.0713031, "node": "node4", "event": "message_received", "message": {"type": "HEARTBEAT", "seq": 27, "from": "node3", "to": "node4"}, "address": "172.22.0.3"}
+{"ts": 1794664824.137104, "node": "node4", "event": "message_sent", "message": {"type": "HEARTBEAT", "seq": 27, "from": "node4", "to": "node1"}}
+{"ts": 1794664824.137374, "node": "node4", "event": "message_sent", "message": {"type": "HEARTBEAT", "seq": 27, "from": "node4", "to": "node2"}}
+{"ts": 1794664824.1376455, "node": "node4", "event": "message_sent", "message": {"type": "HEARTBEAT", "seq": 27, "from": "node4", "to": "node3"}}
+{"ts": 1794664824.1407835, "node": "node4", "event": "message_send_error", "message": {"type": "HEARTBEAT", "seq": 27, "from": "node4", "to": "node5"}, "error": "[Errno -2] Name or service not known"}
+{"ts": 1794664824.2400684, "node": "node4", "event": "message_received", "message": {"type": "HEARTBEAT", "seq": 27, "from": "node2", "to": "node4"}, "address": "172.22.0.5"}
+{"ts": 1794664824.3173325, "node": "node4", "event": "message_received", "message": {"type": "HEARTBEAT", "seq": 27, "from": "node1", "to": "node4"}, "address": "172.22.0.6"}
+{"ts": 1794664823.0582743, "node": "node3", "event": "message_sent", "message": {"type": "HEARTBEAT", "seq": 25, "from": "node3", "to": "node2"}}
+{"ts": 1794664824.5887651, "node": "node4", "event": "message_received", "message": {"type": "HEARTBEAT", "seq": 28, "from": "node3", "to": "node4"}, "address": "172.22.0.3"}
+{"ts": 1794664819.2688463, "node": "node1", "event": "message_sent", "message": {"type": "HEARTBEAT", "seq": 17, "from": "node1", "to": "node2"}}
+{"ts": 1794664824.6412127, "node": "node4", "event": "message_sent", "message": {"type": "HEARTBEAT", "seq": 28, "from": "node4", "to": "node1"}}
+{"ts": 1794664824.6414034, "node": "node4", "event": "message_sent", "message": {"type": "HEARTBEAT", "seq": 28, "from": "node4", "to": "node2"}}
+{"ts": 1794664824.6415799, "node": "node4", "event": "message_sent", "message": {"type": "HEARTBEAT", "seq": 28, "from": "node4", "to": "node3"}}
+{"ts": 1794664824.6443331, "node": "node4", "event": "message_send_error", "message": {"type": "HEARTBEAT", "seq": 28, "from": "node4", "to": "node5"}, "error": "[Errno -2] Name or service not known"}
+{"ts": 1794664824.743487, "node": "node4", "event": "message_received", "message": {"type": "HEARTBEAT", "seq": 28, "from": "node2", "to": "node4"}, "address": "172.22.0.5"}
+{"ts": 1794664824.8206599, "node": "node4", "event": "message_received", "message": {"type": "HEARTBEAT", "seq": 28, "from": "node1", "to": "node4"}, "address": "172.22.0.6"}
+{"ts": 1794664819.2691047, "node": "node1", "event": "message_sent", "message": {"type": "HEARTBEAT", "seq": 17, "from": "node1", "to": "node3"}}
+{"ts": 1794664819.2693577, "node": "node1", "event": "message_sent", "message": {"type": "HEARTBEAT", "seq": 17, "from": "node1", "to": "node4"}}
+{"ts": 1794664819.2743518, "node": "node1", "event": "message_send_error", "message": {"type": "HEARTBEAT", "seq": 17, "from": "node1", "to": "node5"}, "error": "[Errno -2] Name or service not known"}
+{"ts": 1794664819.5097172, "node": "node1", "event": "message_received", "message": {"type": "HEARTBEAT", "seq": 18, "from": "node3", "to": "node1"}, "address": "172.22.0.3"}
+{"ts": 1794664819.5793297, "node": "node1", "event": "message_received", "message": {"type": "HEARTBEAT", "seq": 18, "from": "node4", "to": "node1"}, "address": "172.22.0.4"}
+{"ts": 1794664819.6774814, "node": "node1", "event": "message_received", "message": {"type": "HEARTBEAT", "seq": 18, "from": "node2", "to": "node1"}, "address": "172.22.0.5"}
+{"ts": 1794664819.7750072, "node": "node1", "event": "message_sent", "message": {"type": "HEARTBEAT", "seq": 18, "from": "node1", "to": "node2"}}
+{"ts": 1794664819.7752736, "node": "node1", "event": "message_sent", "message": {"type": "HEARTBEAT", "seq": 18, "from": "node1", "to": "node3"}}
+{"ts": 1794664819.7755296, "node": "node1", "event": "message_sent", "message": {"type": "HEARTBEAT", "seq": 18, "from": "node1", "to": "node4"}}
+{"ts": 1794664819.7787538, "node": "node1", "event": "message_send_error", "message": {"type": "HEARTBEAT", "seq": 18, "from": "node1", "to": "node5"}, "error": "[Errno -2] Name or service not known"}
+{"ts": 1794664820.0137475, "node": "node1", "event": "message_received", "message": {"type": "HEARTBEAT", "seq": 19, "from": "node3", "to": "node1"}, "address": "172.22.0.3"}
+{"ts": 1794664820.0833817, "node": "node1", "event": "message_received", "message": {"type": "HEARTBEAT", "seq": 19, "from": "node4", "to": "node1"}, "address": "172.22.0.4"}
+{"ts": 1794664820.191429, "node": "node1", "event": "message_received", "message": {"type": "HEARTBEAT", "seq": 19, "from": "node2", "to": "node1"}, "address": "172.22.0.5"}
+{"ts": 1794664820.2792878, "node": "node1", "event": "message_sent", "message": {"type": "HEARTBEAT", "seq": 19, "from": "node1", "to": "node2"}}
+{"ts": 1794664820.279573, "node": "node1", "event": "message_sent", "message": {"type": "HEARTBEAT", "seq": 19, "from": "node1", "to": "node3"}}
+{"ts": 1794664820.279826, "node": "node1", "event": "message_sent", "message": {"type": "HEARTBEAT", "seq": 19, "from": "node1", "to": "node4"}}
+{"ts": 1794664820.2827835, "node": "node1", "event": "message_send_error", "message": {"type": "HEARTBEAT", "seq": 19, "from": "node1", "to": "node5"}, "error": "[Errno -2] Name or service not known"}
+{"ts": 1794664820.369494, "node": "node1", "event": "election_retry", "election_id": "node1:2d193924", "reason": "coordinator_announcement_timeout"}
+{"ts": 1794664820.3695607, "node": "node1", "event": "election_started", "election_id": "node1:2a853262", "reason": "higher_node_did_not_announce", "higher_peers": ["node2", "node3", "node4", "node5"]}
+{"ts": 1794664820.369907, "node": "node1", "event": "message_received", "message": {"type": "COORDINATOR", "coordinator": "node4", "election_id": "node4:1a03d0a9", "from": "node4", "to": "node1"}, "address": "172.22.0.4"}
+{"ts": 1794664820.3699594, "node": "node1", "event": "coordinator_changed", "coordinator": "node4", "peer": "node4", "election_id": "node4:1a03d0a9"}
+{"ts": 1794664823.0585165, "node": "node3", "event": "message_sent", "message": {"type": "HEARTBEAT", "seq": 25, "from": "node3", "to": "node4"}}
+{"ts": 1794664823.0624754, "node": "node3", "event": "message_send_error", "message": {"type": "HEARTBEAT", "seq": 25, "from": "node3", "to": "node5"}, "error": "[Errno -2] Name or service not known"}
+{"ts": 1794664823.1199462, "node": "node3", "event": "message_received", "message": {"type": "HEARTBEAT", "seq": 25, "from": "node4", "to": "node3"}, "address": "172.22.0.4"}
+{"ts": 1794664823.2287083, "node": "node3", "event": "message_received", "message": {"type": "HEARTBEAT", "seq": 25, "from": "node2", "to": "node3"}, "address": "172.22.0.5"}
+{"ts": 1794664823.3078897, "node": "node3", "event": "message_received", "message": {"type": "HEARTBEAT", "seq": 25, "from": "node1", "to": "node3"}, "address": "172.22.0.6"}
+{"ts": 1794664823.5631495, "node": "node3", "event": "message_sent", "message": {"type": "HEARTBEAT", "seq": 26, "from": "node3", "to": "node1"}}
+{"ts": 1794664823.563458, "node": "node3", "event": "message_sent", "message": {"type": "HEARTBEAT", "seq": 26, "from": "node3", "to": "node2"}}
+{"ts": 1794664823.563712, "node": "node3", "event": "message_sent", "message": {"type": "HEARTBEAT", "seq": 26, "from": "node3", "to": "node4"}}
+{"ts": 1794664823.56996, "node": "node3", "event": "message_send_error", "message": {"type": "HEARTBEAT", "seq": 26, "from": "node3", "to": "node5"}, "error": "[Errno -2] Name or service not known"}
+{"ts": 1794664823.6252573, "node": "node3", "event": "message_received", "message": {"type": "HEARTBEAT", "seq": 26, "from": "node4", "to": "node3"}, "address": "172.22.0.4"}
+{"ts": 1794664823.733023, "node": "node3", "event": "message_received", "message": {"type": "HEARTBEAT", "seq": 26, "from": "node2", "to": "node3"}, "address": "172.22.0.5"}
+{"ts": 1794664823.8125148, "node": "node3", "event": "message_received", "message": {"type": "HEARTBEAT", "seq": 26, "from": "node1", "to": "node3"}, "address": "172.22.0.6"}
+{"ts": 1794664824.0707445, "node": "node3", "event": "message_sent", "message": {"type": "HEARTBEAT", "seq": 27, "from": "node3", "to": "node1"}}
+{"ts": 1794664820.370136, "node": "node1", "event": "message_sent", "message": {"type": "ELECTION", "election_id": "node1:2a853262", "from": "node1", "to": "node2"}}
+{"ts": 1794664820.3704224, "node": "node1", "event": "message_sent", "message": {"type": "ELECTION", "election_id": "node1:2a853262", "from": "node1", "to": "node3"}}
+{"ts": 1794664820.3705416, "node": "node1", "event": "message_received", "message": {"type": "OK", "election_id": "node1:2a853262", "from": "node2", "to": "node1"}, "address": "172.22.0.5"}
+{"ts": 1794664820.3705664, "node": "node1", "event": "stale_ok_ignored", "peer": "node2", "election_id": "node1:2a853262"}
+{"ts": 1794664820.3706944, "node": "node1", "event": "message_sent", "message": {"type": "ELECTION", "election_id": "node1:2a853262", "from": "node1", "to": "node4"}}
+{"ts": 1794664820.370768, "node": "node1", "event": "message_received", "message": {"type": "OK", "election_id": "node1:2a853262", "from": "node3", "to": "node1"}, "address": "172.22.0.3"}
+{"ts": 1794664820.3707995, "node": "node1", "event": "stale_ok_ignored", "peer": "node3", "election_id": "node1:2a853262"}
+{"ts": 1794664820.3709507, "node": "node1", "event": "message_received", "message": {"type": "OK", "election_id": "node1:2a853262", "from": "node4", "to": "node1"}, "address": "172.22.0.4"}
+{"ts": 1794664820.3709717, "node": "node1", "event": "stale_ok_ignored", "peer": "node4", "election_id": "node1:2a853262"}
+{"ts": 1794664824.0710032, "node": "node3", "event": "message_sent", "message": {"type": "HEARTBEAT", "seq": 27, "from": "node3", "to": "node2"}}
+{"ts": 1794664824.071225, "node": "node3", "event": "message_sent", "message": {"type": "HEARTBEAT", "seq": 27, "from": "node3", "to": "node4"}}
+{"ts": 1794664824.0876436, "node": "node3", "event": "message_send_error", "message": {"type": "HEARTBEAT", "seq": 27, "from": "node3", "to": "node5"}, "error": "[Errno -2] Name or service not known"}
+{"ts": 1794664824.137697, "node": "node3", "event": "message_received", "message": {"type": "HEARTBEAT", "seq": 27, "from": "node4", "to": "node3"}, "address": "172.22.0.4"}
+{"ts": 1794664824.2398257, "node": "node3", "event": "message_received", "message": {"type": "HEARTBEAT", "seq": 27, "from": "node2", "to": "node3"}, "address": "172.22.0.5"}
+{"ts": 1794664824.3170958, "node": "node3", "event": "message_received", "message": {"type": "HEARTBEAT", "seq": 27, "from": "node1", "to": "node3"}, "address": "172.22.0.6"}
+{"ts": 1794664824.5881672, "node": "node3", "event": "message_sent", "message": {"type": "HEARTBEAT", "seq": 28, "from": "node3", "to": "node1"}}
+{"ts": 1794664824.588453, "node": "node3", "event": "message_sent", "message": {"type": "HEARTBEAT", "seq": 28, "from": "node3", "to": "node2"}}
+{"ts": 1794664824.5887244, "node": "node3", "event": "message_sent", "message": {"type": "HEARTBEAT", "seq": 28, "from": "node3", "to": "node4"}}
+{"ts": 1794664824.5931675, "node": "node3", "event": "message_send_error", "message": {"type": "HEARTBEAT", "seq": 28, "from": "node3", "to": "node5"}, "error": "[Errno -2] Name or service not known"}
+{"ts": 1794664824.6416376, "node": "node3", "event": "message_received", "message": {"type": "HEARTBEAT", "seq": 28, "from": "node4", "to": "node3"}, "address": "172.22.0.4"}
+{"ts": 1794664824.7433538, "node": "node3", "event": "message_received", "message": {"type": "HEARTBEAT", "seq": 28, "from": "node2", "to": "node3"}, "address": "172.22.0.5"}
+{"ts": 1794664824.8205202, "node": "node3", "event": "message_received", "message": {"type": "HEARTBEAT", "seq": 28, "from": "node1", "to": "node3"}, "address": "172.22.0.6"}
+{"ts": 1794664820.3757722, "node": "node1", "event": "message_send_error", "message": {"type": "ELECTION", "election_id": "node1:2a853262", "from": "node1", "to": "node5"}, "error": "[Errno -2] Name or service not known"}
+{"ts": 1794664820.5197532, "node": "node1", "event": "message_received", "message": {"type": "HEARTBEAT", "seq": 20, "from": "node3", "to": "node1"}, "address": "172.22.0.3"}
+{"ts": 1794664820.5881228, "node": "node1", "event": "message_received", "message": {"type": "HEARTBEAT", "seq": 20, "from": "node4", "to": "node1"}, "address": "172.22.0.4"}
+{"ts": 1794664820.6957126, "node": "node1", "event": "message_received", "message": {"type": "HEARTBEAT", "seq": 20, "from": "node2", "to": "node1"}, "address": "172.22.0.5"}
+{"ts": 1794664820.783566, "node": "node1", "event": "message_sent", "message": {"type": "HEARTBEAT", "seq": 20, "from": "node1", "to": "node2"}}
+{"ts": 1794664820.783865, "node": "node1", "event": "message_sent", "message": {"type": "HEARTBEAT", "seq": 20, "from": "node1", "to": "node3"}}
+{"ts": 1794664820.7840762, "node": "node1", "event": "message_sent", "message": {"type": "HEARTBEAT", "seq": 20, "from": "node1", "to": "node4"}}
+{"ts": 1794664820.7872589, "node": "node1", "event": "message_send_error", "message": {"type": "HEARTBEAT", "seq": 20, "from": "node1", "to": "node5"}, "error": "[Errno -2] Name or service not known"}
+{"ts": 1794664821.0251064, "node": "node1", "event": "message_received", "message": {"type": "HEARTBEAT", "seq": 21, "from": "node3", "to": "node1"}, "address": "172.22.0.3"}
+{"ts": 1794664821.0920367, "node": "node1", "event": "message_received", "message": {"type": "HEARTBEAT", "seq": 21, "from": "node4", "to": "node1"}, "address": "172.22.0.4"}
+{"ts": 1794664821.2022777, "node": "node1", "event": "message_received", "message": {"type": "HEARTBEAT", "seq": 21, "from": "node2", "to": "node1"}, "address": "172.22.0.5"}
+{"ts": 1794664821.2881517, "node": "node1", "event": "message_sent", "message": {"type": "HEARTBEAT", "seq": 21, "from": "node1", "to": "node2"}}
+{"ts": 1794664821.2884598, "node": "node1", "event": "message_sent", "message": {"type": "HEARTBEAT", "seq": 21, "from": "node1", "to": "node3"}}
+{"ts": 1794664821.288782, "node": "node1", "event": "message_sent", "message": {"type": "HEARTBEAT", "seq": 21, "from": "node1", "to": "node4"}}
+{"ts": 1794664821.2918718, "node": "node1", "event": "message_send_error", "message": {"type": "HEARTBEAT", "seq": 21, "from": "node1", "to": "node5"}, "error": "[Errno -2] Name or service not known"}
+{"ts": 1794664821.5311298, "node": "node1", "event": "message_received", "message": {"type": "HEARTBEAT", "seq": 22, "from": "node3", "to": "node1"}, "address": "172.22.0.3"}
+{"ts": 1794664821.596344, "node": "node1", "event": "message_received", "message": {"type": "HEARTBEAT", "seq": 22, "from": "node4", "to": "node1"}, "address": "172.22.0.4"}
+{"ts": 1794664821.708832, "node": "node1", "event": "message_received", "message": {"type": "HEARTBEAT", "seq": 22, "from": "node2", "to": "node1"}, "address": "172.22.0.5"}
+{"ts": 1794664821.7932005, "node": "node1", "event": "message_sent", "message": {"type": "HEARTBEAT", "seq": 22, "from": "node1", "to": "node2"}}
+{"ts": 1794664821.7934623, "node": "node1", "event": "message_sent", "message": {"type": "HEARTBEAT", "seq": 22, "from": "node1", "to": "node3"}}
+{"ts": 1794664821.79366, "node": "node1", "event": "message_sent", "message": {"type": "HEARTBEAT", "seq": 22, "from": "node1", "to": "node4"}}
+{"ts": 1794664821.7970517, "node": "node1", "event": "message_send_error", "message": {"type": "HEARTBEAT", "seq": 22, "from": "node1", "to": "node5"}, "error": "[Errno -2] Name or service not known"}
+{"ts": 1794664822.0435634, "node": "node1", "event": "message_received", "message": {"type": "HEARTBEAT", "seq": 23, "from": "node3", "to": "node1"}, "address": "172.22.0.3"}
+{"ts": 1794664822.110944, "node": "node1", "event": "message_received", "message": {"type": "HEARTBEAT", "seq": 23, "from": "node4", "to": "node1"}, "address": "172.22.0.4"}
+{"ts": 1794664822.2152348, "node": "node1", "event": "message_received", "message": {"type": "HEARTBEAT", "seq": 23, "from": "node2", "to": "node1"}, "address": "172.22.0.5"}
+{"ts": 1794664822.2980037, "node": "node1", "event": "message_sent", "message": {"type": "HEARTBEAT", "seq": 23, "from": "node1", "to": "node2"}}
+{"ts": 1794664822.2982838, "node": "node1", "event": "message_sent", "message": {"type": "HEARTBEAT", "seq": 23, "from": "node1", "to": "node3"}}
+{"ts": 1794664822.2985623, "node": "node1", "event": "message_sent", "message": {"type": "HEARTBEAT", "seq": 23, "from": "node1", "to": "node4"}}
+{"ts": 1794664822.3019652, "node": "node1", "event": "message_send_error", "message": {"type": "HEARTBEAT", "seq": 23, "from": "node1", "to": "node5"}, "error": "[Errno -2] Name or service not known"}
+{"ts": 1794664822.3766553, "node": "node1", "event": "message_received", "message": {"type": "COORDINATOR", "coordinator": "node4", "election_id": "node4:d612754c", "from": "node4", "to": "node1"}, "address": "172.22.0.4"}
+{"ts": 1794664822.376798, "node": "node1", "event": "coordinator_changed", "coordinator": "node4", "peer": "node4", "election_id": "node4:d612754c"}
+{"ts": 1794664822.5501595, "node": "node1", "event": "message_received", "message": {"type": "HEARTBEAT", "seq": 24, "from": "node3", "to": "node1"}, "address": "172.22.0.3"}
+{"ts": 1794664822.6153095, "node": "node1", "event": "message_received", "message": {"type": "HEARTBEAT", "seq": 24, "from": "node4", "to": "node1"}, "address": "172.22.0.4"}
+{"ts": 1794664822.7217011, "node": "node1", "event": "message_received", "message": {"type": "HEARTBEAT", "seq": 24, "from": "node2", "to": "node1"}, "address": "172.22.0.5"}
+{"ts": 1794664822.8029003, "node": "node1", "event": "message_sent", "message": {"type": "HEARTBEAT", "seq": 24, "from": "node1", "to": "node2"}}
+{"ts": 1794664822.8032033, "node": "node1", "event": "message_sent", "message": {"type": "HEARTBEAT", "seq": 24, "from": "node1", "to": "node3"}}
+{"ts": 1794664822.8034408, "node": "node1", "event": "message_sent", "message": {"type": "HEARTBEAT", "seq": 24, "from": "node1", "to": "node4"}}
+{"ts": 1794664822.8067243, "node": "node1", "event": "message_send_error", "message": {"type": "HEARTBEAT", "seq": 24, "from": "node1", "to": "node5"}, "error": "[Errno -2] Name or service not known"}
+{"ts": 1794664823.0580535, "node": "node1", "event": "message_received", "message": {"type": "HEARTBEAT", "seq": 25, "from": "node3", "to": "node1"}, "address": "172.22.0.3"}
+{"ts": 1794664823.1194026, "node": "node1", "event": "message_received", "message": {"type": "HEARTBEAT", "seq": 25, "from": "node4", "to": "node1"}, "address": "172.22.0.4"}
+{"ts": 1794664823.228402, "node": "node1", "event": "message_received", "message": {"type": "HEARTBEAT", "seq": 25, "from": "node2", "to": "node1"}, "address": "172.22.0.5"}
+{"ts": 1794664823.3074832, "node": "node1", "event": "message_sent", "message": {"type": "HEARTBEAT", "seq": 25, "from": "node1", "to": "node2"}}
+{"ts": 1794664823.307825, "node": "node1", "event": "message_sent", "message": {"type": "HEARTBEAT", "seq": 25, "from": "node1", "to": "node3"}}
+{"ts": 1794664823.3080652, "node": "node1", "event": "message_sent", "message": {"type": "HEARTBEAT", "seq": 25, "from": "node1", "to": "node4"}}
+{"ts": 1794664823.3113964, "node": "node1", "event": "message_send_error", "message": {"type": "HEARTBEAT", "seq": 25, "from": "node1", "to": "node5"}, "error": "[Errno -2] Name or service not known"}
+{"ts": 1794664823.5632446, "node": "node1", "event": "message_received", "message": {"type": "HEARTBEAT", "seq": 26, "from": "node3", "to": "node1"}, "address": "172.22.0.3"}
+{"ts": 1794664823.6247938, "node": "node1", "event": "message_received", "message": {"type": "HEARTBEAT", "seq": 26, "from": "node4", "to": "node1"}, "address": "172.22.0.4"}
+{"ts": 1794664823.7327747, "node": "node1", "event": "message_received", "message": {"type": "HEARTBEAT", "seq": 26, "from": "node2", "to": "node1"}, "address": "172.22.0.5"}
+{"ts": 1794664823.8121433, "node": "node1", "event": "message_sent", "message": {"type": "HEARTBEAT", "seq": 26, "from": "node1", "to": "node2"}}
+{"ts": 1794664823.8124518, "node": "node1", "event": "message_sent", "message": {"type": "HEARTBEAT", "seq": 26, "from": "node1", "to": "node3"}}
+{"ts": 1794664823.8126404, "node": "node1", "event": "message_sent", "message": {"type": "HEARTBEAT", "seq": 26, "from": "node1", "to": "node4"}}
+{"ts": 1794664823.8160048, "node": "node1", "event": "message_send_error", "message": {"type": "HEARTBEAT", "seq": 26, "from": "node1", "to": "node5"}, "error": "[Errno -2] Name or service not known"}
+{"ts": 1794664824.0708146, "node": "node1", "event": "message_received", "message": {"type": "HEARTBEAT", "seq": 27, "from": "node3", "to": "node1"}, "address": "172.22.0.3"}
+{"ts": 1794664824.137184, "node": "node1", "event": "message_received", "message": {"type": "HEARTBEAT", "seq": 27, "from": "node4", "to": "node1"}, "address": "172.22.0.4"}
+{"ts": 1794664824.239569, "node": "node1", "event": "message_received", "message": {"type": "HEARTBEAT", "seq": 27, "from": "node2", "to": "node1"}, "address": "172.22.0.5"}
+{"ts": 1794664824.3167796, "node": "node1", "event": "message_sent", "message": {"type": "HEARTBEAT", "seq": 27, "from": "node1", "to": "node2"}}
+{"ts": 1794664824.3170438, "node": "node1", "event": "message_sent", "message": {"type": "HEARTBEAT", "seq": 27, "from": "node1", "to": "node3"}}
+{"ts": 1794664824.317255, "node": "node1", "event": "message_sent", "message": {"type": "HEARTBEAT", "seq": 27, "from": "node1", "to": "node4"}}
+{"ts": 1794664824.3199604, "node": "node1", "event": "message_send_error", "message": {"type": "HEARTBEAT", "seq": 27, "from": "node1", "to": "node5"}, "error": "[Errno -2] Name or service not known"}
+{"ts": 1794664824.5882423, "node": "node1", "event": "message_received", "message": {"type": "HEARTBEAT", "seq": 28, "from": "node3", "to": "node1"}, "address": "172.22.0.3"}
+{"ts": 1794664824.6412594, "node": "node1", "event": "message_received", "message": {"type": "HEARTBEAT", "seq": 28, "from": "node4", "to": "node1"}, "address": "172.22.0.4"}
+{"ts": 1794664824.7431808, "node": "node1", "event": "message_received", "message": {"type": "HEARTBEAT", "seq": 28, "from": "node2", "to": "node1"}, "address": "172.22.0.5"}
+{"ts": 1794664824.8203406, "node": "node1", "event": "message_sent", "message": {"type": "HEARTBEAT", "seq": 28, "from": "node1", "to": "node2"}}
+{"ts": 1794664824.820477, "node": "node1", "event": "message_sent", "message": {"type": "HEARTBEAT", "seq": 28, "from": "node1", "to": "node3"}}
+{"ts": 1794664824.820585, "node": "node1", "event": "message_sent", "message": {"type": "HEARTBEAT", "seq": 28, "from": "node1", "to": "node4"}}
+{"ts": 1794664824.823544, "node": "node1", "event": "message_send_error", "message": {"type": "HEARTBEAT", "seq": 28, "from": "node1", "to": "node5"}, "error": "[Errno -2] Name or service not known"}
