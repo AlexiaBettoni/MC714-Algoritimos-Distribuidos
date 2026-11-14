@@ -1,2 +1,69 @@
-# MC714-Algoritimos-Distribuidos
-Trabalho 2 - Implementação de Algoritimos Distribuidos MC714
+# MC714 — Algoritmos Distribuídos
+
+Implementação de monitoramento por heartbeat e eleição Bully para o Trabalho 2.
+
+## Executar a matriz experimental
+
+Requisitos: Docker Engine/Desktop com Docker Compose v2 e Python 3.10 ou superior. Na raiz do repositório:
+
+```bash
+python3 scripts/run_experiments.py
+```
+
+Por padrão, o script executa duas repetições com seeds independentes para:
+
+- operação normal com cinco nós;
+- crash do coordenador (`node5`) com cinco nós;
+- três taxas de perda (0%, 5% e 15%) em ambos os cenários.
+
+Isso totaliza 12 execuções: dois cenários × três níveis de perda × duas seeds. É a configuração mínima do script que cobre operação normal, falha do coordenador, três níveis de um parâmetro e repetições independentes. Duas repetições são o mínimo literal; cinco ou mais são preferíveis para estimativas mais confiáveis de variabilidade e percentis.
+
+Cada execução espera seis segundos de aquecimento. Após o crash, observa o cluster por pelo menos oito segundos (ou três timeouts). O script constrói a imagem uma vez, gera um `compose.yaml` por execução, salva os metadados e os logs JSON brutos e remove os contêineres daquele ensaio.
+
+Exemplo com cinco repetições por configuração:
+
+```bash
+python3 scripts/run_experiments.py \
+  --nodes 5 --loss-rates 0,0.05,0.15 --repetitions 5 \
+  --timeout 2 --interval 0.5 --warmup 6 --observe 8
+```
+
+Para estudar escalabilidade, passe três tamanhos, como `--nodes 3,5,7`. Isso aumenta a matriz proporcionalmente; não é necessário para cumprir o requisito de variar um parâmetro, já satisfeito pela perda de mensagens.
+
+Para executar só o crash do coordenador com cinco nós:
+
+```bash
+python3 scripts/run_experiments.py --scenario coordinator_crash --nodes 5 --loss-rates 0 --repetitions 2
+```
+
+Os resultados são criados em `results/experiments/<data-hora>/`. Para rodar uma única repetição de falha, use o atalho:
+
+```bash
+scripts/run_kill.sh node5
+```
+
+## Analisar os resultados
+
+Passe o diretório da execução indicado pelo script:
+
+```bash
+python3 scripts/analyze.py results/experiments/<data-hora>
+```
+
+O analisador gera `metrics.csv` (uma linha por execução) e `summary.json` (média, desvio padrão, p50 e p95 por cenário). As métricas incluem latência de detecção, tempo de convergência para o novo coordenador, suspeitas falsas e contagem de mensagens de eleição. Os logs brutos e o Compose gerado permanecem em cada diretório `run-*` para auditoria e reprodução.
+
+## Visualizar mensagens entre nós
+
+Gere um diagrama de sequência SVG para uma execução:
+
+```bash
+python3 scripts/visualize_messages.py results/experiments/<data-hora>/<diretório-run>
+```
+
+O padrão mostra mensagens Bully (`ELECTION`, `OK` e `COORDINATOR`) e marca o momento em que o nó foi derrubado. A sequência é dividida em duas linhas cronológicas, cada uma avançando da esquerda para a direita; os nós ocupam linhas horizontais e as mensagens aparecem como setas coloridas entre elas, com timestamp relativo. A legenda identifica os tipos e o título inclui os parâmetros registrados para a execução. O SVG é salvo como `messages.svg` dentro do diretório da execução. Para incluir também heartbeats, use `--include-heartbeats`; como eles são frequentes, a figura limita-se a 500 setas por padrão e conserva as mensagens do início e do fim. Ajuste o espaço horizontal entre mensagens com `--spacing 110`, o limite com `--max-messages 1000` ou o arquivo com `--output figura.svg`.
+
+## Interpretação e limitações
+
+`LOSS_RATE` descarta mensagens recebidas de forma pseudoaleatória, incluindo heartbeats e mensagens de eleição. No cenário normal, a perda ajuda a observar suspeitas falsas. No cenário de crash, ela também mostra o efeito da perda sobre detecção e eleição. O ensaio de crash mata o nó de maior ID para exercitar a eleição de um novo coordenador. Os nós são contêineres no mesmo host e não representam domínios de falha independentes. O seed é registrado; escalonamento de threads e rede local podem fazer execuções com o mesmo seed seguirem traços diferentes.
+
+Cada nó registra mensagens enviadas e recebidas, inclusive heartbeats. Para avaliar o custo do Bully, use a contagem de mensagens `ELECTION`, `OK` e `COORDINATOR`; não some heartbeats nessa métrica.

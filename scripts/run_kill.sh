@@ -1,13 +1,11 @@
 #!/usr/bin/env bash
-# Uso: HB_TIMEOUT=2 LOSS_RATE=0.1 SEED=1 scripts/run_kill.sh node3 > results/run1.json
+# Convenience wrapper for one coordinator-crash run. The full experiment
+# matrix is available through scripts/run_experiments.py.
 set -euo pipefail
-VICTIM=${1:-node3}
-docker compose up -d --build >&2
-sleep 5  
-KILL_TS=$(date +%s.%N)
-docker compose kill "$VICTIM" >&2
-sleep $(python3 -c "print(${HB_TIMEOUT:-2}*3)")
-docker compose logs --no-log-prefix --no-color > /tmp/logs.txt
-docker compose down >&2
-python3 scripts/analyze.py /tmp/logs.txt "$VICTIM" "$KILL_TS"
- 
+
+ROOT=$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)
+exec python3 "$ROOT/scripts/run_experiments.py" \
+  --scenario coordinator_crash --nodes "${NODES:-5}" \
+  --loss-rates "${LOSS_RATE:-0}" --repetitions 1 \
+  --timeout "${HB_TIMEOUT:-2}" --interval "${HB_INTERVAL:-0.5}" \
+  --seed "${SEED:-1}" --results "${RESULTS_DIR:-$ROOT/results/experiments}"
