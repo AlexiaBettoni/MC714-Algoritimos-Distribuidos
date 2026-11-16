@@ -1,9 +1,5 @@
 #!/usr/bin/env python3
-"""Run repeatable normal, coordinator-crash, and packet-loss experiments.
-
-At the end of each batch, build_report.py writes report.md, events.csv and
-metrics.csv into the batch folder.
-"""
+"""Run repeatable normal, coordinator-crash, and packet-loss experiments."""
 
 import argparse
 import datetime as dt
@@ -15,8 +11,6 @@ import subprocess
 import sys
 import time
 from pathlib import Path
-
-from build_report import generate
 
 ROOT = Path(__file__).resolve().parents[1]
 IMAGE = "mc714-bully-experiment:local"
@@ -58,7 +52,75 @@ def parse_csv(value, converter, label):
     return result
 
 
-def run_batch(args, configurations, manifest, batch, batch_name):
+def main():
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument("--scenario", choices=["all", "normal", "coordinator_crash"],
+                        default="all")
+    parser.add_argument("--nodes", default="5",
+                        help="node counts (default: 5; pass 3,5,7 to add a size sweep)")
+    parser.add_argument("--loss-rates", default="0,0.05,0.15",
+                        help="loss levels for each selected scenario (default: 0,0.05,0.15)")
+    parser.add_argument("--repetitions", type=int, default=2,
+                        help="independent seeds per configuration (minimum default: 2)")
+    parser.add_argument("--seed", type=int, default=1, help="first random seed")
+    parser.add_argument("--timeout", type=float, default=2.0)
+    parser.add_argument("--interval", type=float, default=0.5)
+    parser.add_argument("--warmup", type=float, default=6.0,
+                        help="seconds before injecting a crash")
+    parser.add_argument("--observe", type=float, default=8.0,
+                        help="seconds to observe a normal run")
+    parser.add_argument("--results", default="results/experiments")
+    parser.add_argument("--skip-build", action="store_true",
+                        help="reuse the already-built experiment image")
+    args = parser.parse_args()
+
+    try:
+        node_counts = parse_csv(args.nodes, int, "node counts")
+        loss_rates = parse_csv(args.loss_rates, float, "loss rates")
+    except argparse.ArgumentTypeError as error:
+        parser.error(str(error))
+    if args.repetitions < 1 or any(count < 3 for count in node_counts):
+        parser.error("repetitions must be positive and every node count must be at least 3")
+    if not 0 <= min(loss_rates) <= max(loss_rates) < 1:
+        parser.error("loss rates must be in [0, 1)")
+    if args.timeout <= 0 or args.interval <= 0 or args.warmup <= 0 or args.observe <= 0:
+        parser.error("timeouts, intervals, warmup, and observation duration must be positive")
+
+    result_root = Path(args.results).expanduser().resolve()
+    batch_name = dt.datetime.now().strftime("%Y%m%d-%H%M%S-%f")
+    batch = result_root / batch_name
+    batch.mkdir(parents=True, exist_ok=False)
+    scenarios = ["normal", "coordinator_crash"] if args.scenario == "all" else [args.scenario]
+    configurations = [
+        (scenario, count, rate)
+        for scenario in scenarios
+        for count in node_counts
+        for rate in loss_rates
+    ]
+
+    manifest = {
+        "created_at": dt.datetime.now().astimezone().isoformat(),
+        "nodes": node_counts, "loss_rates": loss_rates,
+        "repetitions": args.repetitions, "first_seed": args.seed,
+        "timeout_s": args.timeout, "heartbeat_interval_s": args.interval,
+        "warmup_s": args.warmup, "observation_s": args.observe,
+        "scenarios": scenarios, "runs": len(configurations) * args.repetitions,
+        "host": {
+            "platform": platform.platform(),
+            "processor": platform.processor(),
+            "logical_cpu_count": os.cpu_count(),
+            "python": sys.version.split()[0],
+        },
+    }
+    for label, command in (("docker_version", ["docker", "--version"]),
+                           ("compose_version", ["docker", "compose", "version"])):
+        result = subprocess.run(command, cwd=ROOT, text=True, capture_output=True, check=False)
+        manifest[label] = (result.stdout or result.stderr).strip() if result.returncode == 0 else "unavailable"
+    (batch / "manifest.json").write_text(json.dumps(manifest, indent=2) + "\n")
+
+    if not args.skip_build:
+        subprocess.run(["docker", "build", "-t", IMAGE, "."], cwd=ROOT, check=True)
+
     run_number = 0
     for scenario, count, loss_rate in configurations:
         for repetition in range(args.repetitions):
@@ -107,97 +169,7 @@ def run_batch(args, configurations, manifest, batch, batch_name):
             finally:
                 compose(project, compose_file, "down", check=False, capture=True)
 
-
-def main():
-    parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument("--scenario", choices=["all", "normal", "coordinator_crash"],
-                        default="all")
-    parser.add_argument("--nodes", default="5",
-                        help="node counts (default: 5; pass 3,5,7 to add a size sweep)")
-    parser.add_argument("--loss-rates", default="0,0.05,0.15",
-                        help="loss levels for each selected scenario (default: 0,0.05,0.15)")
-    parser.add_argument("--repetitions", type=int, default=2,
-                        help="independent seeds per configuration (minimum default: 2)")
-    parser.add_argument("--seed", type=int, default=1, help="first random seed")
-    parser.add_argument("--timeout", type=float, default=2.0)
-    parser.add_argument("--interval", type=float, default=0.5)
-    parser.add_argument("--warmup", type=float, default=6.0,
-                        help="seconds before injecting a crash")
-    parser.add_argument("--observe", type=float, default=8.0,
-                        help="seconds to observe a normal run")
-    parser.add_argument("--tol", type=float, default=1.0,
-                        help="tolerance (s) added to the time bounds in the property checks")
-    parser.add_argument("--results", default="results/experiments")
-    parser.add_argument("--skip-build", action="store_true",
-                        help="reuse the already-built experiment image")
-    args = parser.parse_args()
-
-    try:
-        node_counts = parse_csv(args.nodes, int, "node counts")
-        loss_rates = parse_csv(args.loss_rates, float, "loss rates")
-    except argparse.ArgumentTypeError as error:
-        parser.error(str(error))
-    if args.repetitions < 1 or any(count < 3 for count in node_counts):
-        parser.error("repetitions must be positive and every node count must be at least 3")
-    if not 0 <= min(loss_rates) <= max(loss_rates) < 1:
-        parser.error("loss rates must be in [0, 1)")
-    if args.timeout <= 0 or args.interval <= 0 or args.warmup <= 0 or args.observe <= 0:
-        parser.error("timeouts, intervals, warmup, and observation duration must be positive")
-
-    result_root = Path(args.results).expanduser().resolve()
-    batch_name = dt.datetime.now().strftime("%Y%m%d-%H%M%S-%f")
-    batch = result_root / batch_name
-    batch.mkdir(parents=True, exist_ok=False)
-    scenarios = ["normal", "coordinator_crash"] if args.scenario == "all" else [args.scenario]
-    configurations = [
-        (scenario, count, rate)
-        for scenario in scenarios
-        for count in node_counts
-        for rate in loss_rates
-    ]
-
-    manifest = {
-        "created_at": dt.datetime.now().astimezone().isoformat(),
-        "nodes": node_counts, "loss_rates": loss_rates,
-        "repetitions": args.repetitions, "first_seed": args.seed,
-        "timeout_s": args.timeout, "heartbeat_interval_s": args.interval,
-        "warmup_s": args.warmup, "observation_s": args.observe,
-        "scenarios": scenarios, "runs": len(configurations) * args.repetitions,
-        "host": {
-            "platform": platform.platform(),
-            "processor": platform.processor(),
-            "logical_cpu_count": os.cpu_count(),
-            "python": sys.version.split()[0],
-        },
-    }
-    for label, command in (("docker_version", ["docker", "--version"]),
-                           ("compose_version", ["docker", "compose", "version"])):
-        result = subprocess.run(command, cwd=ROOT, text=True, capture_output=True, check=False)
-        manifest[label] = (result.stdout or result.stderr).strip() if result.returncode == 0 else "unavailable"
-    manifest_path = batch / "manifest.json"
-    manifest_path.write_text(json.dumps(manifest, indent=2) + "\n")
-
-    if not args.skip_build:
-        subprocess.run(["docker", "build", "-t", IMAGE, "."], cwd=ROOT, check=True)
-
-    batch_started = time.time()
-    try:
-        run_batch(args, configurations, manifest, batch, batch_name)
-    finally:
-        # Runs even if a run failed, so the partial batch still gets a report.
-        manifest["finished_at"] = dt.datetime.now().astimezone().isoformat()
-        manifest["duration_s"] = round(time.time() - batch_started, 1)
-        manifest_path.write_text(json.dumps(manifest, indent=2) + "\n")
-        try:
-            strict_failures = generate(batch, tol=args.tol)
-            print(f"Report:  {batch / 'report.md'}")
-            print(f"Events:  {batch / 'events.csv'}")
-            print(f"Metrics: {batch / 'metrics.csv'}")
-            if strict_failures:
-                print(f"Warning: {strict_failures} run(s) violated a strict property", file=sys.stderr)
-        except Exception as error:  # never lose the raw data because of a report bug
-            print(f"Warning: could not build the report: {error}", file=sys.stderr)
-            print(f"Rebuild later: python3 scripts/build_report.py {batch}", file=sys.stderr)
+    print(f"Run analysis: python3 scripts/analyze.py {batch}")
     print(f"Results saved under: {batch}")
 
 
