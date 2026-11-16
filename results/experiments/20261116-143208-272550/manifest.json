@@ -1,0 +1,30 @@
+{
+  "created_at": "2026-11-16T14:32:08.273226-03:00",
+  "nodes": [
+    5
+  ],
+  "loss_rates": [
+    0.0,
+    0.05,
+    0.15
+  ],
+  "repetitions": 5,
+  "first_seed": 1,
+  "timeout_s": 2.0,
+  "heartbeat_interval_s": 0.5,
+  "warmup_s": 15.0,
+  "observation_s": 8.0,
+  "scenarios": [
+    "normal",
+    "coordinator_crash"
+  ],
+  "runs": 30,
+  "host": {
+    "platform": "Windows-11-10.0.26300-SP0",
+    "processor": "Intel64 Family 6 Model 154 Stepping 4, GenuineIntel",
+    "logical_cpu_count": 12,
+    "python": "3.13.0"
+  },
+  "docker_version": "Docker version 29.9.2, build a82e528",
+  "compose_version": "Docker Compose version v5.6.1"
+}

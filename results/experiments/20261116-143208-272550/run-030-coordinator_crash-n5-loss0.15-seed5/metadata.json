@@ -1,0 +1,18 @@
+{
+  "run_id": "run-030-coordinator_crash-n5-loss0.15-seed5",
+  "scenario": "coordinator_crash",
+  "nodes": 5,
+  "loss_rate": 0.15,
+  "seed": 5,
+  "victim": "node5",
+  "timeout_s": 2.0,
+  "heartbeat_interval_s": 0.5,
+  "warmup_s": 15.0,
+  "observation_s": 8.0,
+  "start_ts": 1794851245.5512235,
+  "kill_ts": 1794851262.76913,
+  "end_ts": 1794851271.836436,
+  "duration_s": 26.285212516784668,
+  "completed_at": "2026-11-16T14:47:51.836442-03:00",
+  "compose_exit_code": 0
+}

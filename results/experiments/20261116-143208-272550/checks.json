@@ -1,0 +1,992 @@
+[
+  {
+    "run_id": "run-001-normal-n5-loss0-seed1",
+    "scenario": "normal",
+    "nodes": 5,
+    "loss_rate": 0.0,
+    "seed": 1,
+    "checks": [
+      {
+        "name": "no false suspicions",
+        "ok": true,
+        "strict": true,
+        "detail": "0 unwarranted suspicion events"
+      },
+      {
+        "name": "leader agreement",
+        "ok": false,
+        "strict": true,
+        "detail": "expected node5, but final views are {'node2': 'node3', 'node3': 'node3', 'node4': 'node4'}"
+      }
+    ]
+  },
+  {
+    "run_id": "run-002-normal-n5-loss0-seed2",
+    "scenario": "normal",
+    "nodes": 5,
+    "loss_rate": 0.0,
+    "seed": 2,
+    "checks": [
+      {
+        "name": "no false suspicions",
+        "ok": true,
+        "strict": true,
+        "detail": "0 unwarranted suspicion events"
+      },
+      {
+        "name": "leader agreement",
+        "ok": true,
+        "strict": true,
+        "detail": "all live nodes end with leader node5"
+      }
+    ]
+  },
+  {
+    "run_id": "run-003-normal-n5-loss0-seed3",
+    "scenario": "normal",
+    "nodes": 5,
+    "loss_rate": 0.0,
+    "seed": 3,
+    "checks": [
+      {
+        "name": "no false suspicions",
+        "ok": true,
+        "strict": true,
+        "detail": "0 unwarranted suspicion events"
+      },
+      {
+        "name": "leader agreement",
+        "ok": true,
+        "strict": true,
+        "detail": "all live nodes end with leader node5"
+      }
+    ]
+  },
+  {
+    "run_id": "run-004-normal-n5-loss0-seed4",
+    "scenario": "normal",
+    "nodes": 5,
+    "loss_rate": 0.0,
+    "seed": 4,
+    "checks": [
+      {
+        "name": "no false suspicions",
+        "ok": true,
+        "strict": true,
+        "detail": "0 unwarranted suspicion events"
+      },
+      {
+        "name": "leader agreement",
+        "ok": false,
+        "strict": true,
+        "detail": "expected node5, but final views are {'node3': 'node4', 'node4': 'node4'}"
+      }
+    ]
+  },
+  {
+    "run_id": "run-005-normal-n5-loss0-seed5",
+    "scenario": "normal",
+    "nodes": 5,
+    "loss_rate": 0.0,
+    "seed": 5,
+    "checks": [
+      {
+        "name": "no false suspicions",
+        "ok": true,
+        "strict": true,
+        "detail": "0 unwarranted suspicion events"
+      },
+      {
+        "name": "leader agreement",
+        "ok": true,
+        "strict": true,
+        "detail": "all live nodes end with leader node5"
+      }
+    ]
+  },
+  {
+    "run_id": "run-006-normal-n5-loss0.05-seed1",
+    "scenario": "normal",
+    "nodes": 5,
+    "loss_rate": 0.05,
+    "seed": 1,
+    "checks": [
+      {
+        "name": "no false suspicions",
+        "ok": true,
+        "strict": false,
+        "detail": "0 unwarranted suspicion events"
+      },
+      {
+        "name": "leader agreement",
+        "ok": true,
+        "strict": false,
+        "detail": "all live nodes end with leader node5"
+      }
+    ]
+  },
+  {
+    "run_id": "run-007-normal-n5-loss0.05-seed2",
+    "scenario": "normal",
+    "nodes": 5,
+    "loss_rate": 0.05,
+    "seed": 2,
+    "checks": [
+      {
+        "name": "no false suspicions",
+        "ok": true,
+        "strict": false,
+        "detail": "0 unwarranted suspicion events"
+      },
+      {
+        "name": "leader agreement",
+        "ok": false,
+        "strict": false,
+        "detail": "expected node5, but final views are {'node1': 'node4', 'node2': 'node4', 'node3': 'node4', 'node4': 'node4'}"
+      }
+    ]
+  },
+  {
+    "run_id": "run-008-normal-n5-loss0.05-seed3",
+    "scenario": "normal",
+    "nodes": 5,
+    "loss_rate": 0.05,
+    "seed": 3,
+    "checks": [
+      {
+        "name": "no false suspicions",
+        "ok": true,
+        "strict": false,
+        "detail": "0 unwarranted suspicion events"
+      },
+      {
+        "name": "leader agreement",
+        "ok": true,
+        "strict": false,
+        "detail": "all live nodes end with leader node5"
+      }
+    ]
+  },
+  {
+    "run_id": "run-009-normal-n5-loss0.05-seed4",
+    "scenario": "normal",
+    "nodes": 5,
+    "loss_rate": 0.05,
+    "seed": 4,
+    "checks": [
+      {
+        "name": "no false suspicions",
+        "ok": true,
+        "strict": false,
+        "detail": "0 unwarranted suspicion events"
+      },
+      {
+        "name": "leader agreement",
+        "ok": true,
+        "strict": false,
+        "detail": "all live nodes end with leader node5"
+      }
+    ]
+  },
+  {
+    "run_id": "run-010-normal-n5-loss0.05-seed5",
+    "scenario": "normal",
+    "nodes": 5,
+    "loss_rate": 0.05,
+    "seed": 5,
+    "checks": [
+      {
+        "name": "no false suspicions",
+        "ok": true,
+        "strict": false,
+        "detail": "0 unwarranted suspicion events"
+      },
+      {
+        "name": "leader agreement",
+        "ok": true,
+        "strict": false,
+        "detail": "all live nodes end with leader node5"
+      }
+    ]
+  },
+  {
+    "run_id": "run-011-normal-n5-loss0.15-seed1",
+    "scenario": "normal",
+    "nodes": 5,
+    "loss_rate": 0.15,
+    "seed": 1,
+    "checks": [
+      {
+        "name": "no false suspicions",
+        "ok": true,
+        "strict": false,
+        "detail": "0 unwarranted suspicion events"
+      },
+      {
+        "name": "leader agreement",
+        "ok": true,
+        "strict": false,
+        "detail": "all live nodes end with leader node5"
+      }
+    ]
+  },
+  {
+    "run_id": "run-012-normal-n5-loss0.15-seed2",
+    "scenario": "normal",
+    "nodes": 5,
+    "loss_rate": 0.15,
+    "seed": 2,
+    "checks": [
+      {
+        "name": "no false suspicions",
+        "ok": false,
+        "strict": false,
+        "detail": "2 unwarranted suspicion events"
+      },
+      {
+        "name": "leader agreement",
+        "ok": false,
+        "strict": false,
+        "detail": "expected node5, but final views are {'node1': 'node4', 'node2': 'node4', 'node3': 'node4', 'node4': 'node4'}"
+      }
+    ]
+  },
+  {
+    "run_id": "run-013-normal-n5-loss0.15-seed3",
+    "scenario": "normal",
+    "nodes": 5,
+    "loss_rate": 0.15,
+    "seed": 3,
+    "checks": [
+      {
+        "name": "no false suspicions",
+        "ok": false,
+        "strict": false,
+        "detail": "1 unwarranted suspicion events"
+      },
+      {
+        "name": "leader agreement",
+        "ok": true,
+        "strict": false,
+        "detail": "all live nodes end with leader node5"
+      }
+    ]
+  },
+  {
+    "run_id": "run-014-normal-n5-loss0.15-seed4",
+    "scenario": "normal",
+    "nodes": 5,
+    "loss_rate": 0.15,
+    "seed": 4,
+    "checks": [
+      {
+        "name": "no false suspicions",
+        "ok": true,
+        "strict": false,
+        "detail": "0 unwarranted suspicion events"
+      },
+      {
+        "name": "leader agreement",
+        "ok": false,
+        "strict": false,
+        "detail": "expected node5, but final views are {'node2': 'node3', 'node3': 'node3'}"
+      }
+    ]
+  },
+  {
+    "run_id": "run-015-normal-n5-loss0.15-seed5",
+    "scenario": "normal",
+    "nodes": 5,
+    "loss_rate": 0.15,
+    "seed": 5,
+    "checks": [
+      {
+        "name": "no false suspicions",
+        "ok": false,
+        "strict": false,
+        "detail": "1 unwarranted suspicion events"
+      },
+      {
+        "name": "leader agreement",
+        "ok": false,
+        "strict": false,
+        "detail": "expected node5, but final views are {'node1': 'node1', 'node2': 'node3', 'node3': 'node3'}"
+      }
+    ]
+  },
+  {
+    "run_id": "run-016-coordinator_crash-n5-loss0-seed1",
+    "scenario": "coordinator_crash",
+    "nodes": 5,
+    "loss_rate": 0.0,
+    "seed": 1,
+    "checks": [
+      {
+        "name": "no false suspicions",
+        "ok": true,
+        "strict": true,
+        "detail": "0 unwarranted suspicion events"
+      },
+      {
+        "name": "completeness",
+        "ok": true,
+        "strict": true,
+        "detail": "all 4 live nodes suspect node5"
+      },
+      {
+        "name": "bounded detection time",
+        "ok": true,
+        "strict": true,
+        "detail": "max 1.918s, limit 3.125s"
+      },
+      {
+        "name": "leader agreement",
+        "ok": true,
+        "strict": true,
+        "detail": "all live nodes end with leader node4"
+      },
+      {
+        "name": "single leader announced",
+        "ok": true,
+        "strict": true,
+        "detail": "nodes that declared themselves leader after the crash: ['node4']"
+      },
+      {
+        "name": "election convergence",
+        "ok": true,
+        "strict": true,
+        "detail": "max 3.848s, limit 7.125s"
+      }
+    ]
+  },
+  {
+    "run_id": "run-017-coordinator_crash-n5-loss0-seed2",
+    "scenario": "coordinator_crash",
+    "nodes": 5,
+    "loss_rate": 0.0,
+    "seed": 2,
+    "checks": [
+      {
+        "name": "no false suspicions",
+        "ok": true,
+        "strict": true,
+        "detail": "0 unwarranted suspicion events"
+      },
+      {
+        "name": "completeness",
+        "ok": true,
+        "strict": true,
+        "detail": "all 4 live nodes suspect node5"
+      },
+      {
+        "name": "bounded detection time",
+        "ok": true,
+        "strict": true,
+        "detail": "max 2.119s, limit 3.125s"
+      },
+      {
+        "name": "leader agreement",
+        "ok": true,
+        "strict": true,
+        "detail": "all live nodes end with leader node4"
+      },
+      {
+        "name": "single leader announced",
+        "ok": true,
+        "strict": true,
+        "detail": "nodes that declared themselves leader after the crash: ['node4']"
+      },
+      {
+        "name": "election convergence",
+        "ok": true,
+        "strict": true,
+        "detail": "max 4.050s, limit 7.125s"
+      }
+    ]
+  },
+  {
+    "run_id": "run-018-coordinator_crash-n5-loss0-seed3",
+    "scenario": "coordinator_crash",
+    "nodes": 5,
+    "loss_rate": 0.0,
+    "seed": 3,
+    "checks": [
+      {
+        "name": "no false suspicions",
+        "ok": true,
+        "strict": true,
+        "detail": "0 unwarranted suspicion events"
+      },
+      {
+        "name": "completeness",
+        "ok": true,
+        "strict": true,
+        "detail": "all 4 live nodes suspect node5"
+      },
+      {
+        "name": "bounded detection time",
+        "ok": true,
+        "strict": true,
+        "detail": "max 2.325s, limit 3.125s"
+      },
+      {
+        "name": "leader agreement",
+        "ok": true,
+        "strict": true,
+        "detail": "all live nodes end with leader node4"
+      },
+      {
+        "name": "single leader announced",
+        "ok": true,
+        "strict": true,
+        "detail": "nodes that declared themselves leader after the crash: ['node4']"
+      },
+      {
+        "name": "election convergence",
+        "ok": true,
+        "strict": true,
+        "detail": "max 4.226s, limit 7.125s"
+      }
+    ]
+  },
+  {
+    "run_id": "run-019-coordinator_crash-n5-loss0-seed4",
+    "scenario": "coordinator_crash",
+    "nodes": 5,
+    "loss_rate": 0.0,
+    "seed": 4,
+    "checks": [
+      {
+        "name": "no false suspicions",
+        "ok": true,
+        "strict": true,
+        "detail": "0 unwarranted suspicion events"
+      },
+      {
+        "name": "completeness",
+        "ok": true,
+        "strict": true,
+        "detail": "all 4 live nodes suspect node5"
+      },
+      {
+        "name": "bounded detection time",
+        "ok": true,
+        "strict": true,
+        "detail": "max 2.385s, limit 3.125s"
+      },
+      {
+        "name": "leader agreement",
+        "ok": true,
+        "strict": true,
+        "detail": "all live nodes end with leader node4"
+      },
+      {
+        "name": "single leader announced",
+        "ok": true,
+        "strict": true,
+        "detail": "nodes that declared themselves leader after the crash: ['node4']"
+      },
+      {
+        "name": "election convergence",
+        "ok": true,
+        "strict": true,
+        "detail": "max 4.270s, limit 7.125s"
+      }
+    ]
+  },
+  {
+    "run_id": "run-020-coordinator_crash-n5-loss0-seed5",
+    "scenario": "coordinator_crash",
+    "nodes": 5,
+    "loss_rate": 0.0,
+    "seed": 5,
+    "checks": [
+      {
+        "name": "no false suspicions",
+        "ok": true,
+        "strict": true,
+        "detail": "0 unwarranted suspicion events"
+      },
+      {
+        "name": "completeness",
+        "ok": true,
+        "strict": true,
+        "detail": "all 4 live nodes suspect node5"
+      },
+      {
+        "name": "bounded detection time",
+        "ok": true,
+        "strict": true,
+        "detail": "max 2.148s, limit 3.125s"
+      },
+      {
+        "name": "leader agreement",
+        "ok": true,
+        "strict": true,
+        "detail": "all live nodes end with leader node4"
+      },
+      {
+        "name": "single leader announced",
+        "ok": true,
+        "strict": true,
+        "detail": "nodes that declared themselves leader after the crash: ['node4']"
+      },
+      {
+        "name": "election convergence",
+        "ok": true,
+        "strict": true,
+        "detail": "max 4.112s, limit 7.125s"
+      }
+    ]
+  },
+  {
+    "run_id": "run-021-coordinator_crash-n5-loss0.05-seed1",
+    "scenario": "coordinator_crash",
+    "nodes": 5,
+    "loss_rate": 0.05,
+    "seed": 1,
+    "checks": [
+      {
+        "name": "no false suspicions",
+        "ok": true,
+        "strict": false,
+        "detail": "0 unwarranted suspicion events"
+      },
+      {
+        "name": "completeness",
+        "ok": true,
+        "strict": true,
+        "detail": "all 4 live nodes suspect node5"
+      },
+      {
+        "name": "bounded detection time",
+        "ok": true,
+        "strict": true,
+        "detail": "max 2.109s, limit 3.125s"
+      },
+      {
+        "name": "leader agreement",
+        "ok": true,
+        "strict": false,
+        "detail": "all live nodes end with leader node4"
+      },
+      {
+        "name": "single leader announced",
+        "ok": true,
+        "strict": false,
+        "detail": "nodes that declared themselves leader after the crash: ['node4']"
+      },
+      {
+        "name": "election convergence",
+        "ok": true,
+        "strict": false,
+        "detail": "max 4.012s, limit 7.125s"
+      }
+    ]
+  },
+  {
+    "run_id": "run-022-coordinator_crash-n5-loss0.05-seed2",
+    "scenario": "coordinator_crash",
+    "nodes": 5,
+    "loss_rate": 0.05,
+    "seed": 2,
+    "checks": [
+      {
+        "name": "no false suspicions",
+        "ok": true,
+        "strict": false,
+        "detail": "0 unwarranted suspicion events"
+      },
+      {
+        "name": "completeness",
+        "ok": true,
+        "strict": true,
+        "detail": "all 4 live nodes suspect node5"
+      },
+      {
+        "name": "bounded detection time",
+        "ok": true,
+        "strict": true,
+        "detail": "max 2.058s, limit 3.125s"
+      },
+      {
+        "name": "leader agreement",
+        "ok": true,
+        "strict": false,
+        "detail": "all live nodes end with leader node4"
+      },
+      {
+        "name": "single leader announced",
+        "ok": true,
+        "strict": false,
+        "detail": "nodes that declared themselves leader after the crash: ['node4']"
+      },
+      {
+        "name": "election convergence",
+        "ok": true,
+        "strict": false,
+        "detail": "max 3.940s, limit 7.125s"
+      }
+    ]
+  },
+  {
+    "run_id": "run-023-coordinator_crash-n5-loss0.05-seed3",
+    "scenario": "coordinator_crash",
+    "nodes": 5,
+    "loss_rate": 0.05,
+    "seed": 3,
+    "checks": [
+      {
+        "name": "no false suspicions",
+        "ok": true,
+        "strict": false,
+        "detail": "0 unwarranted suspicion events"
+      },
+      {
+        "name": "completeness",
+        "ok": true,
+        "strict": true,
+        "detail": "all 4 live nodes suspect node5"
+      },
+      {
+        "name": "bounded detection time",
+        "ok": true,
+        "strict": true,
+        "detail": "max 1.945s, limit 3.125s"
+      },
+      {
+        "name": "leader agreement",
+        "ok": true,
+        "strict": false,
+        "detail": "all live nodes end with leader node4"
+      },
+      {
+        "name": "single leader announced",
+        "ok": false,
+        "strict": false,
+        "detail": "nodes that declared themselves leader after the crash: ['node3', 'node4']"
+      },
+      {
+        "name": "election convergence",
+        "ok": true,
+        "strict": false,
+        "detail": "max 3.875s, limit 7.125s"
+      }
+    ]
+  },
+  {
+    "run_id": "run-024-coordinator_crash-n5-loss0.05-seed4",
+    "scenario": "coordinator_crash",
+    "nodes": 5,
+    "loss_rate": 0.05,
+    "seed": 4,
+    "checks": [
+      {
+        "name": "no false suspicions",
+        "ok": true,
+        "strict": false,
+        "detail": "0 unwarranted suspicion events"
+      },
+      {
+        "name": "completeness",
+        "ok": true,
+        "strict": true,
+        "detail": "all 4 live nodes suspect node5"
+      },
+      {
+        "name": "bounded detection time",
+        "ok": true,
+        "strict": true,
+        "detail": "max 2.671s, limit 3.125s"
+      },
+      {
+        "name": "leader agreement",
+        "ok": true,
+        "strict": false,
+        "detail": "all live nodes end with leader node4"
+      },
+      {
+        "name": "single leader announced",
+        "ok": true,
+        "strict": false,
+        "detail": "nodes that declared themselves leader after the crash: ['node4']"
+      },
+      {
+        "name": "election convergence",
+        "ok": true,
+        "strict": false,
+        "detail": "max 4.638s, limit 7.125s"
+      }
+    ]
+  },
+  {
+    "run_id": "run-025-coordinator_crash-n5-loss0.05-seed5",
+    "scenario": "coordinator_crash",
+    "nodes": 5,
+    "loss_rate": 0.05,
+    "seed": 5,
+    "checks": [
+      {
+        "name": "no false suspicions",
+        "ok": true,
+        "strict": false,
+        "detail": "0 unwarranted suspicion events"
+      },
+      {
+        "name": "completeness",
+        "ok": true,
+        "strict": true,
+        "detail": "all 4 live nodes suspect node5"
+      },
+      {
+        "name": "bounded detection time",
+        "ok": true,
+        "strict": true,
+        "detail": "max 2.207s, limit 3.125s"
+      },
+      {
+        "name": "leader agreement",
+        "ok": true,
+        "strict": false,
+        "detail": "all live nodes end with leader node4"
+      },
+      {
+        "name": "single leader announced",
+        "ok": true,
+        "strict": false,
+        "detail": "nodes that declared themselves leader after the crash: ['node4']"
+      },
+      {
+        "name": "election convergence",
+        "ok": true,
+        "strict": false,
+        "detail": "max 4.182s, limit 7.125s"
+      }
+    ]
+  },
+  {
+    "run_id": "run-026-coordinator_crash-n5-loss0.15-seed1",
+    "scenario": "coordinator_crash",
+    "nodes": 5,
+    "loss_rate": 0.15,
+    "seed": 1,
+    "checks": [
+      {
+        "name": "no false suspicions",
+        "ok": true,
+        "strict": false,
+        "detail": "0 unwarranted suspicion events"
+      },
+      {
+        "name": "completeness",
+        "ok": true,
+        "strict": true,
+        "detail": "all 4 live nodes suspect node5"
+      },
+      {
+        "name": "bounded detection time",
+        "ok": true,
+        "strict": true,
+        "detail": "max 2.166s, limit 3.125s"
+      },
+      {
+        "name": "leader agreement",
+        "ok": true,
+        "strict": false,
+        "detail": "all live nodes end with leader node4"
+      },
+      {
+        "name": "single leader announced",
+        "ok": false,
+        "strict": false,
+        "detail": "nodes that declared themselves leader after the crash: ['node3', 'node4']"
+      },
+      {
+        "name": "election convergence",
+        "ok": true,
+        "strict": false,
+        "detail": "max 6.158s, limit 7.125s"
+      }
+    ]
+  },
+  {
+    "run_id": "run-027-coordinator_crash-n5-loss0.15-seed2",
+    "scenario": "coordinator_crash",
+    "nodes": 5,
+    "loss_rate": 0.15,
+    "seed": 2,
+    "checks": [
+      {
+        "name": "no false suspicions",
+        "ok": false,
+        "strict": false,
+        "detail": "1 unwarranted suspicion events"
+      },
+      {
+        "name": "completeness",
+        "ok": true,
+        "strict": true,
+        "detail": "all 4 live nodes suspect node5"
+      },
+      {
+        "name": "bounded detection time",
+        "ok": true,
+        "strict": true,
+        "detail": "max 2.304s, limit 3.125s"
+      },
+      {
+        "name": "leader agreement",
+        "ok": true,
+        "strict": false,
+        "detail": "all live nodes end with leader node4"
+      },
+      {
+        "name": "single leader announced",
+        "ok": false,
+        "strict": false,
+        "detail": "nodes that declared themselves leader after the crash: ['node3', 'node4']"
+      },
+      {
+        "name": "election convergence",
+        "ok": true,
+        "strict": false,
+        "detail": "max 3.639s, limit 7.125s"
+      }
+    ]
+  },
+  {
+    "run_id": "run-028-coordinator_crash-n5-loss0.15-seed3",
+    "scenario": "coordinator_crash",
+    "nodes": 5,
+    "loss_rate": 0.15,
+    "seed": 3,
+    "checks": [
+      {
+        "name": "no false suspicions",
+        "ok": false,
+        "strict": false,
+        "detail": "1 unwarranted suspicion events"
+      },
+      {
+        "name": "completeness",
+        "ok": true,
+        "strict": true,
+        "detail": "all 4 live nodes suspect node5"
+      },
+      {
+        "name": "bounded detection time",
+        "ok": true,
+        "strict": true,
+        "detail": "max 2.100s, limit 3.125s"
+      },
+      {
+        "name": "leader agreement",
+        "ok": true,
+        "strict": false,
+        "detail": "all live nodes end with leader node4"
+      },
+      {
+        "name": "single leader announced",
+        "ok": true,
+        "strict": false,
+        "detail": "nodes that declared themselves leader after the crash: ['node4']"
+      },
+      {
+        "name": "election convergence",
+        "ok": true,
+        "strict": false,
+        "detail": "max 3.598s, limit 7.125s"
+      }
+    ]
+  },
+  {
+    "run_id": "run-029-coordinator_crash-n5-loss0.15-seed4",
+    "scenario": "coordinator_crash",
+    "nodes": 5,
+    "loss_rate": 0.15,
+    "seed": 4,
+    "checks": [
+      {
+        "name": "no false suspicions",
+        "ok": true,
+        "strict": false,
+        "detail": "0 unwarranted suspicion events"
+      },
+      {
+        "name": "completeness",
+        "ok": true,
+        "strict": true,
+        "detail": "all 4 live nodes suspect node5"
+      },
+      {
+        "name": "bounded detection time",
+        "ok": true,
+        "strict": true,
+        "detail": "max 2.273s, limit 3.125s"
+      },
+      {
+        "name": "leader agreement",
+        "ok": true,
+        "strict": false,
+        "detail": "all live nodes end with leader node4"
+      },
+      {
+        "name": "single leader announced",
+        "ok": true,
+        "strict": false,
+        "detail": "nodes that declared themselves leader after the crash: ['node4']"
+      },
+      {
+        "name": "election convergence",
+        "ok": true,
+        "strict": false,
+        "detail": "max 6.240s, limit 7.125s"
+      }
+    ]
+  },
+  {
+    "run_id": "run-030-coordinator_crash-n5-loss0.15-seed5",
+    "scenario": "coordinator_crash",
+    "nodes": 5,
+    "loss_rate": 0.15,
+    "seed": 5,
+    "checks": [
+      {
+        "name": "no false suspicions",
+        "ok": true,
+        "strict": false,
+        "detail": "0 unwarranted suspicion events"
+      },
+      {
+        "name": "completeness",
+        "ok": true,
+        "strict": true,
+        "detail": "all 4 live nodes suspect node5"
+      },
+      {
+        "name": "bounded detection time",
+        "ok": true,
+        "strict": true,
+        "detail": "max 2.125s, limit 3.125s"
+      },
+      {
+        "name": "leader agreement",
+        "ok": true,
+        "strict": false,
+        "detail": "all live nodes end with leader node4"
+      },
+      {
+        "name": "single leader announced",
+        "ok": false,
+        "strict": false,
+        "detail": "nodes that declared themselves leader after the crash: ['node3', 'node4']"
+      },
+      {
+        "name": "election convergence",
+        "ok": true,
+        "strict": false,
+        "detail": "max 3.647s, limit 7.125s"
+      }
+    ]
+  }
+]
