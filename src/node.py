@@ -18,6 +18,7 @@ TIMEOUT = float(os.environ.get("HB_TIMEOUT", 2.0))
 LOSS = float(os.environ.get("LOSS_RATE", 0))
 SEED = int(os.environ.get("SEED", 0))
 ELECTION_TIMEOUT = max(TIMEOUT, INTERVAL * 3)
+START_GRACE = float(os.environ.get("START_GRACE", 8.0))
 
 
 def node_rank(node_id):
@@ -38,6 +39,7 @@ coordinator = None
 active_election = None
 ok_received = set()
 election_condition = threading.Condition(lock)
+addresses = {} 
 
 
 def log(event, **fields):
@@ -47,8 +49,12 @@ def log(event, **fields):
 def send_message(sock, peer, msg):
     """Log every outbound application message, including failed sends."""
     packet = {**msg, "from": NODE_ID, "to": peer}
+    address = addresses.get(peer)
+    if address is None:
+        log("message_send_error", message=packet, error="peer address not resolved")
+        return
     try:
-        sock.sendto(json.dumps(packet).encode(), (peer, PORT))
+        sock.sendto(json.dumps(packet).encode(), (address, PORT))
         log("message_sent", message=packet)
     except OSError as error:
         log("message_send_error", message=packet, error=str(error))
@@ -58,6 +64,28 @@ def broadcast(sock, msg, peers=None):
     for peer in (PEERS if peers is None else peers):
         send_message(sock, peer, msg)
 
+
+def resolve_peer(peer):
+    """Resolve one peer name, retrying until it exists. A failed lookup can
+    block for seconds, so each peer has its own thread and the send path
+    never calls DNS."""
+    while peer not in addresses:
+        try:
+            addresses[peer] = socket.gethostbyname(peer)
+        except OSError:
+            time.sleep(0.2)
+
+
+def wait_for_peers():
+    for peer in PEERS:
+        threading.Thread(target=resolve_peer, args=(peer,), daemon=True).start()
+    while len(addresses) < len(PEERS):
+        time.sleep(0.05)
+    now = time.time()
+    with lock:
+        for peer in PEERS:
+            last_seen[peer] = now + START_GRACE
+    log("peers_resolved", addresses=dict(addresses))
 
 def start_election(reason):
     """Run a Bully round off the receiver/checker threads."""
@@ -104,8 +132,7 @@ def run_election(election_id):
                 if active_election != election_id:
                     return
                 timed_out = coordinator is None
-                if timed_out:
-                    active_election = None
+                active_election = None
             if timed_out:
                 log("election_retry", election_id=election_id, reason="coordinator_announcement_timeout")
                 start_election("higher_node_did_not_announce")
@@ -236,7 +263,9 @@ def checker():
 if __name__ == "__main__":
     log("start", peers=PEERS, interval=INTERVAL, timeout=TIMEOUT,
         election_timeout=ELECTION_TIMEOUT, loss=LOSS, seed=SEED)
-    for target in (receiver, sender, checker):
+    threading.Thread(target=receiver, daemon=True).start()  
+    wait_for_peers()
+    for target in (sender, checker):
         threading.Thread(target=target, daemon=True).start()
     while True:
         time.sleep(3600)

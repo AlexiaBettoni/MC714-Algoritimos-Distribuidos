@@ -194,7 +194,7 @@ def main():
         parser.error(str(error))
     output = Path(args.output).expanduser() if args.output else default_output
     output.parent.mkdir(parents=True, exist_ok=True)
-    output.write_text(svg)
+    output.write_text(svg, encoding="utf-8")
     print(f"Wrote {output}")
 
 
